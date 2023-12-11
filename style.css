@@ -1,0 +1,197 @@
+/*background*/
+.flowerfall {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -10;
+
+}
+body{
+    background-color: black;
+    z-index: -11;
+}
+/*blockquote {
+    position: absolute;
+    font-family: garamond, 'courier new'; 
+    color:rgb(187, 180, 180);
+    font-size: 1.5rem;
+    font-style:italic;
+    font-weight: bold;
+}*/
+/*.flex-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+}*/
+
+/* header includes both minilogo and full-sized logo */
+header {
+    position: static;/*only in effect on larger screens*/
+
+}
+
+.logo {
+    height: 5%;
+    width: 50%;
+    display: none; /*mobile first design setting. Displayed on larger screens*/
+}
+.minilogo {
+    position: relative;
+    display: block;
+}
+/* header includes both minilogo and full-sized logo */
+
+/*aside designated for animated  down arrow*/
+ aside {  
+    position: absolute;
+    height: 45%;
+    width: 10%;
+    margin: 5% 75% 25% 28%;
+    padding: 5% 2% 1% 10%;
+    bottom: 0;
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+@keyframes moveUpDown {
+    0%, 100% {
+        bottom: 15%;
+    }
+    45% {
+        bottom: 0%;
+    }
+}
+
+.grAro {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    visibility: visible;
+    z-index: 2;
+}
+
+.pkAro {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    z-index: 1;
+}
+
+.fadeLoop {
+    animation: fadeIn 1.5s alternate infinite ease-in-out;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100%{opacity:1;}
+}
+
+/*aside designated for animated  down arrow*/
+
+/* article includes links to project*/
+article {
+    position: fixed; 
+    width: 55%;
+    height: 20%;
+    margin: 50% 5% 2% 25%;
+    overflow: scroll;
+    font-size: 2rem;
+    font-family:  garamond, 'courier new'; 
+}
+
+/*inner window scrollbar style for Chrome and Edge*/
+article::-webkit-scrollbar {
+	width: 0rem;
+}
+
+
+.mMunchies {
+    position: absolute;
+    width: 75%;
+    height: auto;
+    margin-right: 5%;
+    visibility: visible;
+    cursor: pointer;
+    z-index: 6;
+}
+.mM {
+    position: absolute;
+    visibility: hidden;
+    z-index: 5;
+}
+/* article includes links to project*/
+
+/* nav includes social media links*/
+nav {
+    position: relative;
+    height: 30%;
+    width: 50%;
+    margin-top: 95%;
+    margin-right: 10%;
+}
+
+ul {
+    list-style-type: none;
+}
+ul li  {
+    display: inline;
+}
+.linkedin {
+    float: right;
+    margin-top: 60%;
+    
+}
+
+.insta {
+    float: left;
+    margin-top: 60%; 
+    
+}
+
+
+/* nav includes social media links*/
+
+/*remove underlind from all links on page*/
+
+a:link {
+    color: pink;
+    text-decoration: none; 
+}
+a:visited {
+    color: yellow;
+    
+}
+a:hover {
+    color:red;
+}
+/*remove underlind from all links on page*/
+
+footer {
+    position: relative;
+    height: 10%;
+    width: 20%;
+    margin-top: 10%;
+    
+}
+/*.artAura {
+    position: absolute;
+    width:18%;
+    height:3%;
+    margin-top: 174%;
+    margin-right: 3%;
+    z-index: -99;
+}
+.contactAura {
+    position: absolute;
+    width:18%;
+    height:3%;
+    margin-top: 187%;
+    margin-right: 3%;
+    z-index: -99;
+}*/

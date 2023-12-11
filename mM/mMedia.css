@@ -1,0 +1,1242 @@
+@media only screen and (min-width:300px)    {
+    body {
+       margin:0;
+       overflow-y: hidden;
+    }
+    .grid-container{
+        display:grid;
+        position:relative;
+        max-width:100%;
+        height:100vh;
+        margin:0 auto;
+        overflow-y: hidden;
+        justify-items: center;
+        grid-template-columns:1fr;
+        grid-template-rows: 0.5fr 2.5fr 0.75fr 0.25fr;
+        grid-row-gap:0.25rem;
+        grid-template-areas:
+         "header"
+         "article"
+         "nav"
+         "footer"
+    }
+    .grid1{
+        width: 17rem;
+        height:5rem;
+        grid-area:header;
+        right:16rem;
+       
+    }
+   
+    .grid2{
+     grid-area: article;
+    }
+    .grid3 {
+    width:19rem;
+    height: 5rem;
+    grid-area: nav;
+    }
+    .grid4 {
+     grid-area: footer;
+     width: 6rem;
+     height: 8rem;
+    }
+    .appLogo{
+       left:0.25rem;
+    }
+    .miniLogo {
+        width:13%;
+        height: auto;
+        padding:0.5rem;
+        right: 1.5rem;
+        bottom: 0.5rem;
+    }
+    h1 {
+        padding:0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left:3rem;
+    }
+    blockquote {
+        font-size: 0.8rem;
+        top:7rem;
+        padding:0.5rem;
+        margin-left:2rem;
+        width: 13rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        top:14.5rem;
+        left:6rem;
+        padding:0.5rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 5.5rem;
+        left:6.5rem;
+        top:24.5rem;
+        padding:0.5rem;
+    }
+
+    nav {
+        bottom:9rem;
+        padding:0.5rem;
+    }
+    .insta{
+        right: 1.5rem;
+    }
+    .linkedin {
+        left: 4rem;
+        bottom: 2rem;
+    }
+    footer {
+       right: 3rem;
+        bottom:12rem;
+        padding:0.5rem;
+    }
+    .myArt {
+       
+    }
+    .contact {
+        margin-top: 2rem;
+       
+    }
+}
+@media only screen and (min-width:350px) {
+   .grid1 {
+    margin-right:4rem;
+   }
+    .miniLogo {
+        width:13%;
+        height: auto;
+        padding:0.5rem;
+        right: 1.5rem;
+        bottom: 0.5rem;
+    }
+       .appLogo{
+        right:2rem;
+    }
+     h1 {
+         margin-bottom: 0.5rem;
+         margin-left:4.5rem;
+     }
+     blockquote {
+         font-size: 0.8rem;
+         top:9rem;
+         margin-left:3rem;
+         width: 13rem;
+         height:auto;
+     }
+     .mMUiUx, .uiUx{
+        width: 7.5rem;
+         top:15.5rem;
+         left:7.5rem;
+     }
+     .mMApp,  .mMAppDead {
+         width: 6.5rem;
+         left:8rem;
+         top:26.5rem;
+     }
+ 
+     nav {
+         bottom:9rem;
+        left: 2rem;
+     }
+     .insta{
+         margin-left:1rem;
+     }
+     .linkedin {
+         margin-left: 3rem;
+     }
+     footer {
+        right: 3rem;
+         bottom:12rem;
+     }
+     .contact {
+         margin-top: 2rem;
+     }
+}
+@media only screen and (min-width:400px) {
+    .grid1 {
+        margin-right:6rem;
+       }
+       
+       .appLogo{
+        right:0.5rem;
+    }
+     h1 {
+         bottom:4rem;
+         margin-left:6.5rem;
+     }
+     blockquote {
+         font-size: 0.8rem;
+         top:8rem;
+         margin-left:5rem;
+         width: 14rem;
+         height:auto;
+     }
+     .mMUiUx, .uiUx{
+         top:14.5rem;
+         left:8rem;
+     }
+     .mMApp,  .mMAppDead {
+         width: 6.5rem;
+         left:9rem;
+         top:25.5rem;
+     }
+ 
+     .grid3 {
+        left: 2rem;
+     }
+     .insta{
+         margin-left:1rem;
+     }
+     .linkedin {
+         margin-left: 3rem;
+     }
+     footer {
+        right: 4rem;
+         bottom:12rem;
+     }
+}
+@media only screen and (min-width:450px) {
+    .grid1 {
+        margin-right:9rem;
+       }
+    h1 {
+        bottom:4rem;
+        margin-left:7.5rem;
+    }
+    blockquote {
+        font-size: 0.8rem;
+        top:9rem;
+        margin-left:6rem;
+        width: 15rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 7rem;
+        top:17.5rem;
+        left:10.5rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 6.5rem;
+        left:11rem;
+        top:28.5rem;
+    }
+
+    nav {
+        left:0.5rem;
+        bottom:8rem;
+        
+    }
+   
+    footer {
+        right: 4.5rem;
+         bottom:9rem;
+     }
+}
+@media only screen and (min-width:500px) {
+    .grid1 {
+        margin-right:12rem;
+       }
+    .appLogo {
+        margin-left:8rem;
+        width: 11rem;
+        
+    }
+    h1 {
+        bottom:3rem;
+       margin-right: 8rem;
+    }
+    blockquote {
+        font-size: 0.8rem;
+        top:14rem;
+        margin-left:4rem;
+        width: 17rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 8rem;
+        top:24.5rem;
+       left:5rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 7rem;
+        left:15rem;
+        top:25rem;
+    }
+
+    nav {
+       left:0.5rem;
+        bottom:18rem;
+    }
+  
+    footer {
+        right: 5rem;
+         bottom:20rem;
+     }
+}
+@media only screen and (min-width:550px)    {
+    .grid1 {
+        margin-right:16rem;
+       }
+    .appLogo {
+        right:1rem;
+        width: 11rem;
+        bottom: 2rem;
+    }
+    h1 {
+        bottom:3rem;
+       margin-right: 7rem;
+    }
+    blockquote {
+        font-size: 0.8rem;
+        top:14rem;
+        margin-left:3rem;
+        width: 20rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 8rem;
+        top:25.5rem;
+       left:3rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 7rem;
+        left:17rem;
+        top:26rem;
+    }
+
+    nav {
+        margin-right: 1rem;
+        bottom:22rem;
+    }
+  
+    footer {
+        right: 6rem;
+         bottom:24rem;
+     }
+}
+@media only screen and (min-width:600px)    {
+    .grid1 {
+        margin-right:19rem;
+       }
+    .appLogo {
+        right:1rem;
+        width: 11rem;
+        bottom: 2rem;
+    }
+    h1 {
+        bottom:3rem;
+       margin-right: 7rem;
+    }
+    blockquote {
+        font-size: 0.8rem;
+        top:14rem;
+        margin-left:5rem;
+        width: 18rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 8rem;
+        top:25.5rem;
+       left:3rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 7rem;
+        left:17rem;
+        top:26rem;
+    }
+
+    nav {
+        margin-right: 1rem;
+        bottom:26rem;
+    }
+  
+    footer {
+        right: 6rem;
+         bottom:28rem;
+     }
+}
+   
+@media only screen and (min-width:650px) {
+    .grid1 {
+        margin-right:22rem;
+       }
+    .appLogo {
+        right:1rem;
+        width: 11rem;
+        bottom: 2rem;
+    }
+    h1 {
+        bottom:3rem;
+       margin-right: 7rem;
+    }
+    blockquote {
+        font-size: 0.8rem;
+        top:14rem;
+        margin-left:4rem;
+        width: 19rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 8rem;
+        top:25.5rem;
+       left:3rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 7rem;
+        left:17rem;
+        top:26rem;
+    }
+
+    nav {
+        margin-right: 1rem;
+        bottom:30rem;
+    }
+  
+    footer {
+        right: 7rem;
+         bottom:32rem;
+     }
+}
+@media only screen and (min-width:700px) {
+    .grid1 {
+        margin-right:25rem;
+       }
+    .appLogo {
+        right:1rem;
+        width: 11rem;
+        bottom: 2rem;
+    }
+    h1 {
+        bottom:3rem;
+       margin-right: 7rem;
+    }
+    blockquote {
+        font-size: 0.8rem;
+        top:14rem;
+        margin-left:3rem;
+        width: 20rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 8rem;
+        top:25.5rem;
+       left:3rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 7rem;
+        left:17rem;
+        top:26rem;
+    }
+
+    nav {
+        margin-right: 1rem;
+        bottom:34rem;
+    }
+  
+    footer {
+        right: 8rem;
+         bottom:36rem;
+     }
+}
+@media only screen and (min-width:750px) {
+    .grid1 {
+        margin-right:28rem;
+       }
+    .appLogo {
+        right:1rem;
+        width: 11rem;
+        bottom: 2rem;
+    }
+    h1 {
+        bottom:3rem;
+       margin-right: 7rem;
+    }
+    blockquote {
+        font-size: 0.8rem;
+        top:14rem;
+        margin-left:3rem;
+        width: 22rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 8rem;
+        top:25.5rem;
+       left:3rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 7rem;
+        left:17rem;
+        top:26rem;
+    }
+
+    nav {
+        margin-right: 1rem;
+        bottom:38rem;
+    }
+  
+    footer {
+        right: 8rem;
+         bottom:42rem;
+     }
+
+}
+@media only screen and (min-width:800px) {
+   body {margin:0;}
+    .miniLogo{
+        display: none;
+    }
+    .logo {
+        display: block;
+        width: 12rem;
+        padding-top: 0.5rem;
+       margin-right:12rem;
+    
+    }
+    .grid-container{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 2.5fr 0.5fr;
+        grid-row-gap:0.25rem;
+        grid-template-areas:
+         "header nav"
+         "article article"
+         "footer footer"
+    }
+    .grid1{
+        margin:0;
+        grid-area:header;
+        width: fit-content;
+        height: fit-content;
+        
+    }
+    .grid2{
+        grid-area: article;
+        bottom:4rem;
+        margin-bottom: 3rem;
+        width:fit-content;
+        height:fit-content;
+        
+    }
+    .grid3 {
+       
+        bottom:13rem;
+        grid-area: nav;
+        
+    }
+    .grid4 {
+        grid-area: footer;
+        bottom:9rem;
+        width:fit-content;
+    }
+    header {
+        margin-right:13rem;
+       }
+    .appLogo {
+        right:1rem;
+        width: 11rem;
+        bottom: 2rem;
+    }
+    h1 {
+        bottom:3rem;
+       margin-right: 7rem;
+    }
+    blockquote {
+        font-size: 0.8rem;
+        top:14rem;
+        margin-left:3rem;
+        width: 22rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 8rem;
+        top:25.5rem;
+       left:3rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 7rem;
+        left:17rem;
+        top:26rem;
+    }
+    .grid3  {
+        bottom: 0.5rem;
+        left: 2rem;
+        margin:0;
+        padding:0;
+    }
+    .insta, .linkedin {
+        margin:0;
+        padding: 0;
+        }
+       .insta {
+        margin-left: 5rem;
+       }
+       .linkedin {
+        margin-right: 2rem;
+       }
+   
+   
+}
+@media only screen and (min-width:850px) {
+    .grid1{
+        width: 25rem;
+        bottom: 15rem;
+        
+    }
+    .grid3  {
+        bottom: 0.5rem;
+        left: 3rem;
+        margin:0;
+        padding:0;
+    }
+    .grid2  {
+       
+        bottom:4rem;
+    }
+    .grid4 {
+        bottom:8rem;
+    }
+  
+}
+@media only screen and (min-width:900px) {
+    .grid1{
+        width: 26rem;
+        bottom: 15rem;
+        
+    }
+    .appLogo {
+        right:3rem;
+        width: 13rem;
+        bottom: 2rem;
+    }
+    
+    .grid3  {
+        bottom: 0.5rem;
+        left: 4rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:8rem;
+        right: 10rem;
+    }
+    blockquote {
+        font-size: 0.9rem;
+        top:15rem;
+        margin-left:2rem;
+        width: 24rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 9rem;
+        top:25.5rem;
+       left:1rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 8rem;
+        left:18rem;
+        top:26rem;
+    }
+    
+}
+@media only screen and (min-width:950px) {
+    .grid1{
+        width:28rem;
+    }
+    .grid3  {
+        bottom: 0.5rem;
+        left: 5rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:8rem;
+        right: 10rem;
+    }
+    blockquote {
+        font-size: 1rem;
+        top:15rem;
+        margin-left:1rem;
+        width: 24rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 10rem;
+        top:25.5rem;
+        right: 3rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 9rem;
+        left:19rem;
+        top:26rem;
+    }
+    
+}
+@media only screen and (min-width:1000px) {
+    .grid1{
+        width:30rem;
+    }
+    .grid3  {
+        bottom: 0.5rem;
+        left: 6rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:8rem;
+        right: 10rem;
+    }
+    blockquote {
+        font-size: 1rem;
+        top:15rem;
+        margin-left:1rem;
+        width: 24rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 10rem;
+        top:25.5rem;
+        right: 3rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 9rem;
+        left:19rem;
+        top:26rem;
+    }
+    nav {
+        margin-left: 5rem;
+        margin-top:14rem
+    }
+} 
+@media only screen and (min-width:1050px) {
+    .grid1{
+        width:32rem;
+    }
+    .grid3  {
+      
+        left: 7rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:8rem;
+        right: 11rem;
+    }
+    blockquote {
+        font-size: 1rem;
+        top:15rem;
+        margin-left:1rem;
+        width: 24rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 10rem;
+        top:25.5rem;
+        right: 3rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 9rem;
+        left:19rem;
+        top:26rem;
+    }
+    
+}
+@media only screen and (min-width:1100px) {
+    .grid1{
+        width:33rem;
+    }
+    .grid3  {
+      
+        left: 8rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:8rem;
+        right: 13rem;
+    }
+    blockquote {
+        font-size: 1rem;
+        top:15rem;
+        margin-left:1rem;
+        width: 24rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 10rem;
+        top:25.5rem;
+        right: 2rem;
+    }
+    .mMApp,  .mMAppDead {
+        width: 9rem;
+        left:17rem;
+        top:26rem;
+    }
+    nav {
+        margin-left: 6rem;
+        margin-top:14rem
+    }
+}
+@media only screen and (min-width:1150px) {
+    .grid1{
+        width:34rem;
+    }
+    .grid3  {
+      
+        left: 8rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:8rem;
+        right: 13rem;
+    }
+    blockquote {
+        font-size: 1rem;
+        top:15rem;
+        margin-left:1rem;
+        width: 24rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 10rem;
+        top:25.5rem;
+        
+    }
+    .mMApp,  .mMAppDead {
+        width: 9rem;
+        left:19rem;
+        top:26rem;
+    }
+    nav {
+        margin-left: 8rem;
+        margin-top:14rem
+    }
+}
+@media only screen and (min-width:1200px) {
+    .grid1{
+        width:36rem;
+    }
+    .grid3  {
+      
+        left: 10rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:8rem;
+        right: 13rem;
+    }
+    blockquote {
+        font-size: 1rem;
+        top:15rem;
+        margin-left:1rem;
+        width: 24rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 10rem;
+        top:25.5rem;
+        
+    }
+    .mMApp,  .mMAppDead {
+        width: 9rem;
+        left:19rem;
+        top:26rem;
+    }
+    nav {
+        margin-left: 10rem;
+        margin-top:14rem
+    }
+}
+@media only screen and (min-width:1250px) {
+    .appLogo {
+        right:3rem;
+        width: 15rem;
+        bottom: 3rem;
+    }
+    .grid1{
+        width:37rem;
+    }
+    .grid3  {
+      
+        left: 10rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:8rem;
+        right: 13rem;
+    }
+    blockquote {
+        font-size: 1rem;
+        top:17rem;
+        margin-right:2rem;
+        width: 25rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 12rem;
+        top:25.5rem;
+
+        
+    }
+    .mMApp,  .mMAppDead {
+        width: 11rem;
+        left:19rem;
+        top:26rem;
+    }
+    nav {
+        margin-left: 12rem;
+        margin-top:14rem
+    }
+}
+@media only screen and (min-width:1300px) {
+    
+    .appLogo {
+        right:3rem;
+        width: 15rem;
+        bottom: 3rem;
+    }
+    
+    .grid1{
+        width:39rem;
+    }
+    .grid3  {
+      
+        left: 12rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:9rem;
+        right: 12rem;
+    }
+    h1 {
+        bottom:3rem;
+       margin-right: 6rem;
+    }
+    
+    blockquote {
+        font-size: 1rem;
+        top:17rem;
+        margin-right:2rem;
+        width: 25rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 12rem;
+        top:25.5rem;
+
+        
+    }
+    .mMApp,  .mMAppDead {
+        width: 11rem;
+        left:19rem;
+        top:26rem;
+    }
+    nav {
+        margin-left: 12rem;
+        margin-top:14rem
+    }
+}
+@media only screen and (min-width:1350px) {
+    .appLogo {
+        right:3rem;
+        width: 15rem;
+        bottom: 3rem;
+    }
+    
+    .grid1{
+        width:41rem;
+    }
+    .grid3  {
+      
+        left: 12rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:9rem;
+        right: 14rem;
+    }
+    h1 {
+        bottom:3rem;
+       margin-right: 6rem;
+    }
+    article {
+        right:2rem;
+    }
+    blockquote {
+        font-size: 1rem;
+        top:17rem;
+        margin-right:2rem;
+        width: 25rem;
+        height:auto;
+    }
+    .mMUiUx, .uiUx{
+        width: 12rem;
+        top:25.5rem;
+
+        
+    }
+    .mMApp,  .mMAppDead {
+        width: 11rem;
+        left:19rem;
+        top:26rem;
+    }
+    nav {
+        margin-left: 14rem;
+        margin-top:14rem
+    }
+    
+}
+@media only screen and (min-width:1400px) {
+    .appLogo {
+        right:3rem;
+        width: 15rem;
+        bottom: 3rem;
+    }
+    
+    .grid1{
+        width:43rem;
+    }
+    .grid3  {
+      
+        left: 12rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:9rem;
+        right: 15rem;
+    }
+    h1 {
+        bottom:3rem;
+       margin-right: 6rem;
+    }
+    .mMUiUx, .uiUx{
+        width: 12rem;
+        top:25.5rem;
+
+        
+    }
+    .mMApp,  .mMAppDead {
+        width: 11rem;
+        left:19rem;
+        top:26rem;
+    }
+    nav {
+        margin-left: 16rem;
+        margin-top:14rem
+    }
+}
+@media only screen and (min-width:1450px) {
+    .grid1{
+        width:44rem;
+    }
+    .grid3  {
+      
+        left: 13rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:9rem;
+        right: 17rem;
+    }
+    
+}
+@media only screen and (min-width:1500px) {
+    .grid1{
+        width:45rem;
+    }
+    .grid3  {
+      
+        left: 14rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:9rem;
+        right: 18rem;
+    }
+}
+@media only screen and (min-width:1550px) {
+    .grid1{
+        width:47rem;
+    }
+    .grid3  {
+      
+        left: 15rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:9rem;
+        right: 18rem;
+    }
+}
+@media only screen and (min-width:1600px) {
+    .grid1{
+        width:49rem;
+    }
+    .grid3  {
+      
+        left: 15rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:9rem;
+        right: 18rem;
+    }
+}
+@media only screen and (min-width:1650px) {
+    .grid1{
+        width:50rem;
+    }
+    .grid2 {
+        top: 1rem;
+    }
+    .grid3  {
+      
+        left: 16rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:7rem;
+        right: 18rem;
+    }
+}
+@media only screen and (min-width:1700px) {
+    .grid1{
+        width:51rem;
+    }
+    .grid2 {
+        top: 1rem;
+    }
+    .grid3  {
+      
+        left: 17rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:7rem;
+        right: 18rem;
+    }
+}
+@media only screen and (min-width:1750px) {
+    .grid1{
+        width:53rem;
+    }
+    .grid2 {
+        top: 1rem;
+    }
+    .grid3  {
+      
+        left: 18rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:7rem;
+        right: 19rem;
+    }
+}
+@media only screen and (min-width:1800px) {
+    .grid1{
+        width:53rem;
+    }
+    .grid2 {
+        top: 1rem;
+    }
+    .grid3  {
+      
+        left: 18rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:1rem;
+        right: 19rem;
+    }
+}
+@media only screen and (min-width:1850px) {
+    .grid1{
+        width:53rem;
+    }
+    .grid2 {
+        top: 1rem;
+    }
+    .grid3  {
+      
+        left: 19rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:2rem;
+        right: 20rem;
+    }
+}
+@media only screen and (min-width:1900px) {
+    .grid1{
+        width:50rem;
+    }
+    .grid2 {
+        top: 1rem;
+    }
+    .grid3  {
+      
+        left: 20rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:3rem;
+        right: 21rem;
+    }
+}
+@media only screen and (min-width:1950px) {
+    .grid1{
+        width:51rem;
+    }
+    .grid2 {
+        top: 1rem;
+    }
+    .grid3  {
+      
+        left: 21rem;
+        margin:0;
+        padding:0;
+    }
+    
+    .grid4 {
+        bottom:4rem;
+        right: 22rem;
+    }
+}

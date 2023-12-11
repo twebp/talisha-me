@@ -1,0 +1,1315 @@
+@media only screen and (min-width:300px) {
+    body {
+        overflow: hidden;
+        margin: 0;
+    }
+    .grid-container{
+        display: grid;
+        max-width:100%;
+        height:100vh;
+        gap:0.05rem;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 0.25fr 2.75fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "header header"
+        "aside article"
+        "nav nav"
+        "footer footer"
+    
+    }
+    .grid1 {
+        grid-area: header;
+       
+    }
+    .grid2 {
+        grid-area: aside;
+        right:1rem;
+      
+    }
+    .grid3 {
+        grid-area: article;
+        bottom:52rem;
+        
+    }
+    .grid4 {
+        grid-area: nav;
+        left:3rem;
+        bottom:35rem;
+        
+    }
+    .grid5 {
+        grid-area: footer;
+        left:8rem;
+        bottom:32rem;
+      
+    }
+    header {
+        margin: 1rem;
+    }
+    .minilogo {
+        width:3rem;
+        height: auto;
+    }
+    article {
+        height:10rem;
+    }
+    .amber {
+        margin-top:15rem;
+        margin-left:2rem;
+}
+    .guardian {
+    margin-top:15rem;
+    margin-left:0.5rem;
+}
+    .mM {
+    top:1rem;
+    left:0.5rem;
+}
+    .mMunchies {
+        width: 10rem;
+        height:auto;
+    }
+    aside {
+        margin-bottom: 22rem;
+    }
+    nav {
+        width:12rem;
+    }
+    .insta {
+        margin:0;
+    }
+    .linkedin {
+        margin:0;
+    }
+    footer {
+        width:4.5rem;
+        height:10rem;
+        
+    }
+}
+@media only screen and (min-width:350px) {
+    aside{
+        margin-right:13rem;
+    }
+    .grid4 {
+        left:4.5rem;
+    }
+    .grid5 {
+        left:9rem;
+    }
+}
+@media only screen and (min-width:400px) {
+    aside{
+        margin-right:15rem;
+    }
+    .grid4 {
+        left:5rem;
+    }
+    .grid5 {
+        left:10rem;
+    }
+}
+@media only screen and (min-width:450px) {
+    aside{
+        margin-right:16rem;
+    }
+    .grid3 {
+        left: 1.5rem;
+    }
+    .grid4 {
+        left:8rem;
+    }
+    .grid5 {
+        left:13rem;
+    }
+}
+@media only screen and (min-width:500px) {
+    aside{
+        margin-right:18rem;
+    }
+    .grid3 {
+        bottom:48rem;
+        left: 2rem;
+    }
+    .grid4 {
+        bottom: 29rem;
+        left:8rem;
+    }
+    .grid5 {
+        left:14rem;
+        bottom:31rem;
+    }
+    .amber {
+        margin-top:18rem;
+        margin-left:2rem;
+}
+    .guardian {
+    margin-top:16rem;
+    margin-left:0.5rem;
+}
+    .mMunchies {
+        width:12rem;
+    }
+    article {
+        font-size: 2rem;
+        height:12rem;
+    }
+    footer {
+        width:4.5rem;
+        height:11rem;
+        
+    }
+    .contact {
+        margin-top:2rem;
+    }
+
+}
+@media only screen and (min-width:550px) {
+    aside{
+        margin-right:20rem;
+        margin-bottom: 20rem;
+    }
+    
+    .grid3 {
+        bottom:46rem;
+        left: 2rem;
+    }
+    .grid4 {
+        bottom: 26rem;
+        left:10rem;
+    }
+    .grid5 {
+        left:16rem;
+        bottom:28rem;
+    }
+    .mMunchies {
+        width:14rem;
+    }
+   
+    article {
+        font-size:2.5rem;
+        width:14rem;
+        height:14rem;
+    }
+    footer {
+        width:4.5rem;
+        height:11rem;
+        
+    }
+    .contact {
+        margin-top:2rem;
+    }
+
+}
+@media only screen and (min-width:600px) {
+    aside{
+        margin-right:22rem;
+        margin-bottom: 19rem;
+    }
+    
+    .grid3 {
+        bottom:45rem;
+        left: 2rem;
+    }
+    .grid4 {
+        bottom: 24rem;
+        left:11rem;
+    }
+    .grid5 {
+        left:17rem;
+        bottom:26rem;
+    }
+    .mMunchies {
+        width:15rem;
+    }
+   
+    article {
+        width:15rem;
+        height:15rem;
+    }
+    footer {
+        width:4.5rem;
+        height:11rem;
+        
+    }
+    .contact {
+        margin-top:2rem;
+    }
+
+}
+@media only screen and (min-width:650px) {
+    aside{
+        margin-right:26rem;
+        margin-bottom: 17rem;
+    }
+    
+    .grid3 {
+        bottom:43rem;
+        left: 2rem;
+    }
+    .grid4 {
+        bottom: 22rem;
+        left:12rem;
+    }
+    .grid5 {
+        left:18rem;
+        bottom:24rem;
+    }
+    .amber {
+        margin-top:20rem;
+        margin-left:2rem;
+}
+    .mMunchies {
+        width:15rem;
+    }
+    
+   
+    article {
+        width:16rem;
+        height:16rem;
+    }
+    footer {
+        width:4.5rem;
+        height:11rem;
+        
+    }
+    .contact {
+        margin-top:2rem;
+    }
+
+}
+@media only screen and (min-width:700px) {
+    aside{
+        margin-right:28rem;
+        margin-bottom: 16rem;
+    }
+    
+    .grid3 {
+        bottom:42rem;
+        left: 2rem;
+    }
+    .grid4 {
+        bottom: 21rem;
+        left:14rem;
+    }
+    .grid5 {
+        left:20rem;
+        bottom:23rem;
+    }
+    .amber {
+        margin-top:24rem;
+        margin-left:2rem;
+}
+    .mMunchies {
+        width:16rem;
+    }
+    
+    article {
+        font-size:2.5rem;
+        width:16rem;
+        height:16rem;
+    }
+    footer {
+        width:4.5rem;
+        height:11rem;
+        
+    }
+    .contact {
+        margin-top:2rem;
+    }
+
+}
+@media only screen and (min-width:750px) {
+    aside{
+        margin-right:30rem;
+        margin-bottom: 16rem;
+    }
+    
+    .grid3 {
+        bottom:40rem;
+        left: 2rem;
+    }
+    .grid4 {
+        bottom: 20rem;
+        left:16rem;
+    }
+    .grid5 {
+        left:22rem;
+        bottom:22rem;
+    }
+    .amber {
+        margin-top:24rem;
+        margin-left:2rem;
+}
+    .mMunchies {
+        width:17rem;
+    }
+    
+
+    article {
+        font-size:2.5rem;
+        width:17rem;
+        height:17rem;
+    }
+    footer {
+        width:4.5rem;
+        height:11rem;
+        
+    }
+    .contact {
+        margin-top:2rem;
+    }
+
+}
+@media only screen and (min-width:800px) {
+    .grid-container {
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 0.3fr 2.75fr 0.5fr;
+        grid-template-areas: 
+        "header nav"
+        "aside article"
+        "footer footer"
+    }
+    aside{
+        margin-right:30rem;
+        margin-bottom: 16rem;
+    }
+    
+    .grid3 {
+        bottom:38rem;
+        left: 4rem;
+    }
+    .grid4 {
+        bottom: 24rem;
+        left:12rem;
+    }
+   
+    .grid5 {
+        left:20.5rem;
+        bottom:25rem;
+    }
+    .amber {
+        margin-top:24rem;
+        margin-left:2rem;
+}
+    .mMunchies {
+        width:18rem;
+    }
+    
+    article {
+        width:18rem;
+        height:18rem;
+        font-size:3rem;
+    }
+    footer {
+        width:10rem;
+        height:11rem;
+    }
+    .contact {
+        float:right;
+        margin-top: 1rem;
+        
+        
+    }
+    .art {
+        float:left;
+        bottom:1rem;
+        
+    }
+    .minilogo {
+        display: none;
+    }
+    .logo {
+        display: block;
+        height:4rem;
+    }
+
+}
+@media only screen and (min-width:850px) {
+    .grid4 {
+        bottom: 24.5rem;
+        left:12.5rem;
+    }
+    .grid5 {
+        left:21rem;
+        bottom:27rem;
+    }
+}
+@media only screen and (min-width:900px) {
+    .grid4 {
+        bottom: 25.5rem;
+        left:13rem;
+    }
+    .grid5 {
+        left:22rem;
+        bottom:27rem;
+       
+    }
+    .grid2 {
+        display:none;;
+    }
+    article {
+        margin-left:0;
+        width:48rem;
+        overflow:visible;
+       
+    }
+     .mMunchies {
+        right:30rem;
+        z-index: 6;
+    }
+    .mM {
+        margin-top:4rem;
+       right:2rem;
+       z-index: 5;
+    }
+    .amber { 
+        position:absolute;
+        margin:0;
+        left: 14rem;
+        margin-top: 5rem;
+        padding-left:3rem;
+        z-index: 3;
+    }
+    .guardian {
+        position: absolute;
+        margin:0;
+        left: 15rem;
+        margin-top:5rem;
+        margin-left: 18rem;
+        z-index: 4;
+    }
+    footer{
+        width:13rem;
+        font-size: 1.5rem;
+    }
+    .contact {
+        margin-top: 1.5rem;
+    }
+}
+@media only screen and (min-width:950px) {
+    article {
+        width:52rem;
+    }
+    .grid3 {
+        bottom:35rem;
+        left: 4rem;
+    }
+    .grid4 {
+        bottom: 27.5rem;
+        left:16rem;
+    }
+    .grid5 {
+        left:22rem;
+        bottom:25rem;
+    }
+    .mMunchies {
+        right:32rem;
+    }
+    .mM {
+       left:2rem;
+    }
+    .amber { 
+        left: 18rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 16rem;
+        padding-left:2rem;
+    }
+}
+@media only screen and (min-width:1000px) {
+    article {
+        width:56rem;
+    }
+    .grid3 {
+        bottom:33rem;
+        left: 3rem;
+    }
+    .grid4 {
+        bottom: 28.5rem;
+        left:18rem;
+    }
+    .grid5 {
+        left:23rem;
+        bottom:22rem;
+    }
+    .mMunchies {
+        right:35rem;
+    }
+    .mM {
+       left:2rem;
+    }
+    .amber { 
+        left: 20rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 18rem;
+        padding-left:2rem;
+    }
+}
+@media only screen and (min-width:1050px) {
+    article {
+        width:59rem;
+    }
+    .grid3 {
+        bottom:32rem;
+        left: 3rem;
+    }
+    .grid4 {
+        bottom: 30.5rem;
+        left: 19rem;
+    }
+    .grid5 {
+        left:25rem;
+        bottom:22rem;
+    }
+    .mMunchies {
+        right:38rem;
+    }
+    .mM {
+       left:2rem;
+    }
+    .amber { 
+        left: 23rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 21rem;
+        padding-left:2rem;
+    }
+}
+ @media only screen and (min-width:1100px) {
+    article {
+        width:63rem;
+    }
+    .grid3 {
+        bottom:31rem;
+        left: 3rem;
+    }
+    .grid4 {
+        bottom: 32rem;
+        left:21rem;
+    }
+    .grid5 {
+        left:27rem;
+        bottom:20rem;
+    }
+    .mMunchies {
+        right:42rem;
+    }
+    .amber { 
+        left: 26rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 27rem;
+        padding-left:2rem;
+    }
+}
+@media only screen and (min-width:1150px) {
+    header {
+        width: 24rem;
+    }
+    article {
+        width:65rem;
+        height:20rem;
+        font-size:4rem;
+    }
+    .grid3 {
+        bottom:28rem;
+        left: 3rem;
+    }
+    .grid4 {
+        bottom: 33rem;
+        left:22.5rem;
+    }
+    .grid5 {
+        left:27rem;
+        bottom:18rem;
+    }
+    .mMunchies {
+        right:42rem;
+        width:20rem;
+    }
+    .mM {
+        left:1rem;
+     }
+    .amber { 
+        left: 23rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 24rem;
+        padding-left:2rem;
+    }
+}
+@media only screen and (min-width:1200px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:69rem;
+        height:20rem;
+        font-size:4rem;
+    }
+    .grid3 {
+        bottom:26rem;
+        left: 3rem;
+    }
+    .grid4 {
+        bottom: 35rem;
+        left:24.5rem;
+    }
+    .grid5 {
+        left:29rem;
+        bottom:16rem;
+    }
+    .mMunchies {
+        right:44rem;
+        width:20rem;
+    }
+    .mM {
+        left:1rem;
+     }
+    .amber { 
+        left: 25rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 27rem;
+        padding-left:2rem;
+    }
+}
+@media only screen and (min-width:1250px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:72rem;
+        height:20rem;
+        font-size:4rem;
+    }
+    .grid3 {
+        bottom:26rem;
+        left: 3rem;
+    }
+    .grid4 {
+        bottom: 36rem;
+        left:25.5rem;
+    }
+    .grid5 {
+        left:33rem;
+        bottom:16rem;
+    }
+    .mMunchies {
+        right:47rem;
+        width:20rem;
+    }
+    .mM {
+        left:2rem;
+     }
+    .amber { 
+        left: 28rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 30rem;
+        padding-left:2rem;
+    }
+}
+@media only screen and (min-width:1300px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:75rem;
+        height:20rem;
+        font-size:4rem;
+    }
+    .grid3 {
+        bottom:26rem;
+        left: 3rem;
+    }
+    .grid4 {
+        bottom: 38rem;
+        left:27.5rem;
+    }
+    .grid5 {
+        left:33rem;
+        bottom:16rem;
+    }
+    .mMunchies {
+        right:50rem;
+        width:20rem;
+    }
+    .mM {
+        left:2rem;
+     }
+    .amber { 
+        left: 29rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 33rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1350px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:78rem;
+        height:20rem;
+        font-size:4rem;
+    }
+    .grid3 {
+        bottom:23rem;
+        left: 3rem;
+    }
+    .grid4 {
+        bottom: 39rem;
+        left:28.5rem;
+    }
+    .grid5 {
+        left:33rem;
+        bottom:12rem;
+    }
+    .mMunchies {
+        right:51rem;
+        width:20rem;
+    }
+    .mM {
+        left:2rem;
+     }
+    .amber { 
+        left: 30rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 34rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1400px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:80rem;
+        height:20rem;
+        font-size:4rem;
+    }
+    .grid3 {
+        bottom:23rem;
+        left: 4rem;
+    }
+    .grid4 {
+        bottom: 41rem;
+        left:30.5rem;
+    }
+    .grid5 {
+        left:37rem;
+        bottom:12rem;
+    }
+    .mMunchies {
+        right:53rem;
+        width:20rem;
+    }
+    .mM {
+        left:2rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 36rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1450px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:80rem;
+        height:20rem;
+        font-size:4rem;
+    }
+    .grid3 {
+        bottom:23rem;
+        left: 5rem;
+    }
+    .grid4 {
+        bottom: 42rem;
+        left:32rem;
+    }
+    .grid5 {
+        left:37rem;
+        bottom:12rem;
+    }
+    .mMunchies {
+        right:53rem;
+        width:20rem;
+    }
+    .mM {
+        left:2rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 36rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1500px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:80rem;
+        height:20rem;
+        font-size:4rem;
+    }
+    .grid3 {
+        bottom:23rem;
+        left: 7rem;
+    }
+    .grid4 {
+        bottom: 44rem;
+        left:34rem;
+    }
+    .grid5 {
+        left:39rem;
+        bottom:12rem;
+    }
+    .mMunchies {
+        right:53rem;
+        width:20rem;
+    }
+    .mM {
+        left:2rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 36rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1550px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:80rem;
+        height:20rem;
+        font-size:4rem;
+    }
+    .grid3 {
+        bottom:23rem;
+        left: 8rem;
+    }
+    .grid4 {
+        bottom: 45rem;
+        left:35rem;
+    }
+    .grid5 {
+        left:40rem;
+        bottom:12rem;
+    }
+    .mMunchies {
+        right:53rem;
+        width:20rem;
+    }
+    .mM {
+        left:2rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 36rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1600px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:82rem;
+        height:22rem;
+        font-size:5rem;
+    }
+    .grid3 {
+        bottom:21rem;
+        left: 9rem;
+    }
+    .grid4 {
+        bottom: 46.5rem;
+        left:36.5rem;
+    }
+    .grid5 {
+        left:41rem;
+        bottom:12rem;
+    }
+    .mMunchies {
+        right:54rem;
+        width:22rem;
+    }
+    .mM {
+        left:3rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 36rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1650px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:87rem;
+        height:22rem;
+        font-size:5rem;
+    }
+    .grid3 {
+        bottom:21rem;
+        left: 8rem;
+    }
+    .grid4 {
+        bottom: 47.5rem;
+        left:38rem;
+    }
+    .grid5 {
+        left:41rem;
+        bottom:13rem;
+    }
+    .mMunchies {
+        right:58rem;
+        width:22rem;
+    }
+    .mM {
+        left:3rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 39rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1700px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:87rem;
+        height:22rem;
+        font-size:5rem;
+    }
+    .grid3 {
+        bottom:21rem;
+        left: 8rem;
+    }
+    .grid4 {
+        bottom: 49rem;
+        left:39rem;
+    }
+    .grid5 {
+        left:42rem;
+        bottom:14rem;
+    }
+    .mMunchies {
+        right:58rem;
+        width:22rem;
+    }
+    .mM {
+        left:3rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 39rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1750px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:87rem;
+        height:22rem;
+        font-size:5rem;
+    }
+    .grid3 {
+        bottom:21rem;
+        left: 10rem;
+    }
+    .grid4 {
+        bottom: 51rem;
+        left:41rem;
+    }
+    .grid5 {
+        left:44rem;
+        bottom:16rem;
+    }
+    .mMunchies {
+        right:58rem;
+        width:22rem;
+    }
+    .mM {
+        left:3rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 39rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1800px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:87rem;
+        height:22rem;
+        font-size:5rem;
+    }
+    .grid3 {
+        bottom:21rem;
+        left: 13rem;
+    }
+    .grid4 {
+        bottom: 52.5rem;
+        left:43rem;
+    }
+    .grid5 {
+        left:46rem;
+        bottom:17rem;
+    }
+    .mMunchies {
+        right:58rem;
+        width:22rem;
+    }
+    .mM {
+        left:3rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 39rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1850px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:87rem;
+        height:22rem;
+        font-size:5rem;
+    }
+    .grid3 {
+        bottom:20rem;
+        left: 13rem;
+    }
+    .grid4 {
+        bottom: 53.5rem;
+        left:44rem;
+    }
+    .grid5 {
+        left:48rem;
+        bottom:18rem;
+    }
+    .mMunchies {
+        right:58rem;
+        width:22rem;
+    }
+    .mM {
+        left:3rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 39rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:1900px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:87rem;
+        height:22rem;
+        font-size:5rem;
+    }
+    .grid3 {
+        bottom:20rem;
+        left: 14rem;
+    }
+    .grid4 {
+        bottom: 55.5rem;
+        left:46rem;
+    }
+    .grid5 {
+        left:48rem;
+        bottom:20rem;
+    }
+    .mMunchies {
+        right:58rem;
+        width:22rem;
+    }
+    .mM {
+        left:3rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 39rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}@media only screen and (min-width:1950px) {
+    header {
+        width: 23rem;
+    }
+    article {
+        width:87rem;
+        height:22rem;
+        font-size:5rem;
+    }
+    .grid3 {
+        bottom:20rem;
+        left: 15rem;
+    }
+    .grid4 {
+        bottom: 56.5rem;
+        left:47.5rem;
+    }
+    .grid5 {
+        left:49rem;
+        bottom:22rem;
+    }
+    .mMunchies {
+        right:58rem;
+        width:22rem;
+    }
+    .mM {
+        left:3rem;
+     }
+    .amber { 
+        left: 31rem;
+        padding-left:2rem;
+       
+    }
+    .guardian {
+        left: 39rem;
+        padding-left:2rem;
+    }
+    footer{
+        width:15rem;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Talisha Barner's Web Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="transitionStyle.css">
+	    <link media="all" rel="stylesheet" type="text/css" href="media1.css">
+	</head>
+	<body>
+		<video autoplay loop muted class="flowerfall">
+			<source src="videos\flowerfall.3gp" type="video/mp4">
+		</video>
+	<!-- content start-->
+    <div class="grid-container"><!--flex container includes all element except the background-->
+
+        <header class="grid1">
+            <a href="index.html"><img src="images/MyLogoNewColor.png" alt="Talisha's Web Development" class="logo"></a>
+			<a href="index.html"><img src="images/miniLogoNoBg.png" alt="Talisha's Web Development" class="minilogo"></a>
+        </header>
+
+        <blockquote>Hi!<br>I am your Web Developer<br>Ui Designer<br>and<br>Artist.</blockquote>
+    
+        <aside class="grid2" onscroll="dwnArrowStatus()">
+            <img  src="images/GrnUp.png" alt="swipe" class="fadeLoop grAro">
+			<img  src="images/PkUp.png" alt="up" class="pkAro">
+        </aside>
+   
+
+
+        <article class="grid3"><!--list of projrect completed-->
+                <div onmouseover="mlogoToggleOff()" onmouseleave="mlogoToggleOn()">
+                    <img src="images/mMLogo.png" alt="Movie Munchies" class="mMunchies">
+					<a href="mM/mMunchies.html" ><p class="mM">Movie<br>Munchies</p></a>
+                </div>
+					<a href="" target="_blank"><p class="amber">Morbid<br>Shop</p></a>
+                    
+					<a href="" target="_blank"><p class="guardian">Project<br>Guardian</p></a>     
+		</article>
+
+
+    
+        <nav class="grid4">
+            <ul> 
+                <li><a href="https://www.instagram.com/tdb.webdev/" target="_blank"><img src="images/Insta-logo-icon-1-2.png" alt="instagram link" class="insta"></a></li>
+
+                <li><a href="https://www.linkedin.com/in/talisha-barner-44a695218/" target="_blank"><img src="images/linkedin-line-icon-1-2.png" alt="linkedin link" class="linkedin"></a></li>
+            </ul>
+        </nav>
+    
+
+    
+        <footer class="grid5">
+            <a href="art-gallery/myArtPage.html"><p class="art">My Art</p></a>
+            <!--<a href="connect/contactMe.html"><p class="contact">Contact</p></a>-->
+        </footer>
+    
+
+    </div>
+        <script src="transition.js"></script>
+        <script src="escArrow.js"></script>
+        <script src="mouseOver.js"></script>
+    </body>
+    
+</html>

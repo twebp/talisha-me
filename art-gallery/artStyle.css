@@ -1,0 +1,254 @@
+/*background*/
+.flowerfall {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -100;
+
+}
+body{
+    background-color: black;
+    z-index: -101;
+}
+
+aside{
+	position: absolute;
+    height: auto;
+    width: 25%;
+    margin: 50% 40% 0 0;
+	z-index: -99;
+	right: 0;
+    animation: moveLeftRight 4s ease-in-out infinite; /*arrow animation*/
+}
+/*arrow animation*/
+@keyframes moveLeftRight {
+	0%, 100% {
+		right: 0%;
+	}
+	35% {
+		right: 35%;
+	}
+}
+.grAro {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    visibility: visible;
+    z-index: 2;
+}
+
+.pkAro {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    z-index: 1;
+}
+
+/*arrow alternating colors*/
+.fadeLoop {
+    animation: fadeIn 1.5s alternate infinite ease-in-out; 
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100%{opacity:1;}
+}
+@-moz-document url-prefix() {
+    .rArrow {
+        margin-top: 60%;
+    }
+}
+/*header includes both minilogo and full-sized logo */
+header {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 1%;
+}
+
+.logo {
+    height: 5%;
+    width: 50%;
+    display: none; /*mobile first design setting. 
+	Displayed on larger screens*/
+}
+.minilogo {
+    height: 45%;
+    width: 27%;
+    margin-left: 35%;
+	display:block;
+}
+
+/*horizontally scrolling list of images*/
+.horizontal-list {
+    position: relative;
+	text-align: center;
+    white-space: nowrap;
+    overflow: scroll;
+	z-index: 1000;
+    display: block;
+}
+.horizontal_list ul {
+	position: relative;
+	padding: 0;
+    list-style-type: none;
+	z-index: 1000;
+	display: inline-block;
+}
+.horizontal-list ul li {
+    position: relative;
+	display: inline;
+	z-index: 1000;
+}
+
+.horizontal-list ul li img {
+    position: relative;
+	display: inline;
+	width: 100%;
+	margin-right: 20% ;
+	border: 0.05rem solid pink;
+	z-index: 1000;
+}
+
+
+/*Link behavior*/
+a:link {
+    color: pink;
+    text-decoration: none; 
+}
+a:visited {
+    color: yellow;
+    
+}
+a:hover {
+    color:red;
+}
+
+/* nav includes social media links*/
+nav {
+    position: relative;
+    height: auto;
+    width: 25%;
+    
+    left: 20%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.linkedin {
+    float: right;
+}
+
+.insta {
+    float: left;
+}
+
+/*Footer includes links to contacts 
+and art page. Plus when page was last modified*/
+footer {
+    position: relative;
+    height: 10%;
+    width: 20%;
+    margin: 35% 0 15% 42%;
+}
+
+
+
+
+/*Below larger screen modifications*/
+
+
+
+
+
+
+/*Larger Images that are selected are displayed here
+on larger screens*/
+
+figure {
+	display: flex;
+	
+	position: relative;
+	max-width:34%;
+	margin: 45% 25% 5% 33%;
+	z-index: 1000;
+	display:none; /*mobile first design setting.
+	 Displayed on larger screens*/
+}
+figure img {
+	position: relative;
+	display: block;
+	max-width: 100%;
+	min-width: 100%;
+	margin: 0;
+	border: 0.05rem solid pink;
+	z-index: 1000;
+	display: none; /*mobile first design setting.
+	Displayed on larger screens*/
+}
+#thumbImg6, #thumbImg8 {
+	margin-bottom: 45%;
+}
+#thumbImg2, #thumbImg4, #thumbImg9 {
+	margin-bottom: 30%;
+}
+
+/*inner window scrollbar style for Chrome and Edge*/
+.horizontal-list::-webkit-scrollbar {
+	width: 0rem;
+}
+
+
+
+
+
+
+
+/*thumbnail_List below only displayed on larger screens*/
+.thumbnail_List {
+	position: relative;
+	text-align: center;
+	z-index: 1000;
+	display:none;
+}
+
+.thumbnail_List ul {
+	position: relative;
+	padding: 0;
+    list-style-type: none;
+    margin-left: 5%;
+	z-index: 1000;
+	display:none;
+}
+.thumbnail_List ul li {
+	position: relative;
+	display: inline;
+	width: 30%;
+	margin: 0 4px;
+	z-index: 1000;
+	display:none;
+}
+.thumbnail_List ul li img {
+	position: relative;
+	display: inline;
+	max-width: 30%;
+	margin: 0 ;
+	z-index: 1000;
+	display:none;
+}
+
+.thumbnail_List img{
+	position: relative;
+	cursor: pointer;
+	z-index: 1000;
+	display:none;
+}
+
+

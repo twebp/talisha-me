@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+	    <head>
+		    <meta charset="utf-8">
+		    <title>Contact Me</title>
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="transitionStyle.css">
+		    <link rel="stylesheet" type="text/css" href="connect/contactStyle.css">
+		    <!--<link rel="stylesheet" type="text/css" href="reset.css">-->
+		    <link media="all" rel="stylesheet" type="text/css" href="connect/contactMedia.css">
+	    </head>
+        <body>
+          <video autoplay loop muted class="flowerfall">
+			    <source src="videos\flowerfall.3gp" type="video/mp4">
+          </video>
+	    <!-- content start-->
+            <div class="flex-container grid-container">
+           
+                <header class="grid1">
+                    <a href="index.html"><img src="images/MyLogoNewColor.png" alt="Talisha's Web Development" class="logo" /></a>
+                    <a href="index.html"><img src="images/miniLogoNoBg.png" alt="Talisha's Web Development" class="minilogo" /></a>
+                </header>  
+            
+                <article class="grid2">
+                    <h1 id="contact" class="flex3">Contact me</h1>
+                   
+
+                        <form action="/submit-form" method="post" id="email" class="flex4">
+
+                        <label for="firstName">Firstname:</label><br>
+                        <input type="text" id="firstName" name="firstName" placeholder="Firstname"><br><br>
+
+                        <label for="lastName">Lastname:</label><br>
+                        <input type="text" id="lastName" name="lastName" placeholder="Lastname"><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input required type="email"  id="email" name="email" placeholder="Email"><br><br>
+
+                        <textarea required name="message" id="message" placeholder="Write a message..."></textarea><br><br>
+                        
+                        <button type="submit" value="submit" class="send">Send</button>
+                        <button type="reset" class="clear">Reset</button>  
+                    </form><br>
+                </article>
+            
+                <nav class="grid3">
+                    <ul>
+                        <li><a href="https://www.instagram.com/tdb.webdev/" target="_blank"><img src="images/Insta-logo-icon-1-2.png" alt="instagram link"  class="insta"></a></li>
+                        <li><a href="https://www.linkedin.com/in/talisha-barner-44a695218/" target="_blank"><img src="images/linkedin-line-icon-1-2.png" alt="linkedin link" class="linked"></a></li>
+                    </ul>
+                </nav>
+                
+                <footer class="grid4">
+                    <a href="art-gallery/myArtPage.html" class="art"><p>My Art</p></a>
+                </footer>
+            </div>
+            <script src="transition.js"></script>
+            <script src="connect/formFunction.js"></script>
+        </body>
+    </html>

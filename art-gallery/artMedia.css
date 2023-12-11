@@ -1,0 +1,642 @@
+@media only screen and (min-width:300px) {
+    body{
+        margin: 0;
+        overflow: scroll;
+    }
+    .grid-container {
+            display:grid;
+            width:100%;
+            height:100vh;
+            margin:0 auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 2fr 0.75fr 0.75fr ;
+            grid-template-areas: 
+            "header"
+            "article"
+            "nav"
+            "footer"
+            ;
+    }
+    .grid1 {
+        grid-area: header;
+       
+    }
+ 
+    .grid3 {
+        grid-area: article;
+    
+    }
+    .grid4 {
+        grid-area: nav;
+        
+    }
+    .grid5 {
+        grid-area: footer;
+        
+    }
+
+    header {
+        padding-top: 0.5rem;
+        height: 4rem;
+    }
+    .minilogo {
+        width: 4.5rem;
+        height: 4rem;
+        
+    }
+    aside {
+        height:1rem;
+        top: 7rem;
+    }
+    article {
+        top:3rem;
+    }
+    
+    nav {
+        width:10rem;
+        height:auto;
+    }
+    .insta{
+        padding-top:4rem;
+        margin-right: 0.5rem;
+    }
+    .linkedin {
+        padding-top:4rem;
+        margin-left: 0.5rem;
+    }
+    footer {
+        font-size: 1.5rem;
+        width:fit-content;
+        height: auto;
+        right:0.5rem;
+        bottom: 9rem;
+    }
+ .horizontal-list ul li {
+    width: 10rem;
+    height: auto;
+ }
+}
+@media only screen and (min-width:350px) {
+nav {
+    left:5rem;
+}
+footer {
+    bottom:8rem;
+}
+.minilogo {
+    margin-left: 8.5rem;
+}
+   aside {
+    top:4rem;
+   }
+  
+    
+}
+@media only screen and (min-width:400px)    {
+    .minilogo {
+        margin-left: 10rem;
+    }
+    nav {
+        width: 12rem;
+        left:5rem;
+    }
+  
+       aside {
+        margin-top:11rem;
+       }
+       .insta {
+        margin-right: 1rem;
+    }
+    article {
+    margin-top: 3rem;
+}
+}
+@media only screen and (min-width:450px) {
+    .horizontal-list {
+        width:25rem;
+    }
+    aside{
+     margin-top: 11rem;
+        width:6rem;
+    }
+    footer {
+        bottom: 6rem;
+    }
+    .minilogo {
+        width: 4rem;
+        height: auto;
+        margin-left: 12rem;
+    }
+    .quote {
+        margin-left:2rem;
+    }
+    nav {
+        
+        left:6rem;
+    }
+}
+@media only screen and (min-width:500px) {
+    .minilogo {
+        margin-left: 13rem;
+    }
+    nav {
+        left:8rem;
+    }
+
+    .quote {
+        margin-left:3rem;
+    }
+    .horizontal-list {
+        left:2rem;
+    }
+    aside {
+        width:6rem;
+        margin-top:11rem;
+       }
+
+}
+@media only screen and (min-width:550px) {
+    .minilogo {
+        margin-left: 15rem;
+    }
+    nav {
+        left:10rem;
+    }
+    .quote {
+        margin-left:4rem;
+    }
+    .horizontal-list {
+        left:4rem;
+    }
+    aside {
+        margin-top:11rem;
+       }
+      footer {
+        left:0.5rem;
+      }
+}
+@media only screen and (min-width:600px) {
+    .minilogo {
+        margin-left: 16rem;
+    }
+    nav {
+       
+        left:11rem;
+    }
+    .quote {
+        margin-left:5rem;
+    }
+    footer {
+        bottom: 7rem;
+    }
+}
+@media only screen and (min-width:650px) {
+    .minilogo {
+        margin-left: 18rem;
+    }
+    .quote {
+        margin-left:7rem;
+    }
+    .horizontal-list {
+        left:6rem;
+    }
+    nav {
+       
+        left:12rem;
+    }
+    footer{
+        bottom:10rem;
+    }
+}
+@media only screen and (min-width:700px) {
+    nav {
+       
+        left:14rem;
+    }
+    .quote {
+        margin-left:9rem;
+    }
+    .horizontal-list {
+        left:8rem;
+    }
+  
+}
+@media only screen and (min-width:750px) {
+    .minilogo {
+        margin-left: 21rem;
+    }
+    .quote {
+        margin-left:10rem;
+    }
+    .horizontal-list {
+        left:9rem;
+    }
+    nav {
+       
+        left:15rem;
+    }
+    footer{
+        bottom:10rem;
+    }
+}
+@media only screen and (min-width:800px) {
+    .grid-container {
+        gap:0;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 0.5fr 3fr 0.5fr ;
+grid-template-areas: 
+"header nav"
+"article article"
+"footer footer"
+;
+    }
+    .grid1 {
+        grid-area: header;
+    }
+    .grid3 {
+        grid-area: article;
+        
+    }
+    .grid4 {
+        grid-area: nav;
+        
+    }
+    .grid5 {
+        grid-area: footer;
+    }
+    aside {
+        display: none;
+        margin-top:37rem;
+    }
+    .minilogo{
+        display:none;
+    }
+    .logo{
+        display: block;
+        width: 12rem;
+        height:4rem;
+    }
+    header{
+        width:13rem;
+        height:auto;
+    }
+    nav {
+        height:4rem;
+        left:11rem;
+        bottom:4rem;
+    }
+  footer {
+    font-size: 1.5rem;
+  }
+   
+    .horizontal-list{
+       display: none;
+    }
+    figure {
+        margin-top:4rem;
+        display: block;
+    }
+    figure img {
+        display:block;
+    }
+    
+    .thumbnail_List {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3rem;
+       position:relative;
+        overflow: scroll;
+    }
+    
+    .thumbnail_List ul {
+        position:relative;
+        margin-left: 0rem;
+        display:inline;
+    }
+    .thumbnail_List ul li {
+        position:relative;
+        width:20rem;
+        margin:0rem;
+        display:inline;
+    }
+    .thumbnail_List ul li img {
+        position:relative;
+        max-width: 10rem;
+        display:inline;
+    }
+    
+    .thumbnail_List img{
+        position:relative;
+        display:inline;
+    }
+    
+    #thumbImg2, #thumbImg4, #thumbImg6, #thumbImg8, #thumbImg9 {
+        margin-bottom:0;
+    }
+    .quote {
+        margin-left:11rem;
+    }
+}
+@media only screen and (min-width:850px)   {
+    nav {
+        left:13rem;
+    }
+    
+    .quote {
+        margin-left:12rem;
+    }
+}
+@media only screen and (min-width:900px)   {
+    nav {
+        left:15rem;
+    }
+    .quote {
+        margin-left:15rem;
+    }
+}
+@media only screen and (min-width:950px)   {
+   
+    nav {
+        left:16rem;
+    }
+    .quote {
+        margin-left:16.5rem;
+    }
+    footer {
+        left:2rem;
+        bottom: 12rem;
+    }
+}
+@media only screen and (min-width:1000px)   {
+    nav {
+        left:18em;
+    }
+    .quote {
+        margin-left:18rem;
+    }
+    footer {
+        left:2rem;
+        bottom: 13rem;
+    }
+}
+@media only screen and (min-width:1050px)   {
+   
+    nav {
+        left:19em;
+    }
+    .quote {
+        margin-left:19rem;
+    }
+    
+    footer {
+        left:2rem;
+        bottom: 13rem;
+    }
+}
+@media only screen and (min-width:1100px)   {
+   
+    nav {
+        left:21em;
+    }
+    .quote {
+        margin-left:21rem;
+    }
+    
+  
+    footer {
+        left:3rem;
+        bottom: 15rem;
+    }
+}
+@media only screen and (min-width:1150px)   {
+   
+    nav {
+        left:22rem;
+    }
+    .quote {
+        margin-left:22rem;
+    }
+    footer {
+        left:3rem;
+        bottom: 15rem;
+    }
+}
+@media only screen and (min-width:1200px)   {
+   
+    nav {
+        left:23rem;
+    }
+    .quote {
+        margin-left:23rem;
+    }
+    footer {
+        left:3rem;
+        bottom: 16rem;
+    }
+}
+@media only screen and (min-width:1250px)   {
+    header{
+        width:14rem;
+    }
+    nav {
+        left:25rem;
+    }
+    .quote {
+        margin-left:24rem;
+    }
+    footer {
+        left:3rem;
+        bottom: 17rem;
+    }
+}
+@media only screen and (min-width:1300px)   {
+   
+    nav {
+        left:26rem;
+    }
+    .quote {
+        margin-left:26rem;
+    }
+    footer {
+        left:3rem;
+        bottom: 18rem;
+    }
+}
+@media only screen and (min-width:1350px)   {
+   
+    nav {
+        left:28rem;
+    }
+    .quote {
+        margin-left:27rem;
+    }
+    footer {
+        left:3rem;
+        bottom: 19rem;
+    }
+}
+@media only screen and (min-width:1400px)   {
+   
+    nav {
+        left:30rem;
+    }
+    .quote {
+        margin-left:29rem;
+    }
+    
+    footer {
+        left:3rem;
+        bottom: 20rem;
+    }
+}
+@media only screen and (min-width:1450px)   {
+   
+    nav {
+        left:31rem;
+    }
+    .quote {
+        margin-left:30rem;
+    }
+    
+    footer {
+        left:5rem;
+        bottom: 21rem;
+    }
+   
+}
+@media only screen and (min-width:1500px)   {
+   
+    nav {
+        left:33rem;
+    }
+    .quote {
+        margin-left:31rem;
+    } 
+    .thumbnail_List{
+        padding:0 4rem;
+    }
+    footer {
+        left:6rem;
+        bottom: 22rem;
+    }
+}
+@media only screen and (min-width:1550px)   {
+   
+    nav {
+        left:35rem;
+    }
+    .quote {
+        margin-left:33rem;
+    } 
+
+    footer {
+        left:6rem;
+        bottom: 23rem;
+    }
+}
+@media only screen and (min-width:1600px)   {
+   
+    nav {
+        left:36rem;
+    }
+    .quote {
+        margin-left:34rem;
+    } 
+    footer {
+        left:6rem;
+        bottom: 24rem;
+    }
+}
+@media only screen and (min-width:1650px)   {
+   
+    nav {
+        left:37rem;
+    }
+    .quote {
+        margin-left:36rem;
+    }
+    footer {
+        left:6rem;
+        bottom: 25rem;
+    }
+}
+@media only screen and (min-width:1700px)   {
+   
+    nav {
+        left:39rem;
+    }
+    .quote {
+        margin-left:38rem;
+    }
+    footer {
+        left:6rem;
+        bottom: 26rem;
+    }
+}
+@media only screen and (min-width:1750px)   {
+   
+    nav {
+        left:40rem;
+    }
+    .quote {
+        margin-left:40rem;
+    }
+    footer {
+        left:5rem;
+        bottom: 27rem;
+    }
+}
+@media only screen and (min-width:1800px)   {
+   
+    nav {
+        left:42rem;
+    }
+    .quote {
+        margin-left:41rem;
+    }
+    footer {
+        left:5rem;
+        bottom: 28rem;
+    }
+}
+@media only screen and (min-width:1850px)   {
+   
+    nav {
+        left:44rem;
+    }
+    .quote {
+        margin-left:42rem;
+    }
+    footer {
+        left:5rem;
+        bottom: 29rem;
+    }
+}
+@media only screen and (min-width:1900px)   {
+   
+    nav {
+        left:45rem;
+    }
+    .quote {
+        margin-left:43rem;
+    }
+    footer {
+        left:5rem;
+        bottom: 30rem;
+    }
+}
+@media only screen and (min-width:1950px)   {
+   
+    nav {
+        left:46rem;
+    }
+    .quote {
+        margin-left:44rem;
+    }
+    footer {
+        left:5rem;
+        bottom: 30rem;
+    }
+}
