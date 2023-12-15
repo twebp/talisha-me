@@ -10,6 +10,9 @@
     overflow: hidden;
     z-index: -10;
 }
+body {
+    overflow: scroll;
+}
 #wrapper {
     width:100%;
     height: auto;
@@ -85,14 +88,19 @@
     position: absolute;
     z-index:-9;
 }
-@media only screen and (min-width: 325px) {
-    
-   
+@media only screen and (min-width: 400px) {
+    body {
+        overflow: scroll;
+        margin-bottom: 20%;
+    }
     .minilogoM, .mylogoD, .mylogoL {
         display:none;
     }
     
     .mMunchiesM, .mMunchiesD, .mMunchiesL {
+        display: none;
+    }
+    .mM1 {
         display: none;
     }
     
@@ -131,8 +139,12 @@
         
     }
     #header {
+        width:100%;
         margin-right: 55%;
         border: 1px solid pink;
+    }
+    .minilogoS {
+        margin-top: 0%;
     }
     #article{
         width: 100%;
@@ -209,7 +221,9 @@ margin-right: 15%;
 }
 }
 @media only screen and (min-width:576px) {
-   
+    body {
+        overflow: scroll;
+    }
     h4 {
 
         width:75%;
