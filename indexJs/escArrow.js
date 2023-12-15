@@ -2,8 +2,14 @@
 //arrow disapears on scroll down or swipe up.
 
 var dwnArrow = document.querySelector("article");
-var _grarrow = document.querySelector(".grAro");
-var _pkarrow = document.querySelector(".pkAro");
+var _grarrow = document.querySelector(".grAroS");
+var _pkarrow = document.querySelector(".pkAroS");
+var _grarrow = document.querySelector(".grAroM");
+var _pkarrow = document.querySelector(".pkAroM");
+var _grarrow = document.querySelector(".grAroD");
+var _pkarrow = document.querySelector(".pkAroD");
+var _grarrow = document.querySelector(".grAroL");
+var _pkarrow = document.querySelector(".pkAroL");
 
 var arrowStatus = true;
 
