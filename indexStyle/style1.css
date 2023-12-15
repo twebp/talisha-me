@@ -21,8 +21,8 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10%;
-    grid-template-rows: 1.75fr 2fr 0.5fr 0.25fr;
+    gap: 5%;
+    grid-template-rows: 1.5fr 2fr 0.25fr 0.25fr;
     grid-template-areas: 
     "header header"
     "aside article"
@@ -88,9 +88,10 @@ body {
     position: absolute;
     z-index:-9;
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 325px) {
     body {
         overflow: scroll;
+        font-size: 22px;
         margin-bottom: 20%;
     }
     .minilogoM, .mylogoD, .mylogoL {
@@ -126,7 +127,7 @@ body {
     h4 {
 
         width:65%;
-        margin-left: 38%;
+        margin-left: 24%;
         margin-top: 5%;
         color:antiquewhite;
         font-style:italic;
@@ -140,7 +141,7 @@ body {
     }
     #header {
         width:100%;
-        margin-right: 55%;
+        margin-right: 25%;
         border: 1px solid pink;
     }
     .minilogoS {
@@ -148,7 +149,7 @@ body {
     }
     #article{
         width: 100%;
-        height: 25%;
+        height: 28%;
         margin-right: 5%;
         margin-top:10%;
         overflow: scroll;
@@ -182,6 +183,9 @@ body {
         0% {opacity:0;}
         100%{opacity:1;}
     } 
+    .grAroS, .pkAroS {
+        width:50%;
+    }
 a:link {
 text-decoration: none;
 color: pink;
@@ -190,15 +194,15 @@ a:visited {
     color: red;
 } 
 .flex-container {
-    margin-left:25%;
+    margin-left:10%;
 }
 
 .flex1 {
     margin-right:95%;
 }
 nav ul {
-    margin-top:40%;
-    margin-right: 14%;
+    margin-top:15%;
+    margin-right: 20%;
 }
 nav ul li{
     display: inline;
@@ -309,7 +313,16 @@ color: pink;
 a:visited {
     color: red;
 } 
+.flex-container {
+    display:flex;
+    width: fit-content;
+    height: auto;
+    margin-left:45%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+}
 .flex1 {
     margin-right:95%;
 }
@@ -373,8 +386,8 @@ margin-right: 15%;
         display:none;
     }
     h4 {
-        margin-left: 57%;
-        width: 55%;
+        margin-left: 45%;
+        width: 65%;
         color:antiquewhite;
         font-style:italic;
     }
@@ -389,7 +402,8 @@ margin-right: 15%;
         
     }
     #header {
-        margin-right: 55%;
+        width:100%;
+        margin-right: 45%;
     }
     #article{
         width: 100%;
