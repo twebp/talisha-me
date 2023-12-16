@@ -3,7 +3,7 @@
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     width: auto;
     height: auto;
     background-size: cover;
@@ -34,23 +34,35 @@ body {
 }
 .grid1 {
     grid-area: header;
-    
+    width:100%;
+    height: 25%;
+    border:1ps solid pink;
 }
 .grid2 {
     grid-area: aside;
+    width:10%;
+    height:5%;
+    border: 1px solid pink;
 }
 .grid3 {
     grid-area: article;
+    width:90%;
+    height: 25%;
+    border:1ps solid pink;
 }
 .grid4 {
     grid-area: nav;
+    width:90%;
+    height:25%;
+    border: 1px solid pink;
 }
 .grid5 {
     grid-area: footer;
-
+    width:100%;
+    height:25%;
+    border:1ps solid pink;
 }
 #header {
-
     width:100%;
 }
 #article{
@@ -89,11 +101,7 @@ body {
     z-index:-9;
 }
 @media only screen and (min-width: 325px) {
-    body {
-        overflow: scroll;
-        font-size: 22px;
-        margin-bottom: 20%;
-    }
+
     .minilogoM, .mylogoD, .mylogoL {
         display:none;
     }
@@ -101,6 +109,9 @@ body {
     .mMunchiesM, .mMunchiesD, .mMunchiesL {
         display: none;
     }
+   .mMunchiesS {
+    width:65%;
+   }
     .mM1 {
         display: none;
     }
@@ -126,7 +137,8 @@ body {
     }
     h4 {
 
-        width:65%;
+        width:200%;
+        height: 10%;
         margin-left: 24%;
         margin-top: 5%;
         color:antiquewhite;
@@ -140,28 +152,31 @@ body {
         
     }
     #header {
-        width:100%;
+        width:90%;
         margin-right: 25%;
-        border: 1px solid pink;
+        
     }
     .minilogoS {
         margin-top: 0%;
     }
     #article{
-        width: 100%;
-        height: 28%;
-        margin-right: 5%;
+        width: 225%;
+        height: 95%;
         margin-top:10%;
         overflow: scroll;
+        overflow-x: hidden;
 
+    }
+    #footer{
+        width:175%
     }
    
     #aside {
         position: absolute;
         width: 10%; 
         padding:10% 1%;
-        margin-bottom:40%;
-        left:8%;
+        margin-bottom:35%;
+        left:12%;
         float: left;
         z-index:-7;
         bottom: 0;
@@ -194,53 +209,68 @@ a:visited {
     color: red;
 } 
 .flex-container {
-    margin-left:10%;
+    margin-left:5%;
 }
 
 .flex1 {
     margin-right:95%;
 }
+#nav {
+    width:120%;
+    margin-top: 65%;
+    margin-left: 55%;
+    height: 10%;
+}
 nav ul {
-    margin-top:15%;
-    margin-right: 20%;
+    margin: 0;
+    padding: 0;
+    width: 155%;
 }
 nav ul li{
     display: inline;
     list-style: none;
 }
 .flex6 {
-margin-right: 15%;
+    margin:0;
+    padding: 0;
+    margin-left:15%;
+    float:left;
+   
    
 }
 .flex7 {
-    margin-left: 15%;
+    margin: 0;
+    padding: 0;
+    margin-right:15%;
+    float:right;
+   
 }
 .flex1 {
     margin-top: 7%;
     margin-right:100%;
 }
 .flex8 {
-    margin-top: 20%;
+    margin-left:70%;
+    margin-top: 15%;
+    font-size: 22px;
+}
+body {
+    overflow: scroll;
     font-size: 22px;
 }
 }
-@media only screen and (min-width:576px) {
-    body {
-        overflow: scroll;
-    }
-    h4 {
-
-        width:75%;
-        margin-left: 40%;
-        color:antiquewhite;
-        font-style:italic;
-    }
-
+@media only screen and (min-width: 375px) {
     .minilogoM, .mylogoD, .mylogoL {
         display:none;
     }
     
     .mMunchiesM, .mMunchiesD, .mMunchiesL {
+        display: none;
+    }
+   .mMunchiesS {
+    width:55%;
+   }
+    .mM1 {
         display: none;
     }
     
@@ -263,28 +293,50 @@ margin-right: 15%;
     .h-4 {
         display: none;
     }
+    h4 {
+
+        width:200%;
+        height: 10%;
+        margin-left: 24%;
+        margin-top: 5%;
+        color:antiquewhite;
+        font-style:italic;
+    }
+
     #wrapper {
-        width:100%;
+        width:90%;
         margin:0 auto;
+        border: 1px solid pink;
         
     }
     #header {
-        margin-right: 55%;
+        width:90%;
+        height: 25%;
+        margin-right: 25%;
+        
+    }
+    .minilogoS {
+        margin-top: 0%;
+       
     }
     #article{
-        width: 100%;
-        margin-left: 10%;
-        margin-top:25%;
+        width: 225%;
+        height: 85%;
+        margin-top:10%;
         overflow: scroll;
+        overflow-x: hidden;
 
+    }
+    #footer{
+        width:175%
     }
    
     #aside {
         position: absolute;
         width: 10%; 
         padding:10% 1%;
-        margin-bottom:40%;
-        left:8%;
+        margin-bottom:35%;
+        left:12%;
         float: left;
         z-index:-7;
         bottom: 0;
@@ -306,6 +358,9 @@ margin-right: 15%;
         0% {opacity:0;}
         100%{opacity:1;}
     } 
+    .grAroS, .pkAroS {
+        width:50%;
+    }
 a:link {
 text-decoration: none;
 color: pink;
@@ -314,109 +369,140 @@ a:visited {
     color: red;
 } 
 .flex-container {
-    display:flex;
-    width: fit-content;
-    height: auto;
-    margin-left:45%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    margin-left:5%;
 }
+
 .flex1 {
     margin-right:95%;
 }
+#nav {
+    width:120%;
+    margin-top: 25%;
+    margin-left: 55%;
+    height: 10%;
+}
 nav ul {
-    margin-top:40%;
-    margin-right: 14%;
+    margin: 0;
+    padding: 0;
+    width: 155%;
 }
 nav ul li{
     display: inline;
     list-style: none;
 }
 .flex6 {
-margin-right: 15%;
+    margin:0;
+    padding: 0;
+    width: 15%;
+    margin-left:20%;
+    float:left;
+   
    
 }
 .flex7 {
-    margin-left: 15%;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    margin-right:20%;
+    float:right;
+   
 }
 .flex1 {
     margin-top: 7%;
     margin-right:100%;
 }
 .flex8 {
-    margin-top: 20%;
+    margin-left:70%;
+    margin-top: 10%;
+    font-size: 22px;
+}
+body {
+    overflow: scroll;
     font-size: 22px;
 }
 }
-@media only screen and (min-width: 768px) {
-   
-    .minilogoS, .mylogoD, .mylogoL {
-        display:none;
+@media only screen and (min-width:412px) {
+    #header{
+        height:35%;
     }
-    .minilogoM {
-        display: block;
+    #article {
+        margin-bottom: 5%;
     }
-    .mMunchiesS, .mMunchiesD, .mMunchiesL {
-        display: none;
+    #nav {
+        margin-top: 40%;
     }
-    .mMunchiesM{
-        display: block;
+    #footer {
+        margin-top: 10%;
     }
-    .instaS, .instaD, .instaL {
-        display:none;
+    #aside {
+        margin-left: 8%;
     }
-    .instaM {
-        display: block;
-    }
-    .linkedinS, .linkedinD, .linkedinL {
-        display: none;
-    }
-    .linkedinM {
-        display:block;
-    }
-    .grAroS, .pkAroS {
-        display: none;
-    }
-    .grAroM, .pkAroM {
-        display: block;
-    }
-    .mM1S, .mM3, .mM4 {
-        display:none;
-    }
+}
+@media only screen and (min-width:576px) {
+    
     h4 {
-        margin-left: 45%;
-        width: 65%;
+
+        width:220%;
+        height: 10%;
+        margin-left: 35%;
+        margin-top: 5%;
         color:antiquewhite;
         font-style:italic;
     }
 
-    .minilogoS, .mylogoD, .mylogoL {
+    .minilogoM, .mylogoD, .mylogoL {
         display:none;
     }
     
+    .mMunchiesM, .mMunchiesD, .mMunchiesL {
+        display: none;
+    }
+    .mMunchiesS {
+        width:65%;
+       }
+    .instaM, .instaD, .instaL {
+        display:none;
+    }
+    .linkedinM, .linkedinD, .linkedinL {
+        display: none;
+    }
+    .grAroM, .pkAroM {
+        display: none;
+    }
+
+    .mM2, .mM3, .mM4 {
+        display:none;
+    }
+    .h4 {
+        display: none;
+    }
+    .h-4 {
+        display: none;
+    }
     #wrapper {
         width:90%;
         margin:0 auto;
         
     }
     #header {
-        width:100%;
-        margin-right: 45%;
+        width: 90%;
+        height: 25%;
+        margin-right: 65%;
     }
     #article{
-        width: 100%;
-        margin-left: 25%;
-        margin-top:15%;
+        width: 225%;
+        height: 95%;
+        margin-top:5%;
         overflow: scroll;
+        overflow-x: hidden;
+
     }
    
     #aside {
         position: absolute;
         width: 10%; 
         padding:10% 1%;
-        margin-bottom:20%;
+        margin-bottom:15%;
         left:15%;
         float: left;
         z-index:-7;
@@ -443,14 +529,139 @@ a:link {
 text-decoration: none;
 color: pink;
 }
+a:hover {
+    color: white;
+}
 a:visited {
     color: red;
 } 
+#nav {
+    margin-top: 30%;
+}
 .flex-container {
     display:flex;
     width: fit-content;
     height: auto;
-    margin-left:25%;
+    margin-left:35%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.flex1 {
+    margin-right:95%;
+}
+nav ul {
+    margin-top:10%;
+    margin-right: 14%;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+.flex6 {
+margin-right: 15%;
+   
+}
+.flex7 {
+    margin-left: 15%;
+}
+.flex1 {
+    margin-top: 7%;
+    margin-right:100%;
+}
+.flex8 {
+    margin-top: 20%;
+    font-size: 22px;
+}
+body {
+    overflow: scroll;
+}
+}
+@media only screen and (min-width: 768px) {
+   
+    .minilogoS, .mylogoD, .mylogoL {
+        display:none;
+    }
+    .minilogoM {
+        display: block;
+    }
+    .mMunchiesM, .mMunchiesD, .mMunchiesL {
+        display: none;
+    }
+    .mMunchiesS{
+        display: block;
+        width:75%;
+    }
+    .instaM, .instaD, .instaL {
+        display:none;
+    }
+    .instaS {
+        display: block;
+    }
+    .linkedinM, .linkedinD, .linkedinL {
+        display: none;
+    }
+    .linkedinS {
+        display:block;
+    }
+    .grAroS, .pkAroS {
+        display: block;
+    }
+    .grAroM, .pkAroM {
+        display: none;
+    }
+    .mM1S, .mM3, .mM4 {
+        display:none;
+    }
+    h4 {
+        margin: 0;
+        margin-left: 55%;
+        width: 75%;
+        color:antiquewhite;
+        font-style:italic;
+    }
+
+    .minilogoS, .mylogoD, .mylogoL {
+        display:none;
+    }
+    
+    #wrapper {
+        width:90%;
+        margin:0 auto;
+        
+    }
+    #header {
+        width:110%;
+        height: 35%;
+        margin: 0;
+        margin-right: 85%;
+    }
+
+    #article{
+        width: 100%;
+        height: 75%;
+        margin-left: 15%;
+        margin-top:5%;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+   
+    #aside {
+        position: absolute;
+        width: 10%; 
+        padding:10% 1%;
+        margin-bottom: 8%;
+        left:20%;
+        float: left;
+        z-index:-7;
+}
+.flex-container {
+    display:flex;
+    width: 100%;
+    height: auto;
+    margin-left:50%;
+    margin-bottom: 20%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -459,39 +670,51 @@ a:visited {
     margin-right:95%;
 }
 #nav {
+    width: 75%;
+    margin-top: 0%;
     margin-left: 20%;
-   
+    
 }
 nav ul {
-    margin-top:20%;
+    margin-top:10%;
    
 }
 nav ul li{
     display: inline;
     list-style: none;
+    
 }
 .flex6 {
     float: left;
-    margin-right: 8%;
-    
+    margin:0;
+  
 }
 .flex7 {
     float: right;
-    margin-left: 8%;
-
+    margin:0;
+    margin-right: 45%;   
+    
 }
 .flex1 {
     margin-top: 7%;
 }
+#footer {
+    margin:0;
+}
 .flex8 {
-    margin-top: 20%;
-    margin-left: 18%;
+    margin: 0;
+    margin-top: 10%;
+    margin-left: 48%;
     font-size: 24px;
+}
+body {
+    overflow: scroll;
 }
 }
 @media only screen and (min-width: 992px) {
     body {
-        font-size: 32px;
+        margin:0;
+        padding:0;
     }
     .minilogoS, .minilogoM, .mylogoL {
         display:none;
@@ -509,13 +732,13 @@ nav ul li{
     .instaM, .instaD, .instaL {
         display:none;
     }
-    .instaM {
+    .instaS {
         display: block;
     }
-    .linkedinS, .linkedinD, .linkedinL {
+    .linkedinM, .linkedinD, .linkedinL {
         display: none;
     }
-    .linkedinM {
+    .linkedinS {
         display:block;
     }
     .grAroS, .pkAroS {
@@ -542,8 +765,8 @@ nav ul li{
     .h-4 {
         display: block;
         font-size: 32px;
+        margin-bottom: 10%;
         width: 100%;
-        margin:0 0 10% 0;
         color:antiquewhite;
         font-style:italic;
     }
@@ -552,7 +775,7 @@ nav ul li{
         width:90%;
         margin:0 auto;
         grid-template-columns: 1fr 1fr;
-        gap: 10%;
+        gap: 5%;
         grid-template-rows: 1.25fr 2.3fr 0.05fr;
         grid-template-areas: 
         "header nav"
@@ -562,23 +785,27 @@ nav ul li{
     
     #header {
         width:85%;
-        
+        margin: 0;
+        margin-right: 65%;
     }
     #article{
-        width: 250%;
+        width: 200%;
         height: fit-content;
-        margin-left: 130%;
-        margin-bottom: 0;
-        padding:20% 20% 0% 5%;
+        margin: 0;
+        padding:15% 20% 0% 0%;
         overflow: visible;
+        overflow-inline: ;
+       border: 1px solid pink;
     }
-    
+    article {
+        width:200%;
+        border: 1px solid pink;
+    }
 
 #nav {
-    width: 115%;
+    width: 75%;
     position: relative;
-    margin-left: 90%;
-    margin-top: 20%;
+    margin-bottom: 85%;
    
 }
 
@@ -588,6 +815,17 @@ nav ul {
 nav ul li{
     display: inline;
     list-style: none;
+}
+
+.flex-container {
+    display:flex;
+    width: 100%;
+    height: auto;
+    margin-left:25%;
+    margin-bottom: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .flex6 {
     float: left;
@@ -601,8 +839,8 @@ nav ul li{
 }
 .flex8 {
     width: 35%;
-    margin-top: 85%;
-    margin-left: 100%;
+    margin-top: 0%;
+    margin-left: 70%;
     font-size: 32px;
 }
 
@@ -637,28 +875,42 @@ padding: 7% 6% 6.55% 6%;
 }
 @media only screen and (min-width: 1200px) {
     #nav {
-        margin-top: 35%;
+        margin-top: 20%;
+        margin-bottom: 0%;
     }
     .flex8 {
-        margin-top: 45%;
+        margin-top: 35%;
     }
 }
 @media only screen and (min-width: 1300px) {
     #nav {
-        margin-top: 40%;
-        width: 95%;
-    }
-    .flex8 {
-        margin-top: 50%;
+        margin-top: 20%;
+        width: 65%;
     }
  .h-4 {
     margin-left: 6%;
  }
+ body {
+    font-size: 32px;
+        overflow: scroll;
+}
 }
 @media only screen and (min-width: 1400px) {
+    #wrapper{
+        grid-template-rows:1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "header footer nav"
+        "article article article";
+    }
     #nav {
-        margin-top: 45%;
+        margin-top: 30%;
+        margin-left: 55%;
+        width: 55%;
 
+    }
+    body {
+        overflow: scroll;
     }
 }
 @media only screen and (min-width: 1500px) {
@@ -668,7 +920,12 @@ padding: 7% 6% 6.55% 6%;
     }
     .flex8 {
         margin-top: 35%;
-
+    }
+    .flex8 {
+        margin-top: 0%;
+    }
+    body {
+        overflow: scroll;
     }
 }
 @media only screen and (min-width: 1600px) {
@@ -681,7 +938,9 @@ padding: 7% 6% 6.55% 6%;
         margin-top: 30%;
 
     }
-   
+    body {
+        overflow: scroll;
+    }
   
 }
 @media only screen and (min-width: 1700px) {
@@ -699,6 +958,9 @@ padding: 7% 6% 6.55% 6%;
     .h-4 {
         margin-bottom: 1%;;
     }
+    body {
+        overflow: scroll;
+    }
 }
 @media only screen and (min-width: 1800px) {
     
@@ -706,16 +968,12 @@ padding: 7% 6% 6.55% 6%;
         margin-top: 0%;
 
     }
-   
+    body {
+        overflow: scroll;
+    }
 }
 @media only screen and (min-width: 1900px) {
-    #wrapper{
-        grid-template-rows:1fr 1fr 1fr ;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "header footer nav"
-        "article article article";
-    }
+    
     #nav {
         margin-top: 105%;
         width: 75%;
@@ -728,5 +986,7 @@ padding: 7% 6% 6.55% 6%;
     .h-4{
         margin-top: 0;
     }
-
+    body {
+        overflow: scroll;
+    }
 }
