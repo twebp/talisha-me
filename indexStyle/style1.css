@@ -36,31 +36,26 @@ body {
     grid-area: header;
     width:100%;
     height: 25%;
-    border:1ps solid pink;
 }
 .grid2 {
     grid-area: aside;
     width:10%;
     height:5%;
-    border: 1px solid pink;
 }
 .grid3 {
     grid-area: article;
     width:90%;
     height: 25%;
-    border:1ps solid pink;
 }
 .grid4 {
     grid-area: nav;
     width:90%;
     height:25%;
-    border: 1px solid pink;
 }
 .grid5 {
     grid-area: footer;
     width:100%;
     height:25%;
-    border:1ps solid pink;
 }
 #header {
     width:100%;
@@ -175,8 +170,8 @@ body {
         position: absolute;
         width: 10%; 
         padding:10% 1%;
-        margin-bottom:35%;
-        left:12%;
+        margin-bottom:85%;
+        left:15t%;
         float: left;
         z-index:-7;
         bottom: 0;
@@ -259,6 +254,19 @@ body {
     font-size: 22px;
 }
 }
+@media only screen and (min-width: 360px) {
+    #article {
+        margin-top: 5%;
+    }
+    #aside {
+        left: 15%;
+        margin-bottom:1%;
+    }
+    #nav {
+        margin-top:5px;
+
+    }
+}
 @media only screen and (min-width: 375px) {
     .minilogoM, .mylogoD, .mylogoL {
         display:none;
@@ -335,8 +343,8 @@ body {
         position: absolute;
         width: 10%; 
         padding:10% 1%;
-        margin-bottom:35%;
-        left:12%;
+        margin-bottom:10%;
+        left:20%;
         float: left;
         z-index:-7;
         bottom: 0;
@@ -421,6 +429,24 @@ body {
     font-size: 22px;
 }
 }
+@media only screen and (min-width: 393px)  {
+    #aside {
+        margin-left: 2%;
+        margin-bottom:28%;
+    }
+}
+@media only screen and (min-width: 411px)  {
+    #aside {
+        margin-left: 1%;
+        margin-bottom:25%;
+    }
+}
+@media only screen and (min-width: 411px) and (min-height: 731px)  {
+    #aside {
+        margin-left: 1%;
+        margin-bottom:10%;
+    }
+}
 @media only screen and (min-width:412px) {
     #header{
         height:35%;
@@ -436,7 +462,28 @@ body {
     }
     #aside {
         margin-left: 8%;
+        margin-bottom:50%;
     }
+}
+@media only screen and (min-width: 412px) and (min-height: 915px) {
+    #aside {
+        margin-left: 1%;
+        margin-bottom:25%;
+    }
+}
+@media only screen and (min-width:412px) and (min-height: 732px) {
+    #aside {
+        margin-left: 1%;
+        margin-bottom:3%;
+    }
+}
+@media only screen and (min-height: 800px) {
+  #aside {
+    margin-bottom:25%;
+  }
+}
+@media only screen and (min-width: 428px) {
+    
 }
 @media only screen and (min-width:576px) {
     
@@ -578,6 +625,14 @@ body {
     overflow: scroll;
 }
 }
+
+@media screen and (min-width: 600px) {
+
+        #aside {
+            margin-left: 6%;
+            margin-bottom:5%;
+        }
+    }
 @media only screen and (min-width: 768px) {
    
     .minilogoS, .mylogoD, .mylogoL {
@@ -710,6 +765,11 @@ nav ul li{
 body {
     overflow: scroll;
 }
+}
+@media only screen and (min-width: 800px) {
+    #aside {
+        margin-bottom: 20%;
+    }
 }
 @media only screen and (min-width: 992px) {
     body {
