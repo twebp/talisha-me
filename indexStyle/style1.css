@@ -10,6 +10,7 @@
     overflow: hidden;
     z-index: -10;
 }
+@media all and screen {}
 body {
     overflow: scroll;
 }
@@ -147,7 +148,7 @@ body {
     .linkedinM, .linkedinD, .linkedinL {
         display: none;
     }
-    .grAroM, .pkAroM,.grAroM-2, .pkAroM-2 {
+    .grAroM-2, .pkAroM-2 {
         display: none;
     }
 
