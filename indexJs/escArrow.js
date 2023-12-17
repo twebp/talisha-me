@@ -1,25 +1,26 @@
 //index page arrow scroll event
 //arrow disapears on scroll down or swipe up.
 
-var dwnArrow = document.querySelector("article");
+var dwnArrow = document.querySelector("#article");
 var _grarrow = document.querySelector(".grAroS");
 var _pkarrow = document.querySelector(".pkAroS");
-var _grarrow = document.querySelector(".grAroM");
-var _pkarrow = document.querySelector(".pkAroM");
-var _grarrow = document.querySelector(".grAroD");
-var _pkarrow = document.querySelector(".pkAroD");
-var _grarrow = document.querySelector(".grAroL");
-var _pkarrow = document.querySelector(".pkAroL");
+var _swipe = document.querySelector(".swipe")
+var _up = document.querySelector(".up")
+
 
 var arrowStatus = true;
 
 _grarrow.style.visibility = "visible";
 _pkarrow.style.visibility = "visible";
+_swipe.style.visibility = "visible";
+_up.style.visibility = "visible";
 
 var dwnArrowStatus = function() {
-	if (arrowStatus){
+	if (arrowStatus) {
 	_grarrow.style.visibility = "hidden";
 	_pkarrow.style.visibility = "hidden";
+	_swipe.style.visibility = "hidden";
+	_up.style.visibility = "hidden";
 	arrowStatus = false;
 	}
 }
