@@ -10,7 +10,6 @@
     overflow: hidden;
     z-index: -10;
 }
-@media all and screen {}
 body {
     overflow: scroll;
 }
@@ -664,6 +663,15 @@ body {
             margin-bottom:5%;
         }
     }
+@media screen and (min-width: 360px) {
+    #aside {
+        margin-bottom:15%;
+    }
+    nav ul {
+        margin-top: 15%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
    
     .minilogoS, .mylogoD, .mylogoL {
@@ -692,13 +700,36 @@ body {
         display:block;
     }
     .grAroS, .pkAroS {
-        display: block;
-    }
-    .grAroM, .pkAroM {
         display: none;
+    }
+    .grAroM-2, .pkAroM-2 {
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 65%;
+       
+    }
+    .grAroM-2 {
+        z-index: 6;
+    }
+    .pkAroM-2 {
+        z-index: 5;
+    
     }
     .mM1S, .mM3, .mM4 {
         display:none;
+    }
+    .swipe, .up {
+        display: none;
+    }
+    .scroll, .down {
+        display: block;
+        position: absolute;
+        left:9%;
+        bottom: 10%;
+        color: antiquewhite;
+         background-color: transparent;
+        text-align: center;
     }
     h4 {
         margin: 0;
@@ -737,10 +768,16 @@ body {
         position: absolute;
         width: 10%; 
         padding:10% 1%;
-        margin-bottom: 8%;
+        margin-bottom: 5%;
         left:20%;
         float: left;
         z-index:-7;
+}
+.scroll {
+    z-index: 4;
+}
+.down {
+    z-index: ;
 }
 .flex-container {
     display:flex;
@@ -802,6 +839,7 @@ body {
         margin-bottom: 20%;
     }
 }
+
 @media only screen and (min-width: 992px) {
     body {
         margin:0;
