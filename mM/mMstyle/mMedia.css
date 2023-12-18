@@ -11,23 +11,18 @@
     justify-content: center;
     align-items:flex-start;
 }
-.flex-item {
-    width: fit-content;
-    height: auto;
-}
 
 @media only screen and (min-width:300px)    {
    
     .grid-container{
         display:grid;
         position:relative;
-        max-width:100%;
         height:100vh;
         margin:0 auto;
-        overflow-y: hidden;
+        padding: 0;
         justify-items: center;
         grid-template-columns:1fr;
-        grid-template-rows: 0.5fr 2.5fr 0.75fr 0.25fr;
+        grid-template-rows: 0.5fr 2.5fr 0.25fr 0.25fr;
         grid-row-gap:0.25rem;
         grid-template-areas:
          "header"
@@ -38,346 +33,319 @@
     .grid1{
         grid-area:header;
         width: 100%;
-        
        border: 1px solid pink; 
     }
    
     .grid2{
      grid-area: article;
      width: 100%;
-     height: auto;
+     height: fit-content;
      border: 1px solid pink; 
     }
     .grid3 {
     grid-area: nav;
     width: 100%;
+    bottom: 95%;
     border: 1px solid pink; 
     }
     .grid4 {
      grid-area: footer;
-
      width: 100%;
+     bottom: 95%;
      border: 1px solid pink; 
     }
-    .appLogo{
-       left:0.25rem;
+    .flex2{
+       border: 1px solid pink;
     }
-    .miniLogo {
+    .flex1 {
         width:13%;
         height: auto;
         padding:0.5rem;
         right: 1.5rem;
         bottom: 0.5rem;
     }
-    h1 {
-        font-size: 24px;
-       
+    #h1 {
+        font-size: 22px;
+        margin-left: 15%;
+        margin-top:1%;
+        border: 1px solid pink;
     }
     blockquote {
         font-size: 0.8rem;
-        
+        top:80%;
+        width: 75%;
         height:auto;
+        border: 1px solid pink;
     }
-    
+    .flex3 {
+        top:175%;
+       
+    }
+    .flex4 {
+        top:280%;
+    }
+  ul {
+    width: 85%;
+    border: 1px solid pink; 
+ }
+    .flex5{
+        margin-left: 0%;
+        padding: 3%;
+        padding: 3% 11% 3% 11%;
+        border: 1px solid pink; 
+    }
+
+   .flex6 {
+    margin-right: 13%;
+    padding: 3% 15% 3% 11%;
+    border: 1px solid pink; 
+    }
+    footer {
+        width: 85%;
+    }
+    .flex7 {
+        width: fit-content;
+        padding: 2% 20%;
+        margin-left: 15%;
+        border: 1px solid pink;
+    }
 }
 @media only screen and (min-width:350px) {
-   .grid1 {
-    margin-right:4rem;
-   }
-    .miniLogo {
+
+    .grid-container{
+        display:grid;
+        position:relative;
+        height:100vh;
+        margin:0 auto;
+        padding: 0;
+        justify-items: center;
+        grid-template-columns:1fr;
+        grid-template-rows: 0.5fr 2.5fr 0.25fr 0.25fr;
+        grid-row-gap:0.25rem;
+        grid-template-areas:
+         "header"
+         "article"
+         "nav"
+         "footer"
+    }
+    .grid1{
+        grid-area:header;
+        width: 100%;
+    }
+   
+    .grid2{
+     grid-area: article;
+     width: 100%;
+     height: fit-content;
+    }
+    .grid3 {
+    grid-area: nav;
+    width: 100%;
+    bottom: 95%;
+    }
+    .grid4 {
+     grid-area: footer;
+     width: 100%;
+     bottom: 95%;
+    }
+   
+    .flex1 {
         width:13%;
         height: auto;
         padding:0.5rem;
         right: 1.5rem;
         bottom: 0.5rem;
     }
-       .appLogo{
-        right:2rem;
+    #h1 {
+        font-size: 22px;
+        margin-left: 15%;
+        margin-top:1%;
     }
-     h1 {
-         margin-bottom: 0.5rem;
-         margin-left:4.5rem;
-     }
-     blockquote {
-         font-size: 0.8rem;
-         top:9rem;
-         margin-left:3rem;
-         width: 13rem;
-         height:auto;
-     }
-     .mMUiUx, .uiUx{
-        width: 7.5rem;
-         top:15.5rem;
-         left:7.5rem;
-     }
-     .mMApp,  .mMAppDead {
-         width: 6.5rem;
-         left:8rem;
-         top:26.5rem;
-     }
- 
-     nav {
-         bottom:9rem;
-        left: 2rem;
-     }
-     .insta{
-         margin-left:1rem;
-     }
-     .linkedin {
-         margin-left: 3rem;
-     }
-     footer {
-        right: 3rem;
-         bottom:12rem;
-     }
-     .contact {
-         margin-top: 2rem;
-     }
+    blockquote {
+        font-size: 0.8rem;
+        top:80%;
+        width: 75%;
+        height:auto;
+    }
+    .flex3 {
+        top:155%;
+       
+    }
+    .flex4 {
+        top:250%;
+        right:35%;
+    }
+  ul {
+    width: 85%;
+ }
+    .flex5{
+        margin-left: 0%;
+        padding: 3%;
+        padding: 3% 11% 3% 11%;
+    }
+
+   .flex6 {
+    margin-right: 13%;
+    padding: 3% 15% 3% 11%;
+    }
+    footer {
+        width: 85%;
+    }
+    .flex7 {
+        width: fit-content;
+        padding: 2% 20%;
+        margin-left: 15%;
+        border: 1px solid pink;
+    }
+}
+@media only screen and (min-width:375px) {
+    .flex3 {
+        width:35%;
+    }
+    .flex4 {
+        width:33%;
+        top:240%;
+        right: 40%;
+    }
+    .grid3 {
+        bottom: 65%
+    }
+    .grid4 {
+        bottom: 65%
+    }
+    .flex5{
+        margin-left: 0%;
+        padding: 3%;
+        padding: 3% 13% 3% 13%;
+    }
+
+   .flex6 {
+    margin-right: 13%;
+    padding: 3% 17% 3% 13%;
+    }
 }
 @media only screen and (min-width:400px) {
-    .grid1 {
-        margin-right:6rem;
-       }
-       
-       .appLogo{
-        right:0.5rem;
+    .flex3 {
+        top:145%;
+        width:30%;
     }
-     h1 {
-         bottom:4rem;
-         margin-left:6.5rem;
-     }
-     blockquote {
-         font-size: 0.8rem;
-         top:8rem;
-         margin-left:5rem;
-         width: 14rem;
-         height:auto;
-     }
-     .mMUiUx, .uiUx{
-         top:14.5rem;
-         left:8rem;
-     }
-     .mMApp,  .mMAppDead {
-         width: 6.5rem;
-         left:9rem;
-         top:25.5rem;
-     }
- 
-     .grid3 {
-        left: 2rem;
-     }
-     .insta{
-         margin-left:1rem;
-     }
-     .linkedin {
-         margin-left: 3rem;
-     }
-     footer {
-        right: 4rem;
-         bottom:12rem;
-     }
+    .flex4 {
+        width:28%;
+    }
+    .grid3 {
+        bottom: 65%
+    }
+    .grid4 {
+        bottom: 65%
+    }
 }
 @media only screen and (min-width:450px) {
-    .grid1 {
-        margin-right:9rem;
-       }
-    h1 {
-        bottom:4rem;
-        margin-left:7.5rem;
+    .flex3 {
+        top:135%;
+        width:27%;
+        left: 35%;
+    }
+    .flex4 {
+        width:25%;
+        top:215%;
+        right: 38%;
+    }
+  
+    .flex5{
+        margin-left: 0%;
+        padding: 3%;
+        padding: 3% 18% 3% 13%;
+    }
+    .flex6 {
+        margin-right: 11%;
+        padding: 3% 17% 3% 14%;
+        }
+    .flex7{
+        padding: 2% 30% 2% 35%;
+        margin-left: 7%;
+       
+    }
+    #h1 {
+        margin-left:27%;
     }
     blockquote {
-        font-size: 0.8rem;
-        top:9rem;
-        margin-left:6rem;
-        width: 15rem;
-        height:auto;
+        left:5%;
     }
-    .mMUiUx, .uiUx{
-        width: 7rem;
-        top:17.5rem;
-        left:10.5rem;
-    }
-    .mMApp,  .mMAppDead {
-        width: 6.5rem;
-        left:11rem;
-        top:28.5rem;
-    }
-
-    nav {
-        left:0.5rem;
-        bottom:8rem;
-        
-    }
-   
-    footer {
-        right: 4.5rem;
-         bottom:9rem;
-     }
 }
 @media only screen and (min-width:500px) {
-    .grid1 {
-        margin-right:12rem;
-       }
-    .appLogo {
-        margin-left:8rem;
-        width: 11rem;
-        
-    }
-    h1 {
-        bottom:3rem;
-       margin-right: 8rem;
-    }
     blockquote {
-        font-size: 0.8rem;
-        top:14rem;
-        margin-left:4rem;
-        width: 17rem;
-        height:auto;
+        top:85%;
+        left:5%;
     }
-    .mMUiUx, .uiUx{
-        width: 8rem;
-        top:24.5rem;
-       left:5rem;
+    .flex3{
+        width: 30%;
+        top:147%;
+       left:15%;
     }
-    .mMApp,  .mMAppDead {
-        width: 7rem;
-        left:15rem;
-        top:25rem;
+    .flex4 {
+        width: 28%;
+        left:55%;
+        top:150%;
     }
-
-    nav {
-       left:0.5rem;
-        bottom:18rem;
+    .flex5{
+        margin-left: 2%;
+        padding: 3%;
+        padding: 3% 20% 3% 13%;
     }
-  
-    footer {
-        right: 5rem;
-         bottom:20rem;
-     }
+    .flex6 {
+        margin-right: 9%;
+        padding: 3% 17% 3% 16%;
+        }
+    
 }
 @media only screen and (min-width:550px)    {
-    .grid1 {
-        margin-right:16rem;
-       }
-    .appLogo {
-        right:1rem;
-        width: 11rem;
-        bottom: 2rem;
-    }
-    h1 {
-        bottom:3rem;
-       margin-right: 7rem;
-    }
     blockquote {
-        font-size: 0.8rem;
-        top:14rem;
-        margin-left:3rem;
-        width: 20rem;
-        height:auto;
+        top:85%;
+        left:5%;
     }
-    .mMUiUx, .uiUx{
-        width: 8rem;
-        top:25.5rem;
-       left:3rem;
+    .flex3{
+        width: 30%;
+        top:147%;
+       left:15%;
     }
-    .mMApp,  .mMAppDead {
-        width: 7rem;
-        left:17rem;
-        top:26rem;
+    .flex4 {
+        width: 28%;
+        left:55%;
+        top:150%;
     }
-
-    nav {
-        margin-right: 1rem;
-        bottom:22rem;
+    .flex5{
+        margin-left: 4%;
+        padding: 3%;
+        padding: 3% 21% 3% 13%;
     }
-  
-    footer {
-        right: 6rem;
-         bottom:24rem;
-     }
+    .flex6 {
+        margin-right: 7%;
+        padding: 3% 17% 3% 17%;
+        }
+    .flex7{
+            padding: 2% 32% 2% 37%;
+            margin-left: 6%;
+           
+        }
 }
 @media only screen and (min-width:600px)    {
-    .grid1 {
-        margin-right:19rem;
-       }
-    .appLogo {
-        right:1rem;
-        width: 11rem;
-        bottom: 2rem;
+    #h1 {
+        margin-left:31%;
     }
-    h1 {
-        bottom:3rem;
-       margin-right: 7rem;
+    .flex3{
+        width: 30%;
+        top:127%;
+       left:15%;
     }
-    blockquote {
-        font-size: 0.8rem;
-        top:14rem;
-        margin-left:5rem;
-        width: 18rem;
-        height:auto;
+    .flex4 {
+        width: 28%;
+        left:55%;
+        top:129%;
     }
-    .mMUiUx, .uiUx{
-        width: 8rem;
-        top:25.5rem;
-       left:3rem;
-    }
-    .mMApp,  .mMAppDead {
-        width: 7rem;
-        left:17rem;
-        top:26rem;
-    }
-
-    nav {
-        margin-right: 1rem;
-        bottom:26rem;
-    }
-  
-    footer {
-        right: 6rem;
-         bottom:28rem;
-     }
 }
    
 @media only screen and (min-width:650px) {
-    .grid1 {
-        margin-right:22rem;
-       }
-    .appLogo {
-        right:1rem;
-        width: 11rem;
-        bottom: 2rem;
-    }
-    h1 {
-        bottom:3rem;
-       margin-right: 7rem;
-    }
-    blockquote {
-        font-size: 0.8rem;
-        top:14rem;
-        margin-left:4rem;
-        width: 19rem;
-        height:auto;
-    }
-    .mMUiUx, .uiUx{
-        width: 8rem;
-        top:25.5rem;
-       left:3rem;
-    }
-    .mMApp,  .mMAppDead {
-        width: 7rem;
-        left:17rem;
-        top:26rem;
-    }
-
-    nav {
-        margin-right: 1rem;
-        bottom:30rem;
-    }
-  
-    footer {
-        right: 7rem;
-         bottom:32rem;
-     }
+   
 }
 @media only screen and (min-width:700px) {
     .grid1 {

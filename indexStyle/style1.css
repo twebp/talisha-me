@@ -10,13 +10,10 @@
     overflow: hidden;
     z-index: -10;
 }
-body {
-    overflow: scroll;
 
-}
 #wrapper {
     width:100%;
-    height: auto;
+    height: 100vh;
     margin:0 auto;
     padding:0;
     text-align: center;

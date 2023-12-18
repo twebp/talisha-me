@@ -4,7 +4,7 @@
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     width: auto;
     height: auto;
     background-size: cover;
@@ -29,11 +29,9 @@ body{
 }
 blockquote {
     position: absolute;
-    top: 90%;
-    left: 5%;
     font-size: 1rem;
     font-weight: bold;
-    color: rgba(158, 158, 158, 0.476) ;
+    color: rgba(158, 158, 158, 0.7) ;
     font-family:  garamond, 'courier new';
     z-index: 7;
 }
@@ -43,7 +41,7 @@ article {
 h1 {
     font-family:  garamond, 'courier new';
     color: #ffff;
-    margin: 0 0 10% 20%;
+    
 }
 .appLogo{
     position: relative;
@@ -54,7 +52,7 @@ h1 {
 .mMUiUx {
     position: absolute;
     width: 35%;
-    top: 15rem;
+   
     left: 30%;
     height: auto;
     cursor: pointer;
@@ -64,7 +62,7 @@ h1 {
 .uiUx {
     position: absolute;
     width: 35%;
-    top: 15rem;
+    
     left: 30%;
     height: auto;
     cursor: pointer;
@@ -73,9 +71,9 @@ h1 {
 }
 .mMApp {
     position: absolute;
-    width: 35%;
+    width: 33%;
     height: auto;
-    top: 25rem;
+    
     right: 7.25rem;
     cursor: pointer;
     z-index: 6;
@@ -83,9 +81,9 @@ h1 {
 }
 .mMAppDead {
     position: absolute;
-    width: 35%;
+    width: 33%;
     height: auto;
-    top: 25rem;
+    
     right: 7.25rem;
     cursor: pointer;
     z-index: 5;
@@ -107,7 +105,7 @@ h1 {
 }
 nav{
     position: relative;
-    margin-top: 135%;
+   
    
     
 }
@@ -137,8 +135,6 @@ a:hover {
 }
 footer {
     position: relative;
-    margin-top: 20%;
-    margin-left: 38%;
     font-size: 1.3rem;
     font-family:  garamond, 'courier new';
 }
