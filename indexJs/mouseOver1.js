@@ -1,5 +1,5 @@
-var _mMunchiesS = document.querySelector('.mMunchiesS');
-var _mM1 = document.querySelector('.mM1');
+var _mMunchiesS = document.getElementById('#mMunchies');
+var _mM1 = document.getElementById('#mM');
 
 var logoStatus = true;
 var wordStatus = false;
