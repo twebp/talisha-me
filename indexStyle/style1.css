@@ -30,9 +30,6 @@ body {
     "nav nav"
     "footer footer";
 }
-.grid-item {
-
-}
 .grid1 {
     grid-area: header;
     width:100%;
@@ -129,6 +126,15 @@ body {
 .grAroM-2, .pkAroM-2 {
     display: none;
 }
+.mMunchiesS {
+    cursor: pointer;
+}
+.flex3 {
+    visibility: visible;
+}
+.flex9 {
+    visibility: hidden;
+}
 @media only screen and (min-width: 325px) {
 
     .minilogoM, .mylogoD, .mylogoL {
@@ -151,7 +157,7 @@ body {
     .linkedinM, .linkedinD, .linkedinL {
         display: none;
     }
-
+    
     .mM2, .mM3, .mM4 {
         display:none;
     }
@@ -174,8 +180,7 @@ body {
     #wrapper {
         width:90%;
         margin:0 auto;
-        border: 1px solid pink;
-        
+             
     }
     #header {
         width:90%;
@@ -342,7 +347,6 @@ body {
     #wrapper {
         width:90%;
         margin:0 auto;
-        border: 1px solid pink;
         
     }
     #header {
@@ -484,18 +488,30 @@ body {
         margin-bottom:3%;
     }
 }
+@media only screen and (min-height: 720px) {
+    
+    .flex4, .flex5 {
+        bottom: 10%;
+    }
+    .flex3 {
+        bottom:17%;
+    }
+    .flex8 {
+        
+        top:4%;
+    }
+}
 @media only screen and (min-height: 800px) {
   #aside {
     margin-bottom:25%;
   }
 }
 
-@media only screen and (min-width: 428px) {
-    
-}
 
 @media only screen and (min-width:576px) {
-    
+    .mMunchiesS {
+        display: block;
+    } 
     h4 {
 
         width:220%;
@@ -514,6 +530,7 @@ body {
     }
     .scroll, .down {
         display: block;
+        top:45%;
     }
     .mMunchiesM, .mMunchiesD, .mMunchiesL {
         display: none;
@@ -653,8 +670,11 @@ body {
 @media screen and (min-width: 600px) {
 
         #aside {
-            margin-left: 6%;
+            margin-left: 1%;
             margin-bottom:5%;
+        }
+        .scroll, .down {
+            top:55%;
         }
     }
 @media screen and (min-height: 736px) {
@@ -771,6 +791,12 @@ body {
         left:20%;
         float: left;
         z-index:-7;
+}
+.mMunchiesS {
+    visibility: visible;
+}
+.mM1 {
+    visibility: hidden;
 }
 .scroll {
     z-index: 4;
@@ -901,6 +927,7 @@ body {
         display: block;
         font-size: 32px;
         margin-bottom: 10%;
+        margin-left: 60%;
         width: 100%;
         color:antiquewhite;
         font-style:italic;
@@ -927,14 +954,15 @@ body {
         width: 100%;
         height: 1;
         margin: 0;
-        padding:15% 45% 0% 0%;
+        padding:15% 50% 0% 0%;
         overflow: visible;
         overflow-inline: ;
-       border: 1px solid pink;
+      
     }
     article {
         width:80%;
-        border: 1px solid pink;
+        margin-right: 30%;
+       
     }
 
 #nav {
@@ -942,7 +970,7 @@ body {
     width: 75%;
     left:100%;
     position: relative;
-    margin-top:40%;
+    margin-top:10%;
 
    
 }
@@ -977,8 +1005,8 @@ nav ul li{
 }
 .flex8 {
     width: 35%;
-    margin-top: 15%;
-    margin-left: 70%;
+    margin-top: 20%;
+    margin-left: 50%;
     font-size: 32px;
 }
 
@@ -1011,9 +1039,50 @@ padding: 7% 6% 6.55% 6%;
 }
 
 }
+@media only screen and (min-height: 900px) {
+  .h-4 {
+    width: 155%;
+    right: 55%;
+  }
+   #nav {
+    bottom:88%;
+}
+.flex8{
+    padding-top: 9%;
+}
+} 
+@media only screen and (min-height: 812px) {
+    #aside {
+        margin-bottom: 25%;
+    }
+
+    .flex8 {
+        margin-top:20%;
+    }
+}
+@media only screen and (min-height: 667px) {
+    #nav {
+        margin-top: 1%;
+    }
+    .flex8 {
+        margin-top:15%;
+    }
+}
+@media only screen and (min-height: 720px) {
+ .flex8 {
+   position: absolute;
+   top:55%;
+   right:30%;
+ }
+}
+@media only screen and (min-height: 732px) {
+    #nav {margin-top: 2%;}
+    #article{margin-top: 1%;}
+}
 @media only screen and (min-height: 1080px) {
     #aside {
-        margin-bottom:1%;
+        left: 25%;
+        margin-bottom:3%;
     }
     .grAroS, .pkAroS {
         display: none;
@@ -1025,27 +1094,92 @@ padding: 7% 6% 6.55% 6%;
     }
    
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-height: 1024px)  {
+    #aside {
+        left: 25%;
+    }
+    #article {
+        height: 90%;
+    }
+}
+@media only screen and (min-height: 1280px){
+    
+    #aside {
+        margin-bottom: 25%;
+    }
+    #article {
+        height:85%;
+    }
+}
+@media only screen and (min-width: 1280px) and (min-height: 800px) {
+    .flex4, .flex5 {
+        bottom: 15%;
+    }
+    .flex3 {
+        bottom:22%;
+    }
     #nav {
-        margin-top: 20%;
-        margin-bottom: 0%;
+        height:45%;
+      
     }
     .flex8 {
-        margin-top: 35%;
+        position:absolute;
+        top:55%;
+        right:30%;
+    }
+}
+@media only screen and (min-height: 950px) {
+        .flex8 {
+            top: 60%;
+        }
+}
+@media only screen and (min-height: 1180px)  {
+    #aside {
+        left: 24%;
+        margin-bottom: 10%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #article{
+        height:5%;
+    }
+    #nav {
+        margin-top:30%;
+        margin-bottom: 0%;
+    }
+   .flex6, .flex7 {
+    width: 8%;
+   }
+    .flex8 {
+    
+        margin-top:15%;
+    }
+    .h-4 {
+        margin-top: 5%;
     }
 }
 
 @media only screen and (min-width: 1300px) {
     #nav {
-        margin-top: 20%;
+        margin-top: 35%;
         width: 65%;
     }
  .h-4 {
-    margin-left: 6%;
+    margin-left: 60%;
  }
  body {
     font-size: 32px;
         overflow: scroll;
+}
+.flex4, .flex5 {
+    bottom: 20%;
+}
+.flex3 {
+    bottom:27%;
+}
+.flex8 {
+    
+    margin-top:4%;
 }
 }
 @media only screen and (min-width: 1400px) {
@@ -1075,7 +1209,7 @@ padding: 7% 6% 6.55% 6%;
         margin-top: 35%;
     }
     .flex8 {
-        margin-top: 0%;
+        margin-top: 5%;
     }
     body {
         overflow: scroll;
@@ -1083,12 +1217,13 @@ padding: 7% 6% 6.55% 6%;
 }
 @media only screen and (min-width: 1600px) {
     #nav {
-        width: 85%;
-        margin-top: 50%;
+        width: 55%;
+        left:95%;
+        margin-top: 47%;
 
     }
     .flex8 {
-        margin-top: 30%;
+        margin-top: 3%;
 
     }
     body {
@@ -1098,8 +1233,10 @@ padding: 7% 6% 6.55% 6%;
 }
 @media only screen and (min-width: 1700px) {
     #nav {
-        margin-top: 85%;
-        width: 75%;
+        width: 55%;
+        left:95%;
+        margin-top: 47%;
+
     }
     #article {
         margin-top: 5%;
@@ -1109,13 +1246,18 @@ padding: 7% 6% 6.55% 6%;
 
     }
     .h-4 {
-        margin-bottom: 1%;;
+        margin-bottom: 1%;
+        margin-left: 65%;
     }
     body {
         overflow: scroll;
     }
 }
 @media only screen and (min-width: 1800px) {
+    .h-4 {
+        margin-bottom: 1%;
+        margin-left: 72%;
+    }
     
     .flex8 {
         margin-top: 0%;
@@ -1128,16 +1270,22 @@ padding: 7% 6% 6.55% 6%;
 @media only screen and (min-width: 1900px) {
     
     #nav {
-        margin-top: 105%;
-        width: 75%;
+        margin-top: 60%;
+        width: 55%;
     }
     
     .flex8 {
         margin-top: 0%;
-        margin-bottom: 45%;
+        margin-bottom: 30%;
     }
     .h-4{
-        margin-top: 0;
+        margin-top: 10%;
+    }
+    .flex4, .flex5 {
+        bottom: 13%;
+    }
+    .flex3 {
+        bottom:19%;
     }
     body {
         overflow: scroll;

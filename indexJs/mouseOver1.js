@@ -1,5 +1,5 @@
-var _mMunchiesS = document.querySelector('.mMunchiesS');
-var _mM1 = document.querySelector('.mM1');
+var _mMunchiesS = document.getElementById('.flex3');
+var _mM1 = document.getElementById('.flex9');
 
 var logoStatus = true;
 var wordStatus = false;
