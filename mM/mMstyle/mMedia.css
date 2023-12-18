@@ -1,8 +1,23 @@
+#wrapper{
+    width:90%;
+    margin:0 auto;
+    padding: 0;
+    text-align:start;
+    border: 1px solid palevioletred;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.flex-item {
+    width: fit-content;
+    height: auto;
+}
+
 @media only screen and (min-width:300px)    {
-    body {
-       margin:0;
-       overflow-y: hidden;
-    }
+   
     .grid-container{
         display:grid;
         position:relative;
@@ -21,25 +36,28 @@
          "footer"
     }
     .grid1{
-        width: 17rem;
-        height:5rem;
         grid-area:header;
-        right:16rem;
-       
+        width: 100%;
+        
+       border: 1px solid pink; 
     }
    
     .grid2{
      grid-area: article;
+     width: 100%;
+     height: auto;
+     border: 1px solid pink; 
     }
     .grid3 {
-    width:19rem;
-    height: 5rem;
     grid-area: nav;
+    width: 100%;
+    border: 1px solid pink; 
     }
     .grid4 {
      grid-area: footer;
-     width: 6rem;
-     height: 8rem;
+
+     width: 100%;
+     border: 1px solid pink; 
     }
     .appLogo{
        left:0.25rem;
@@ -52,53 +70,15 @@
         bottom: 0.5rem;
     }
     h1 {
-        padding:0.5rem;
-        margin-bottom: 0.5rem;
-        margin-left:3rem;
+        font-size: 24px;
+       
     }
     blockquote {
         font-size: 0.8rem;
-        top:7rem;
-        padding:0.5rem;
-        margin-left:2rem;
-        width: 13rem;
+        
         height:auto;
     }
-    .mMUiUx, .uiUx{
-        top:14.5rem;
-        left:6rem;
-        padding:0.5rem;
-    }
-    .mMApp,  .mMAppDead {
-        width: 5.5rem;
-        left:6.5rem;
-        top:24.5rem;
-        padding:0.5rem;
-    }
-
-    nav {
-        bottom:9rem;
-        padding:0.5rem;
-    }
-    .insta{
-        right: 1.5rem;
-    }
-    .linkedin {
-        left: 4rem;
-        bottom: 2rem;
-    }
-    footer {
-       right: 3rem;
-        bottom:12rem;
-        padding:0.5rem;
-    }
-    .myArt {
-       
-    }
-    .contact {
-        margin-top: 2rem;
-       
-    }
+    
 }
 @media only screen and (min-width:350px) {
    .grid1 {
@@ -512,7 +492,7 @@
     }
     .grid2{
         grid-area: article;
-        bottom:4rem;
+        bottom:10%;
         margin-bottom: 3rem;
         width:fit-content;
         height:fit-content;
