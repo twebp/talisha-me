@@ -126,7 +126,15 @@ body {
 .grAroM-2, .pkAroM-2 {
     display: none;
 }
-
+.mMunchiesS {
+    cursor: pointer;
+}
+.flex3 {
+    visibility: visible;
+}
+.flex9 {
+    visibility: hidden;
+}
 @media only screen and (min-width: 325px) {
 
     .minilogoM, .mylogoD, .mylogoL {
@@ -172,8 +180,7 @@ body {
     #wrapper {
         width:90%;
         margin:0 auto;
-        border: 1px solid pink;
-        
+             
     }
     #header {
         width:90%;
@@ -340,7 +347,6 @@ body {
     #wrapper {
         width:90%;
         margin:0 auto;
-        border: 1px solid pink;
         
     }
     #header {
@@ -503,7 +509,9 @@ body {
 
 
 @media only screen and (min-width:576px) {
-    
+    .mMunchiesS {
+        display: block;
+    } 
     h4 {
 
         width:220%;
@@ -784,10 +792,10 @@ body {
         float: left;
         z-index:-7;
 }
-#mMunchies {
+.mMunchiesS {
     visibility: visible;
 }
-#mM {
+.mM1 {
     visibility: hidden;
 }
 .scroll {
@@ -949,12 +957,12 @@ body {
         padding:15% 50% 0% 0%;
         overflow: visible;
         overflow-inline: ;
-       border: 1px solid pink;
+      
     }
     article {
         width:80%;
         margin-right: 30%;
-        border: 1px solid pink;
+       
     }
 
 #nav {
