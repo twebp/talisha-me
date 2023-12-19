@@ -61,8 +61,8 @@
         width:13%;
         height: auto;
         padding:0.5rem;
-        right: 1.5rem;
-        bottom: 0.5rem;
+        right: 9%;
+        bottom: 35%;
     }
     #h1 {
         font-size: 22px;
@@ -376,6 +376,27 @@
             margin-left: 8%;
            
         }
+}
+@media only screen and (min-height:667px) {
+    .grid1{
+        height:50%;
+    }
+    .grid2 {
+        bottom:11%;
+    }
+    blockquote {
+font-size: 16px;
+    }
+    .flex3{
+        width: 30%;
+        top:190%;
+       left:15%;
+    }
+    .flex4 {
+        width: 26%;
+        left:55%;
+        top:194%;
+    }
 }
 @media only screen and (min-width:700px) {
     #h1 {
