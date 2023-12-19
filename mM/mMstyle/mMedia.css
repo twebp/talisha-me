@@ -199,6 +199,9 @@
     }
 }
 @media only screen and (min-width:375px) {
+    #h1 {
+        margin-left: 25%;
+    }
     .flex3 {
         width:35%;
     }
@@ -222,6 +225,11 @@
    .flex6 {
     margin-right: 13%;
     padding: 3% 17% 3% 13%;
+    }
+}
+@media only screen and (min-width:390px) {
+    #h1 {
+        margin-left: 25%;
     }
 }
 @media only screen and (min-width:400px) {
@@ -347,10 +355,11 @@
    
 @media only screen and (min-width:650px) {
     #h1 {
-        margin-left:33%;
+        margin-left:35%;
     }
     blockquote {
         top:90%;
+        left:7%;
     }
     .flex3{
         width: 30%;
@@ -429,6 +438,22 @@ font-size: 16px;
         top:138%;
     }
 
+} 
+@media only screen and (min-height: 800px) {
+    .flex1 {
+        bottom: 53%;
+    }
+    .flex3{
+        width: 30%;
+        top:145%;
+       left:15%;
+    }
+    .flex4 {
+        width: 26%;
+        left:55%;
+        top:151%;
+    }
+
 }
 @media only screen and (min-width:800px) {
    body {margin:0;}
@@ -498,7 +523,39 @@ font-size: 16px;
         top:150%;
     }
 }
+@media only screen and (min-height:812px){
+    .flex1 {
+        bottom:35%;
+    }
+    .flex3{
+        width: 30%;
+        top:220%;
+       left:15%;
+    }
+    .flex4 {
+        width: 26%;
+        left:55%;
+        top:223%;
+    }
+}
+}
+@media only screen and (min-height: 844px){
+    .flex1 {
+        bottom:33%;
+    }
+    .flex3{
+        width: 30%;
+        top:220%;
+       left:15%;
+    }
+    .flex4 {
+        width: 26%;
+        left:55%;
+        top:223%;
+    }
+}
 @media only screen and (min-width:850px) {
+
     .grid1{
         width: 25rem;
         bottom: 15rem;
@@ -595,6 +652,18 @@ font-size: 16px;
     }
     
 }
+@media only screen and (min-height: 1000px){
+    .flex3{
+        width: 30%;
+        top:175%;
+       left:15%;
+    }
+    .flex4 {
+        width: 26%;
+        left:55%;
+        top:181%;
+    }
+}
 @media only screen and (min-width:1000px) {
     .grid1{
         width:30rem;
@@ -665,6 +734,18 @@ font-size: 16px;
         top:26rem;
     }
     
+}
+@media only screen (min-height: 1100px) {
+    .flex3{
+        width: 30%;
+        top:175%;
+       left:15%;
+    }
+    .flex4 {
+        width: 26%;
+        left:55%;
+        top:181%;
+    }
 }
 @media only screen and (min-width:1100px) {
     .grid1{
