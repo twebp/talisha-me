@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+    z-index: -110;
+}
 #wrapper{
     width:90%;
     margin:0 auto;
