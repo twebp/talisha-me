@@ -1,3 +1,8 @@
+body{
+    
+    background-color: black;
+    z-index: -11;
+}
 .flowerfall {
     position: fixed;
     right: 0;
@@ -11,11 +16,7 @@
     z-index: -10;
 
 }
-body{
-    
-    background-color: black;
-    z-index: -11;
-}
+
 header {
     position: relative;
     top:0.25rem;
@@ -94,10 +95,8 @@ aside {
 /*middle*/
 article {
     display: flex;
-    top: 2rem;
     position: relative;
     width: 100%;
-    height: fit-content;
 	text-align: left;
     white-space: nowrap;
     overflow: scroll;
