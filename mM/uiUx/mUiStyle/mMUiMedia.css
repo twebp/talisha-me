@@ -1,274 +1,581 @@
-@media only screen and (min-width:300px)    {
-    .flex1-1{
-        width:18rem;
-        height:auto
+
+#wrapper {
+    width:90%;
+    height: 100vh;
+    margin: 0 auto;
+    padding:0;
+    overflow-x: hidden;
+    font-size:18px;
+    border: 1px solid rgb(255, 0, 43);
+}
+.grid-container {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    gap:1%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.05fr 2.5fr 0.2fr 0.05fr;
+        grid-row-gap:0.25rem;
+        grid-template-areas:
+         "header"
+         "aside"
+         "article"
+         "nav"
+         "footer"
+}
+.grid1 {
+    position: relative;
+    grid-area: header;
+    margin:0;
+    top:0;
+    left:0;
+    width:16%;
+    height:20%;
+    border: 1px solid pink;
+}
+.grid2 {
+    position: absolute;
+    grid-area: aside;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 3%;
+    top:24.5%;
+    margin-right: 34%;
+    border: 1px solid pink;
+}
+.grid3 {
+    position: relative;
+    grid-area: article;
+    margin: 0;
+    padding: 0;
+    top:5%;
+    width:16%;
+    height: fit-content;
+    border: 1px solid pink;
+}
+.grid4 {
+    position: relative;
+    grid-area: nav;
+    margin: 0;
+    padding: 0;
+    top:6%;
+    width: 16%;
+    height: fit-content;
+    border: 1px solid pink;
+}
+.grid5 {
+    position: relative;
+    grid-area: footer;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    top: 7%;
+    width: 16%;
+    border: 1px solid pink;
+}
+ .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ 
+.flex-item {
+    font-size: 14px;
+}
+.flex10 {
+    margin: 0;
+    padding: 0;
+    width:15%;
+    
+}
+.flex11 {
+    margin: 0;
+    padding: 0;
+    width:40%;
+    top:1%;
+    left:33%;
+}
+.flex12 {
+    margin: 0;
+    padding: 0;
+}
+.flex7 {
+    left: 6%;
+    border:1px solid pink;
+   }
+   .flex8 {
+     right:22%;
+     border:1px solid pink;
+   }
+   .flex9 {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    padding:3%;
+    margin-left:35%;
+    font-size:20px;
+    border:1px solid pink;
+   }
+   .flex1, .flex2, .flex3, .flex4 {
+    border: 1px solid pink;
+
+   }
+.flex2 {
+    width:13.5rem;
+}
+.flex3 {
+    top: 8rem;
+    width:20rem;
+}
+.flex4 {
+    top: 8rem;
+    left:75rem;
+    width:20rem;
+}
+.flex1-1, .flex2-2, .flex3-3, .flex4-4, .flex5s-5, .flex6t-6 {
+    top:30%;
+}
+.flex1-1 {
+    left: 22rem;
+}
+.flex2-2 {
+    left:63rem;
+}
+.flex3-3 {
+    left:107rem;
+}
+.flex4-4 {
+    left:152rem;
+}
+.flex5 {
+    top:1.5rem;
+    left: 102rem;
+}
+.flex6 {
+    top:1.5rem;
+    left: 112rem
+}
+@media only screen and (min-width: 320px) {
+    .grid1 {
+        width:17.25%;
     }
-    .flex4-4 {
-        width:18rem;
+    .grid3 {
+        width:17.25%;
+    }
+    .grid4 {
+        width:17.25%; 
+    }
+    .grid5 {
+        width:17.25%;
+    }
+}
+@media only screen and (min-height:567px) {
+    .grid2 {
+        top:28%;
+        height: 4%;
+    }
+}
+@media only screen and (min-width:375px) {
+    .grid1 {
+        position: relative;
+        grid-area: header;
+        margin:0;
+        top:0;
+        left:0;
+        width:20.25%;
+        height:25%;
+        
+    }
+    .grid2 {
+        position: absolute;
+        grid-area: aside;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        height: 3%;
+        top:24%;
+        margin-right: 34%;
+       
+    }
+    .grid3 {
+        position: relative;
+        grid-area: article;
+        margin: 0;
+        padding: 0;
+        top:5%;
+        width:20.25%;
+        height: fit-content;
+       
+    }
+    .grid4 {
+        position: relative;
+        grid-area: nav;
+        margin: 0;
+        padding: 0;
+        top:6%;
+        width:20.25%;
+        height: fit-content;
+        
+    }
+    .grid5 {
+        position: relative;
+        grid-area: footer;
+        margin: 0;
+        padding: 0;
         height: auto;
+        top: 7%;
+        width: 20.25%;
+        
     }
-    footer {
-        width: 5rem;
-        height: 8rem;
-        top:6rem;
+    .flex-item {
+        font-size: 14px;
+    }
+    .flex10 {
+        margin: 0;
+        padding: 0;
+        width:15%;
+        
+    }
+    .flex11 {
+        margin: 0;
+        padding: 0;
+        width:40%;
+        top:1%;
+        left:33%;
+    }
+    .flex12 {
+        margin: 0;
+        padding: 0;
     }
     
-    .contact {
-        margin-top:2rem;
+    .flex7 {
+     left: 15%;
     }
-    nav {
-        width: 11rem;
-        top:5rem;
-        
+    .flex8 {
+      right:25%;
     }
-    .insta {
-         margin-right:1.5rem;
-    }
-}
-@media only screen and (min-width:350px) {
-    aside {
-        margin-top: 1rem;
+    .flex9 {
+     margin-left: 40%;
+     font-size:20px;
     }
 }
-@media only screen and (min-width:400px) {
-    aside {
-        margin-top: 2rem;
-    }
-    nav {
-       
-        left:1rem;
-        
-    }
-}
-@media only screen and (min-width:450px) {
-    aside {
-        margin-top: 3rem;
-    }
-    nav {
-       
-        left:2rem;
-        
+@media only screen and (min-width:360px)  {
+    .grid1 {
+        width:19.5%;
+    } 
+    .grid3 {
+        width:19.5%;
+    } 
+    .grid4 {
+        width:19.5%;
+    } 
+    .grid5 {
+        width:19.5%;
     }
 }
-@media only screen and (min-width:500px) {
-    .mMlogo {
-        top:1rem;
-    }
-    article {
-        top:4.5rem;
-    }
-    aside {
-        margin-top: 8rem;
-    }
-    nav {
-        top:9rem;
-        left: 3rem;
-    }
-    footer {
-        font-size: 1.3rem;
-        top: 7rem;
-        left: 1rem;
-    }
-    .contact {
-       margin-top:2rem;
+@media only screen and (min-width:380px)  {
+    .grid1 {
+        width:20.8%;
+    } 
+    .grid3 {
+        width:20.8%;
+    } 
+    .grid4 {
+        width:20.8%;
+    } 
+    .grid5 {
+        width:20.8%;
     }
 }
-@media only screen and (min-width:550px) {
-    aside {
-        margin-top: 10rem;
-    }
-    nav {
-        left: 4rem;
+@media only screen and (min-width:390px)  {
+    .grid1 {
+        width:21.2%;
+    } 
+    .grid3 {
+        width:21.2%;
+    } 
+    .grid4 {
+        width:21.2%;
+    } 
+    .grid5 {
+        width:21.2%;
     }
 }
-@media only screen and (min-width:600px) {
-    aside {
-        margin-top: 11rem;
-        width: 7rem;
+@media only screen and (min-width:411px) {
+    .grid1 {
+     width:22.2%;
     }
-    article {
-        left:4rem;
+    .grid3 {
+     width:22.2%;
     }
-   nav {
-        width: 11rem;
-        left: 5rem;
+    .grid4 {
+     width:22.2%;
     }
-    footer {
-        height: 6rem;
-        top: 6rem;
-        
+    .grid5 {    
+     width:22.2%;
+    }
+ }
+@media only screen and (min-width:412px) {
+    .grid1 {
+     width:22.3%;
+    }
+    .grid3 {
+     width:22.3%;
+    }
+    .grid4 {
+     width:22.3%;
+    }
+    .grid5 {    
+     width:22.3%;
+    }
+ }
+@media only screen and (min-width:414px) {
+   .grid1 {
+    width:22.4%;
+   }
+   .grid3 {
+    width:22.4%;
+   }
+   .grid4 {
+    width:22.4%;
+   }
+   .grid5 {    
+    width:22.4%;
+   }
+}
+@media only screen and (min-height: 615px)  {
+    .grid2 {
+        top: 22.2%;
+        height: 3%;
+    }
+}
+@media only screen and (min-height: 640px) {
+    .grid2 {
+        top:30.8%;
+        height:4%;
+    }
+}
+@media only screen and (min-height:667px) {
+    .grid2 {
+        top:29%;
+        height: 4.5%;
     }
 }
 
-@media only screen and (min-width:650px) {
-    aside {
-        margin-top: 12rem;
-        width: 7rem;
-    }
-    article {
-        left:5rem;
+@media only screen and (min-height: 731px) {
+    .grid2 {
+        top:27.6%;
+        height:4%;
     }
 }
-@media only screen and (min-width:700px) {
-    aside {
-        margin-top: 13rem;
-        width: 7rem;;
-    }
-    .mMlogo{
-        left:15rem;
-        width:13rem;
-    }
-    article {
-        left:6rem;
-    }
-    nav {
-        left: 7.5rem;
-    }
-    footer {
-       
-        left:2rem;
-        
+@media only screen and (min-height: 736px) {
+    .grid2 {
+        top:27.5%;
+        height:4%;
     }
 }
-@media only screen and (min-width:750px) {
-    aside {
-        margin-top: 13rem;
-    }
-    .mMlogo{
-        left:17rem;
-       
-    }
-    article {
-        left:7rem;
-    }
-    nav {
-        left: 8rem;
-    }
-    footer {
-       
-        left:2rem;
-        
+@media only screen and (min-height: 740px) {
+    .grid2 {
+        top:22.5%;
+        height:4%;
     }
 }
+@media only screen and (min-height: 746px) {
+    .grid2 {
+        top:22%;
+        height:4%;
+    }
+}
+@media only screen and (min-height: 800px) {
+    .grid2 {
+        top:21.3%;
+        height:3%;
+    }
+}
+@media only screen and (min-height:812px) {
+    .grid2 {
+        top: 24%;
+        height: 3%;
+    }
+}
+@media only screen and (min-height:812px) {
+    .grid2 {
+        top: 23%;
+        height: 3%;
+    }
+}
+@media only screen and (min-height:823px) {
+    .grid2 {
+        top: 24.7%;
+        height: 3%;
+    }
+}
+@media only screen and (min-height: 846px)  {
+    .grid2 {
+        top: 24.3%;
+        height: 3%;
+    }
+}
+@media only screen and (min-height: 851px)  {
+    .grid2 {
+        top: 23.3%;
+        height: 3%;
+    }
+}
+@media only screen and (min-height: 883px)  {
+    .grid2 {
+        top: 23.2%;
+        height: 3%;
+    }
+}
+@media only screen and (min-height: 896px)  {
+    .grid2 {
+        top: 22.3%;
+        height: 3%;
+    }
+}
+
+@media only screen and (min-height: 926px) {
+    .grid2 {
+        top:22%;
+    }
+}
+@media only screen and (min-width: 428px) {
+    .grid1 {
+        width:23.2%;
+    }
+    .grid3 {
+        width:23.2%;
+    }
+    .grid4 {
+        width:23.2%;
+    }
+    .grid5 {
+        width:23.2%;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .grid1 {
+        height:35%;
+        width:32.6%;
+    }
+    .grid3 {
+        margin:0;
+        padding:0;
+        left:0;
+        width:32.6%;
+    }
+    .grid4 {
+        margin:0;
+        padding:0;
+        left:0;
+        width:32.6%;
+    }
+    .grid5 {
+        margin:0;
+        padding:0;
+        left:0;
+        width:32.6%; 
+    }
+}
+@media only screen and (min-height: 960px) {
+    .grid2 {
+        top:31.6%;
+        height:4%;
+    }
+}
+
+
+
 @media only screen and (min-width:800px) {
     aside {
         display: none;
     }
-    article {
+    body {
+        margin:0;
+      }
+      .minilogo{
+        display: none;
+      }
+      .logo {
+        display:block;
+      }
+      .flex11 {
+        left:42%;
+        width:20%;
+      }
+      .mMlogo {
+        display: none;
+      }
+      .mMlogo2 {
+        display:block;
+      }
+    #wrapper {
+        width:90%;
+        height: 100vh;
+        margin: 0 auto;
+        padding:0;
+        overflow-x: hidden;
+        font-size:18px;
+        border: 1px solid rgb(255, 0, 43);
+    }
+    .grid-container {
+        display: grid;
+        width:100%;
+        height:100vh;
+        margin:0 auto;
+        justify-content: center;
+        align-items: flex-start;
+        gap:0.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2.5fr 0.5fr;
+        grid-template-areas: 
+        "header nav"
+        "article article"
+        "footer footer"
+        
+    }
+    .grid1 {
+        grid-area: header;
+        height:35%;
+        
+        margin-left: 0;
+    }
+    .grid3 {
+        grid-area: article;
+        width:43.7%;
+        left:0.3%;
+    }
+    .grid4 {
+        grid-area: nav;
+        width:43.7%;
+        left:0.3%;
+    
+    }
+    .grid5 {
+        grid-area: footer;
+        width:43.7%;
+        left:0.3%;
+        
+    }
+    .flex {
         display: flex;
-        left:8rem;
         overflow: visible;
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        align-items: center;
     }
     .flex1, .flex1-1, .flex2, .flex2-2, .flex3, .flex3-3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 10rem;
-    
-    }
-    .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t {
-        margin-top: 10rem;
-        margin-bottom: 20rem;
-    }
-    .tss3, .tss4 {
-        width:30rem;
-        left:2.5rem;
-    }
-    .flex1-1 {
-        top:18rem;
-        left:18rem;
-    }
-    .flex2-2 {
-        top:70rem;
-        left:16rem;
-    }
-    .flex3-3 {
-        top:132rem;
-        left:10rem;
-    }
-    .flex4-4 {
-        top:182rem;
-        left:10rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        margin-bottom: 5rem;
-    }
-    .tss1 {
-        left:2rem;
-        margin-bottom:16rem;
-        width: 20rem;
-    }
-    .tss2 {
-        left:4rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:15rem;
-    }
-    nav {
-        left: 9rem;
-    }
-    footer {
-       
-        left:2.5rem;
-        
-    }
-    .minilogo {
-        display: none;
-        
-    }
-    .logo {
-        display: block;
-        width: 12rem;
-        height: auto;
-}
-body {
-    margin:0;
-  }
-.grid-container {
-    display: grid;
-    width:100%;
-    height:100vh;
-    margin:0 auto;
-    justify-content: center;
-    gap:0.5rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2.5fr 0.5fr;
-    grid-template-areas: 
-    "header nav"
-    "article article"
-    "footer footer"
     
 }
-.grid1 {
-    grid-area: header;
-}
-.grid3 {
-    grid-area: article;
-}
-.grid4 {
-    grid-area: nav;
-
-}
-.grid5 {
-    grid-area: footer;
-    
-}
-nav {
-    top:1rem;
-    left:8rem;
-}
-.tss6t {
-    margin-bottom:2rem;
-}
-
-footer {
-    margin-top:3rem;
-    margin-bottom: 4rem;
-    font-size: 1.5rem;
+.flex10 {
+    width: 40%;
 }
 }
 @media only screen and (min-width:850px) {

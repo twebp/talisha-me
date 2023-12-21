@@ -3,7 +3,7 @@
     margin:0 auto;
     padding: 0;
     text-align:start;
-    border: 1px solid palevioletred;
+   
 }
 .flex {
     display: flex;
@@ -11,7 +11,6 @@
     justify-content: center;
     align-items:flex-start;
 }
-
 @media only screen and (min-width:300px)    {
    
     .grid-container{
@@ -33,29 +32,29 @@
     .grid1{
         grid-area:header;
         width: 100%;
-       border: 1px solid pink; 
+       
     }
    
     .grid2{
      grid-area: article;
      width: 100%;
      height: fit-content;
-     border: 1px solid pink; 
+   
     }
     .grid3 {
     grid-area: nav;
     width: 100%;
     bottom: 95%;
-    border: 1px solid pink; 
+    
     }
     .grid4 {
      grid-area: footer;
      width: 100%;
      bottom: 95%;
-     border: 1px solid pink; 
+    
     }
     .flex2{
-       border: 1px solid pink;
+      
     }
     .flex1 {
         width:13%;
@@ -68,14 +67,14 @@
         font-size: 22px;
         margin-left: 15%;
         margin-top:1%;
-        border: 1px solid pink;
+        
     }
     blockquote {
         font-size: 0.8rem;
         top:80%;
         width: 75%;
         height:auto;
-        border: 1px solid pink;
+       
     }
     .flex3 {
         top:175%;
@@ -86,19 +85,19 @@
     }
   ul {
     width: 85%;
-    border: 1px solid pink; 
+    
  }
     .flex5{
         margin-left: 0%;
         padding: 3%;
         padding: 3% 11% 3% 11%;
-        border: 1px solid pink; 
+        
     }
 
    .flex6 {
     margin-right: 13%;
     padding: 3% 15% 3% 11%;
-    border: 1px solid pink; 
+   
     }
     footer {
         width: 85%;
@@ -107,8 +106,9 @@
         width: fit-content;
         padding: 2% 20%;
         margin-left: 15%;
-        border: 1px solid pink;
+        
     }
+  
 }
 @media only screen and (min-width:320px) {
     #h1 {
