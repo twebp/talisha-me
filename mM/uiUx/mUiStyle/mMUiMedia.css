@@ -1,4 +1,6 @@
-
+.mMlogo2 {
+    display: none;
+}
 #wrapper {
     width:90%;
     height: 100vh;
