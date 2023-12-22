@@ -16,7 +16,7 @@ blockquote {
     overflow-x: hidden;
     text-align: center;
     font-size:18px;
-    border: 1px solid rgb(255, 0, 43);
+    
 }
 a:link {
     color: rgb(180, 99, 0);
@@ -52,7 +52,7 @@ a:hover {
     left:0;
     width:16%;
     height:20%;
-    border: 1px solid pink;
+    
 }
 .grid2 {
     position: absolute;
@@ -62,7 +62,7 @@ a:hover {
     width: 25%;
     height: 3%;
     margin-right: 34%;
-    border: 1px solid pink;
+    
 }
 .grid3 {
     position: relative;
@@ -73,9 +73,8 @@ a:hover {
     width:16%;
     text-align: center;
     height: fit-content;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    border: 1px solid pink;
+    overflow: hidden;
+    
 }
 .grid4 {
     position: relative;
@@ -85,7 +84,7 @@ a:hover {
     top:6%;
     width: 16%;
     height: fit-content;
-    border: 1px solid pink;
+   
 }
 .grid5 {
     position: relative;
@@ -95,12 +94,12 @@ a:hover {
     height: auto;
     top: 7%;
     width: 16%;
-    border: 1px solid pink;
+    
 }
  #aside {
         width: 10%; 
         padding:10% 5%;
-        margin-top:145%;
+        margin-top:45%;
         margin-right: 75%;
         float: left;
         top: 0;
@@ -175,12 +174,12 @@ a:hover {
     font-size: 16px;
 }
 .flex7 {
-    margin-left: 10%;
-    border:1px solid pink;
+    margin-left: 20%;
+    
    }
    .flex8 {
-     margin-right:20%;
-     border:1px solid pink;
+     margin-right:30%;
+    
    }
    .flex9  {
     margin: 0;
@@ -190,7 +189,7 @@ a:hover {
     padding:3%;
     margin-left:32%;
     font-size:20px;
-    border:1px solid pink;
+    
    }
    .flex13  {
     margin: 0;
@@ -200,13 +199,9 @@ a:hover {
     padding:3%;
     margin-left:10%;
     font-size:20px;
-    border:1px solid pink;
+    
    }
   
-   .flex1, .flex2, .flex3, .flex4 {
-    border: 1px solid pink;
-
-   }
 .flex2 {
     width:13.5rem;
 }
@@ -415,6 +410,9 @@ footer ul li {
     .grid1 {
         width:100%;
     } 
+    .grid2 {
+        margin-bottom: 45%;
+    }
     .grid3 {
         width:100%;
 
@@ -752,6 +750,38 @@ li {
        }
       
 }
+@media only screen and (min-width:1920px) {
+    .flex-item{
+        margin-left: 6%;
+    }
+    .flex14 {
+        margin-left: 45%;
+    }
+    .flex13 {
+        margin-left: 65%;
+    }
+    .flex1{
+        margin-left: 15%;
+    }
+    .flex2{
+        margin-left: 35%;
+    }
+    .flex5 {
+        margin-left: 35%;
+    }
+    .flex6 {
+        margin-left: 40%;
+    }
+    .flex1-1, .flex2-2 {
+        padding-right: 116.5%;
+    }
+     .flex3-3, .flex4-4 {
+        padding-right: 116.5%;
+    }
+    .flex9 {
+        margin-left: 43%;
+    }
+}
 @media only screen and (min-height:567px) {
     .grid2 {
         top:28%;
@@ -776,7 +806,11 @@ li {
         height: 4.5%;
     }
 }
-
+@media only screen and (min-height: 720px) {
+    .grid4 {
+        height:11%;
+    }
+}
 @media only screen and (min-height: 731px) {
     .grid2 {
         top:27.6%;
@@ -849,6 +883,12 @@ li {
         height: 3%;
     }
 }
+/*@media only screen and (min-height: 916px)  {
+    .grid2 {
+        margin-bottom: 10%;
+        height: 3%;
+    }
+}*/
 
 @media only screen and (min-height: 926px) {
     .grid2 {
