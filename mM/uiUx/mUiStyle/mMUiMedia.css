@@ -450,6 +450,17 @@ footer ul li {
         left:55%;
         top:1%;
     }
+    .flex7 {
+        left: 24%;
+        
+       }
+       .flex8 {
+         right:28%;
+         
+       }
+    .flex9 {
+        margin-left:40%;
+    }
    
     .flex11 {
         left:3%;
@@ -457,6 +468,10 @@ footer ul li {
     .flex13  {
         margin-left:60%;
         font-size:20px;
+        
+       }
+       .flex12 {
+        position: absolute;
         border:1px solid pink;
        }
 
