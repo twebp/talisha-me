@@ -1,12 +1,15 @@
 .mMlogo2 {
     display: none;
 }
+
+
 #wrapper {
     width:90%;
     height: 100vh;
     margin: 0 auto;
     padding:0;
     overflow-x: hidden;
+    text-align: center;
     font-size:18px;
     border: 1px solid rgb(255, 0, 43);
 }
@@ -21,8 +24,7 @@
         grid-row-gap:0.25rem;
         grid-template-areas:
          "header"
-         "aside"
-         "article"
+         "aside article"
          "nav"
          "footer"
 }
@@ -54,7 +56,10 @@
     padding: 0;
     top:5%;
     width:16%;
+    text-align: center;
     height: fit-content;
+    overflow-x: hidden;
+    overflow-y: scroll;
     border: 1px solid pink;
 }
 .grid4 {
@@ -77,6 +82,48 @@
     width: 16%;
     border: 1px solid pink;
 }
+ #aside {
+        width: 10%; 
+        padding:10% 5%;
+        margin-top:45%;
+        margin-right: 75%;
+        float: left;
+        top: 0;
+        animation: moveUpDown 3s ease-in-out infinite;
+    }
+    @keyframes moveUpDown {
+        0%, 100% {
+            top: 0%;
+        }
+        45% {
+            top: 45%;
+        }
+    }
+   
+    .fadeLoop {
+        animation: fadeIn 1.5s alternate infinite ease-in-out;
+    }
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100%{opacity:1;}
+    } 
+    .grAroS, .pkAroS {
+        width:85%;
+    }
+    #grAro {
+        position: absolute;
+        width: 30%;
+        height: auto;
+        visibility: visible;
+        z-index: 2;
+    }
+    
+    #pkAro {
+        position: absolute;
+        width: 30%;
+        height: auto;
+        z-index: 1;
+    }
  .flex {
     display: flex;
     flex-direction: column;
@@ -86,6 +133,10 @@
  
 .flex-item {
     font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .flex10 {
     margin: 0;
@@ -98,7 +149,7 @@
     padding: 0;
     width:40%;
     top:1%;
-    left:33%;
+    left:3%;
 }
 .flex12 {
     margin: 0;
@@ -112,16 +163,27 @@
      right:22%;
      border:1px solid pink;
    }
-   .flex9 {
+   .flex9  {
     margin: 0;
     padding: 0;
     width: fit-content;
     height: fit-content;
     padding:3%;
-    margin-left:35%;
+    margin-left:28%;
     font-size:20px;
     border:1px solid pink;
    }
+   .flex13  {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    padding:3%;
+    margin-left:10%;
+    font-size:20px;
+    border:1px solid pink;
+   }
+  
    .flex1, .flex2, .flex3, .flex4 {
     border: 1px solid pink;
 
@@ -130,155 +192,118 @@
     width:13.5rem;
 }
 .flex3 {
-    top: 8rem;
+    
     width:20rem;
 }
 .flex4 {
-    top: 8rem;
-    left:75rem;
+    
     width:20rem;
 }
-.flex1-1, .flex2-2, .flex3-3, .flex4-4, .flex5s-5, .flex6t-6 {
-    top:30%;
-}
-.flex1-1 {
-    left: 22rem;
-}
-.flex2-2 {
-    left:63rem;
-}
-.flex3-3 {
-    left:107rem;
-}
-.flex4-4 {
-    left:152rem;
-}
-.flex5 {
-    top:1.5rem;
-    left: 102rem;
-}
-.flex6 {
-    top:1.5rem;
-    left: 112rem
+footer ul li {
+    display: block;
 }
 @media only screen and (min-width: 320px) {
     .grid1 {
-        width:17.25%;
+        width:98.8%;
+        height:fit-content;
     }
     .grid3 {
-        width:17.25%;
+        top: 1%;
+        width:98.8%;
     }
     .grid4 {
-        width:17.25%; 
+        top: 2%;
+        width:98.8%;
     }
     .grid5 {
-        width:17.25%;
+        top:2%;
+        width:98.8%;
     }
+    .flex-item{
+       align-content: space-between;
+    }
+    .flex-item ul {
+        list-style-type: none;
+    }
+    .flex-item ul li {
+        margin-right: 45%;
+        margin-bottom: 65%;
+   }
+   .flex1 {
+    width: 150%;
+    top: 5%;
+   }
+    .flex2 {
+        width: 150%;
+        left:0;
+    }
+    .flex3{
+        width: 165%;
+        left:0;
+    }
+    .flex4 {
+        width: 165%;
+        left:0;
+    }
+    .flex5 {
+        width: 165%;
+        left:0;
+    }
+    .flex6 {
+        width: 165%;
+        left:0;
+    }
+    .flex1-1, .flex2-2, .flex3-3, .flex4-4 {
+        position: relative;
+        margin-right: 45%;
+        width: 200%;
+        height: fit-content;
+        left:0;
+        top:1%;
+    }
+
+    
 }
-@media only screen and (min-height:567px) {
-    .grid2 {
-        top:28%;
-        height: 4%;
+
+@media only screen and (min-width:360px)  {
+    .grid1 {
+        width:95%;
+    } 
+    .grid3 {
+        width:95%;
+
+    } 
+    .grid4 {
+        width:95%;
+
+    } 
+    .grid5 {
+        width:95%;
+
     }
 }
 @media only screen and (min-width:375px) {
     .grid1 {
-        position: relative;
-        grid-area: header;
-        margin:0;
-        top:0;
-        left:0;
-        width:20.25%;
-        height:25%;
-        
-    }
-    .grid2 {
-        position: absolute;
-        grid-area: aside;
-        margin: 0;
-        padding: 0;
-        width: 25%;
-        height: 3%;
-        top:24%;
-        margin-right: 34%;
-       
-    }
-    .grid3 {
-        position: relative;
-        grid-area: article;
-        margin: 0;
-        padding: 0;
-        top:5%;
-        width:20.25%;
-        height: fit-content;
-       
-    }
-    .grid4 {
-        position: relative;
-        grid-area: nav;
-        margin: 0;
-        padding: 0;
-        top:6%;
-        width:20.25%;
-        height: fit-content;
-        
-    }
-    .grid5 {
-        position: relative;
-        grid-area: footer;
-        margin: 0;
-        padding: 0;
-        height: auto;
-        top: 7%;
-        width: 20.25%;
-        
-    }
-    .flex-item {
-        font-size: 14px;
-    }
-    .flex10 {
-        margin: 0;
-        padding: 0;
-        width:15%;
-        
-    }
-    .flex11 {
-        margin: 0;
-        padding: 0;
-        width:40%;
-        top:1%;
-        left:33%;
-    }
-    .flex12 {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .flex7 {
-     left: 15%;
-    }
-    .flex8 {
-      right:25%;
-    }
-    .flex9 {
-     margin-left: 40%;
-     font-size:20px;
-    }
-}
-@media only screen and (min-width:360px)  {
-    .grid1 {
-        width:19.5%;
+        width:100%;
     } 
     .grid3 {
-        width:19.5%;
+        width:100%;
+
     } 
     .grid4 {
-        width:19.5%;
+        width:100%;
+
     } 
     .grid5 {
-        width:19.5%;
+        width:100%;
+
     }
+    .flex13  {
+        margin-left:25%;
+        font-size:20px;
+       }
 }
+
 @media only screen and (min-width:380px)  {
     .grid1 {
         width:20.8%;
@@ -295,16 +320,19 @@
 }
 @media only screen and (min-width:390px)  {
     .grid1 {
-        width:21.2%;
+        width:100%;
     } 
     .grid3 {
-        width:21.2%;
+        width:100%;
+
     } 
     .grid4 {
-        width:21.2%;
+        width:100%;
+
     } 
     .grid5 {
-        width:21.2%;
+        width:100%;
+
     }
 }
 @media only screen and (min-width:411px) {
@@ -337,17 +365,108 @@
  }
 @media only screen and (min-width:414px) {
    .grid1 {
-    width:22.4%;
+    width:100%;
    }
    .grid3 {
-    width:22.4%;
+    width:100%;
    }
    .grid4 {
-    width:22.4%;
+    width:100%;
    }
    .grid5 {    
-    width:22.4%;
+    width:100%;
    }
+}
+@media only screen and (min-width:428px) {
+   .grid1 {
+    width:100%;
+   }
+   .grid3 {
+    width:100%;
+   }
+   .grid4 {
+    width:100%;
+   }
+   .grid5 {    
+    width:100%;
+   }
+}
+@media only screen and (min-width:600px) {
+    .grid1 {
+        width:100%;
+       }
+       .grid3 {
+        width:100%;
+       }
+       .grid4 {
+        width:100%;
+       }
+       .grid5 {    
+        width:100%;
+       }
+}
+@media only screen and (min-width:768px) {
+   .grid1 {
+    width:100%;
+   }
+   .grid3 {
+    width:100%;
+   }
+   .grid4 {
+    width:100%;
+   }
+   .grid5 {    
+    width:100%;
+   }
+    .flex1 {
+    width: 120%;
+    left:25%;
+   }
+    .flex2 {
+        width: 120%;
+        left:25%;
+    }
+    .flex3{
+        width: 135%;
+        left:22%;
+    }
+    .flex4 {
+        width: 135%;
+        left:22%;
+    }
+    .flex5 {
+        width: 135%;
+        left:15%;
+    }
+    .flex6 {
+        width: 163%;
+        left:5%;
+    }
+    .flex1-1, .flex2-2, .flex3-3, .flex4-4 {
+        position: relative;
+        margin-right: 45%;
+        width: 65%;
+        height: fit-content;
+        left:55%;
+        top:1%;
+    }
+   
+    .flex11 {
+        left:3%;
+    }
+    .flex13  {
+        margin-left:60%;
+        font-size:20px;
+        border:1px solid pink;
+       }
+
+}
+
+@media only screen and (min-height:567px) {
+    .grid2 {
+        top:28%;
+        height: 4%;
+    }
 }
 @media only screen and (min-height: 615px)  {
     .grid2 {
@@ -446,45 +565,7 @@
         top:22%;
     }
 }
-@media only screen and (min-width: 428px) {
-    .grid1 {
-        width:23.2%;
-    }
-    .grid3 {
-        width:23.2%;
-    }
-    .grid4 {
-        width:23.2%;
-    }
-    .grid5 {
-        width:23.2%;
-    }
-}
 
-@media only screen and (min-width:600px) {
-    .grid1 {
-        height:35%;
-        width:32.6%;
-    }
-    .grid3 {
-        margin:0;
-        padding:0;
-        left:0;
-        width:32.6%;
-    }
-    .grid4 {
-        margin:0;
-        padding:0;
-        left:0;
-        width:32.6%;
-    }
-    .grid5 {
-        margin:0;
-        padding:0;
-        left:0;
-        width:32.6%; 
-    }
-}
 @media only screen and (min-height: 960px) {
     .grid2 {
         top:31.6%;
@@ -492,1223 +573,3 @@
     }
 }
 
-
-
-@media only screen and (min-width:800px) {
-    aside {
-        display: none;
-    }
-    body {
-        margin:0;
-      }
-      .minilogo{
-        display: none;
-      }
-      .logo {
-        display:block;
-      }
-      .flex11 {
-        left:42%;
-        width:20%;
-      }
-      .mMlogo {
-        display: none;
-      }
-      .mMlogo2 {
-        display:block;
-      }
-    #wrapper {
-        width:90%;
-        height: 100vh;
-        margin: 0 auto;
-        padding:0;
-        overflow-x: hidden;
-        font-size:18px;
-        border: 1px solid rgb(255, 0, 43);
-    }
-    .grid-container {
-        display: grid;
-        width:100%;
-        height:100vh;
-        margin:0 auto;
-        justify-content: center;
-        align-items: flex-start;
-        gap:0.5rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 2.5fr 0.5fr;
-        grid-template-areas: 
-        "header nav"
-        "article article"
-        "footer footer"
-        
-    }
-    .grid1 {
-        grid-area: header;
-        height:35%;
-        
-        margin-left: 0;
-    }
-    .grid3 {
-        grid-area: article;
-        width:43.7%;
-        left:0.3%;
-    }
-    .grid4 {
-        grid-area: nav;
-        width:43.7%;
-        left:0.3%;
-    
-    }
-    .grid5 {
-        grid-area: footer;
-        width:43.7%;
-        left:0.3%;
-        
-    }
-    .flex {
-        display: flex;
-        overflow: visible;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-    .flex1, .flex1-1, .flex2, .flex2-2, .flex3, .flex3-3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-    
-}
-.flex10 {
-    width: 40%;
-}
-}
-@media only screen and (min-width:850px) {
-    aside {
-        margin-top: 13rem;
-    }
-    .mMlogo{
-        left:19rem;
-       
-    }
-    article {
-        left:9rem;
-    }
-    nav {
-        left: 11rem;
-    }
-    footer {
-       
-        left:3rem;
-        
-    }
-}
-@media only screen and (min-width:900px) {
-
-    article {
-        left:11rem;
-    }
-    nav {
-        left:11rem;
-    }
-    footer {
-       
-        left:4rem;
-    }
-     
-}
-@media only screen and (min-width:950px) {
-    .mMlogo{
-        top:5rem;
-        left:24rem;
-    }
-    article {
-        left:12rem;
-    }
-    nav {
-        left: 12rem;
-        
-    }
-    footer {
-       
-        left:4rem;
-        
-    }
-
-    
-}
-@media only screen and (min-width:1000px) {
-    nav {
-        left: 13rem;
-        
-    }
-    .logo {
-        width: 14rem;
-        height: auto;
-}
-}
-@media only screen and (min-width:1050px) {
-   
-    nav {
-        left:14.3rem;
-    }
-    .mMlogo {
-        left:26rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 14rem;
-    
-    }
-    .tss3, .tss4 {
-        width:30rem;
-        left:6.5rem;
-    }
-    .flex1-1 {
-        top:18rem;
-        left:20rem;
-    }
-    .flex2-2 {
-        top:70rem;
-        left:20rem;
-    }
-    .flex3-3 {
-        top:132rem;
-        left:13rem;
-    }
-    .flex4-4 {
-        top:182rem;
-        left:13rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        margin-bottom: 5rem;
-    }
-    .tss1 {
-        left:4rem;
-        margin-bottom:16rem;
-        width: 20rem;
-    }
-    .tss2 {
-        left:7rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:15rem;
-    }
-}
-@media only screen and (min-width:1100px) {
-    nav {
-        left:15.3rem;
-    }
-    .mMlogo {
-        left:26rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 15rem;
-    
-    }
-    .tss3, .tss4 {
-        width:30rem;
-        left:7.5rem;
-    }
-    .flex1-1 {
-        top:19rem;
-        left:24rem;
-    }
-    .flex2-2 {
-        top:70rem;
-        left:22rem;
-    }
-    .flex3-3 {
-        top:132rem;
-        left:14rem;
-    }
-    .flex4-4 {
-        top:182rem;
-        left:14rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        margin-bottom: 5rem;
-    }
-    .tss1 {
-        left:7rem;
-        margin-bottom:16rem;
-        width: 20rem;
-    }
-    .tss2 {
-        left:10rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:15rem;
-    }
-}
-    
-@media only screen and (min-width:1150px) {
-    nav {
-        left:17.3rem;
-    }
-    .mMlogo {
-        left:32rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 17rem;
-    
-    }
-    .tss3, .tss4 {
-        width:30rem;
-        left:9.5rem;
-    }
-    .flex1-1 {
-        top:19rem;
-        left:25rem;
-    }
-    .flex2-2 {
-        top:70rem;
-        left:24rem;
-    }
-    .flex3-3 {
-        top:132rem;
-        left:16rem;
-    }
-    .flex4-4 {
-        top:182rem;
-        left:16rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        margin-bottom: 5rem;
-    }
-    .tss1 {
-        left:9rem;
-        margin-bottom:16rem;
-        width: 20rem;
-    }
-    .tss2 {
-        left:12rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:15rem;
-    }
-}
-@media only screen and (min-width:1200px) {
-    nav {
-        left:18.3rem;
-    }
-    .mMlogo {
-        left:32rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 19rem;
-    
-    }
-    .tss3, .tss4 {
-        width:30rem;
-        left:11.5rem;
-    }
-    .flex1-1 {
-        top:22rem;
-        left:29rem;
-    }
-    .flex2-2 {
-        top:82rem;
-        left:26rem;
-    }
-    .flex3-3 {
-        top:144rem;
-        left:18rem;
-    }
-    .flex4-4 {
-        top:194rem;
-        left:18rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-    }
-    .tss1 {
-        left:9rem;
-        margin-bottom:16rem;
-        width: 24rem;
-    }
-    .tss2 {
-        left:12rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:18rem;
-    }
-}
-@media only screen and (min-width:1250px) {
-    nav {
-        left:19.3rem;
-    }
-    .mMlogo {
-        left:34rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 19rem;
-    
-    }
-    .tss3, .tss4 {
-        width:30rem;
-        left:11.5rem;
-    }
-    .flex1-1 {
-        top:22rem;
-        left:29rem;
-    }
-    .flex2-2 {
-        top:82rem;
-        left:26rem;
-    }
-    .flex3-3 {
-        top:144rem;
-        left:18rem;
-    }
-    .flex4-4 {
-        top:194rem;
-        left:18rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-    }
-    .tss1 {
-        left:9rem;
-        margin-bottom:16rem;
-        width: 24rem;
-    }
-    .tss2 {
-        left:12rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:18rem;
-    }
-    
-}
-@media only screen and (min-width:1300px) {
-    nav {
-        left:20.3rem;
-    }
-    .mMlogo {
-        left:36rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 20rem;
-    
-    }
-    .tss3, .tss4 {
-        width:34rem;
-        left:11.5rem;
-    }
-    .flex1-1 {
-        top:22rem;
-        left:30rem;
-    }
-    .flex2-2 {
-        top:82rem;
-        left:27rem;
-    }
-    .flex3-3 {
-        top:148rem;
-        left:19rem;
-    }
-    .flex4-4 {
-        top:198rem;
-        left:19rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-    }
-    .tss1 {
-        left:10rem;
-        margin-bottom:16rem;
-        width: 24rem;
-    }
-    .tss2 {
-        left:13rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:18rem;
-    }
-    
-    
-}
-@media only screen and (min-width:1350px) {
-    nav {
-        left:22.3rem;
-    }
-    .mMlogo {
-        left:36rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 22rem;
-    
-    }
-    .tss3, .tss4 {
-        width:34rem;
-        left:11.5rem;
-    }
-    .flex1-1 {
-        top:22rem;
-        left:30rem;
-    }
-    .flex2-2 {
-        top:82rem;
-        left:27rem;
-    }
-    .flex3-3 {
-        top:148rem;
-        left:19rem;
-    }
-    .flex4-4 {
-        top:198rem;
-        left:19rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-    }
-    .tss1 {
-        left:10rem;
-        margin-bottom:16rem;
-        width: 24rem;
-    }
-    .tss2 {
-        left:13rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:18rem;
-    }
-    
-}
-@media only screen and (min-width:1400px) {
-    nav {
-        left:23.3rem;
-    }
-    .mMlogo {
-        left:37rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 24rem;
-    
-    }
-    .tss3, .tss4 {
-        width:34rem;
-        left:14.5rem;
-    }
-    .flex1-1 {
-        top:22rem;
-        left:30rem;
-    }
-    .flex2-2 {
-        top:82rem;
-        left:27rem;
-    }
-    .flex3-3 {
-        top:148rem;
-        left:21rem;
-    }
-    .flex4-4 {
-        top:198rem;
-        left:21rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-    }
-    .tss1 {
-        left:10rem;
-        margin-bottom:16rem;
-        width: 24rem;
-    }
-    .tss2 {
-        left:13rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:18rem;
-    }
-    .logo {
-       width: 16rem;
-    }
-}
-@media only screen and (min-width:1450px) {
-    nav {
-        left:24.3rem;
-    }
-    .mMlogo {
-        left:38rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 26rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:14.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:31rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:30rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:26rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:26rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:24rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:24rem;
-    }
-    .tss1 {
-        left:11rem;
-        margin-bottom:16rem;
-        width: 26rem;
-    }
-    .tss2 {
-        left:14rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 16rem;
-    }
-    
-}
-@media only screen and (min-width:1500px) {
-    nav {
-        left:25.3rem;
-    }
-    .mMlogo {
-        left:42rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 27rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:14.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:33rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:32rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:26rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:26rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:24rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:24rem;
-    }
-    .tss1 {
-        left:13rem;
-        margin-bottom:16rem;
-        width: 26rem;
-    }
-    .tss2 {
-        left:16rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 16rem;
-    }
-    
-   
-}
-@media only screen and (min-width:1550px) {
-    nav {
-        left:26.3rem;
-    }
-    .mMlogo {
-        left:44rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 28rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:16.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:35rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:34rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:28rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:28rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:26rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:26rem;
-    }
-    .tss1 {
-        left:14rem;
-        margin-bottom:16rem;
-        width: 26rem;
-    }
-    .tss2 {
-        left:20rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 16rem;
-    }
-    
-}
-@media only screen and (min-width:1600px) {
-    nav {
-        left:28.3rem;
-    }
-    .mMlogo {
-        left:46rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 30rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:18.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:38rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:36rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:30rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:30rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:28rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:28rem;
-    }
-    .tss1 {
-        left:16rem;
-        margin-bottom:16rem;
-        width: 26rem;
-    }
-    .tss2 {
-        left:22rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 16rem;
-    }
-    
-}
-@media only screen and (min-width:1650px) {
-    nav {
-        left:29.3rem;
-    }
-    .mMlogo {
-        left:48rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 32rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:20.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:40rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:38rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:32rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:32rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:30rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:30rem;
-    }
-    .tss1 {
-        left:18rem;
-        margin-bottom:16rem;
-        width: 26rem;
-    }
-    .tss2 {
-        left:24rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 16rem;
-    }
-    
-}
-@media only screen and (min-width:1700px) {
-    nav {
-        left:31.3rem;
-    }
-    .mMlogo {
-        left:50rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 32rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:22.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:42rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:40rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:34rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:34rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:32rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:32rem;
-    }
-    .tss1 {
-        left:20rem;
-        margin-bottom:16rem;
-        width: 26rem;
-    }
-    .tss2 {
-        left:26rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 16rem;
-    }
-    footer {
-        left:8rem;
-    }
-}
-@media only screen and (min-width:1750px) {
-    nav {
-        left:32.3rem;
-    }
-    .mMlogo {
-        left:52rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 34rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:24.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:44rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:42rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:36rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:36rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:34rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:34rem;
-    }
-    .tss1 {
-        left:22rem;
-        margin-bottom:16rem;
-        width: 26rem;
-    }
-    .tss2 {
-        left:28rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 20rem;
-    }
-    footer {
-        left:10rem;
-    }
-    
-}
-@media only screen and (min-width:1800px) {
-    nav {
-        left:33.3rem;
-    }
-    .mMlogo {
-        left:54rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 36rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:26.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:46rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:44rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:38rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:38rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:36rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:36rem;
-    }
-    .tss1 {
-        left:24rem;
-        margin-bottom:16rem;
-        width: 26rem;
-    }
-    .tss2 {
-        left:30rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 20rem;
-    }
-    footer {
-        left:12rem;
-    }
-    
-}
-@media only screen and (min-width:1850px) {
-    .grid3 {
-        top:12rem;
-    }
-    nav {
-        left:34.3rem;
-    }
-    .mMlogo {
-        left:56rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 38rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:28.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:48rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:46rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:40rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:40rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:38rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:38rem;
-    }
-    .tss1 {
-        left:26rem;
-        margin-bottom:16rem;
-        width: 26rem;
-    }
-    .tss2 {
-        left:32rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 20rem;
-    }
-    footer {
-        margin-top: 10rem;
-        left:8rem;
-        width:6rem;
-        height:auto;
-    }
-  
-    
-}
-@media only screen and (min-width:1900px) {
-    .grid3 {
-        top:12rem;
-    }
-    nav {
-        left:35.3rem;
-    }
-    .mMlogo {
-        left:54rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 40rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:30.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:50rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:48rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:42rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:42rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:40rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:40rem;
-    }
-    .tss1 {
-        left:28rem;
-        margin-bottom:16rem;
-        width: 26rem;
-    }
-    .tss2 {
-        left:34rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 20rem;
-    }
-    footer {
-        margin-top: 10rem;
-        left:10rem;
-        width:6rem;
-        height:auto;
-        border: 1px solid pink;
-    }
-}
-@media only screen and (min-width:1950px) {
-    .grid3 {
-        top:12rem;
-    }
-    nav {
-        left:36.3rem;
-    }
-    .mMlogo {
-        left:56rem;
-    }
-    .flex1, .flex2, .flex3, .flex4, .flex4-4, .tss1, .tss2, .tss3, .tss4, .tss5c, .tss6t  {
-        left: 42rem;
-    
-    }
-    .tss3, .tss4 {
-        width: 40rem;
-        left:32.5rem;
-    }
-    .flex1-1 {
-        top:26rem;
-        left:52rem;
-    }
-    .flex2-2 {
-        top:88rem;
-        left:50rem;
-    }
-    .flex3-3 {
-        top:158rem;
-        left:44rem;
-    }
-    .flex4-4 {
-        top:214rem;
-        left:44rem;
-    }
-    .tss5c {
-        margin-bottom:5rem;
-        width: 20rem;
-        left:42rem;
-    }
-    .tss6t {
-        margin-bottom: 5rem;
-        width: 20rem;
-        left:42rem;
-    }
-    .tss1 {
-        left:28rem;
-        margin-bottom:16rem;
-        width: 28rem;
-    }
-    .tss2 {
-        left:36rem;
-        margin-top: 6rem;
-        margin-bottom: 16rem;
-        width:20rem;
-    }
-    .logo {
-       width: 20rem;
-    }
-    footer {
-        margin-top: 10rem;
-        left:12rem;
-        width:6rem;
-        height:auto;
-        border: 1px solid pink;
-    }
-}
