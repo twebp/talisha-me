@@ -52,7 +52,7 @@ a:hover {
     left:0;
     width:16%;
     height:20%;
-    
+   
 }
 .grid2 {
     position: absolute;
@@ -62,7 +62,7 @@ a:hover {
     width: 25%;
     height: 3%;
     margin-right: 34%;
-    
+   
 }
 .grid3 {
     position: relative;
@@ -74,7 +74,7 @@ a:hover {
     text-align: center;
     height: fit-content;
     overflow: hidden;
-    
+   
 }
 .grid4 {
     position: relative;
@@ -221,6 +221,9 @@ footer ul li {
 }
 .glogo {
     display: none;
+}
+body {
+    font-size:22px;
 }
 @media only screen and (min-width:240px) {
     .grid1 {
@@ -628,7 +631,9 @@ footer ul li {
        .grid2 {
         display: none;
        }
-      
+       body {
+        font-size:24px;
+    }
 }
 @media only screen and (min-width: 1280px) {
 .flex-item {
@@ -684,6 +689,9 @@ li {
 }
 .flex6 {
     margin-left:48%;
+}
+body {
+    font-size:34px;
 }
 
 }
@@ -787,11 +795,18 @@ li {
         top:28%;
         height: 4%;
     }
+    .grid4 {
+        margin-top: 1%;
+        height: fit-content;
+    }
 }
 @media only screen and (min-height: 615px)  {
     .grid2 {
         top: 22.2%;
         height: 3%;
+    }
+    .grid4 {
+        height: fit-content;
     }
 }
 @media only screen and (min-height: 640px) {
@@ -799,16 +814,25 @@ li {
         top:30.8%;
         height:4%;
     }
+    .grid4 {
+        height: fit-content;
+    }
 }
 @media only screen and (min-height:667px) {
     .grid2 {
         top:29%;
         height: 4.5%;
     }
+    .grid4 {
+        height: fit-content;
+    }
 }
 @media only screen and (min-height: 720px) {
     .grid4 {
         height:11%;
+    }
+    .grid4 {
+        height: fit-content;
     }
 }
 @media only screen and (min-height: 731px) {
@@ -816,11 +840,17 @@ li {
         top:27.6%;
         height:4%;
     }
+    .grid4 {
+        height: fit-content;
+    }
 }
 @media only screen and (min-height: 736px) {
     .grid2 {
         top:27.5%;
         height:4%;
+    }
+    .grid4 {
+        height: fit-content;
     }
 }
 @media only screen and (min-height: 740px) {
@@ -828,17 +858,26 @@ li {
         top:22.5%;
         height:4%;
     }
+    .grid4 {
+        height: fit-content;
+    }
 }
 @media only screen and (min-height: 746px) {
     .grid2 {
         top:22%;
         height:4%;
     }
+    .grid4 {
+        height: fit-content;
+    }
 }
 @media only screen and (min-height: 800px) {
     .grid2 {
         top:21.3%;
         height:3%;
+    }
+    .grid4 {
+        height: fit-content;
     }
 }
 @media only screen and (min-height:812px) {
@@ -852,6 +891,9 @@ li {
         top: 23%;
         height: 3%;
     }
+    .grid4 {
+        height: fit-content;
+    }
 }
 @media only screen and (min-height:823px) {
     .grid2 {
@@ -864,11 +906,17 @@ li {
         top: 24.3%;
         height: 3%;
     }
+    .grid4 {
+        height: fit-content;
+    }
 }
 @media only screen and (min-height: 851px)  {
     .grid2 {
         top: 23.3%;
         height: 3%;
+    }
+    .grid4 {
+        height: fit-content;
     }
 }
 @media only screen and (min-height: 883px)  {
@@ -876,23 +924,35 @@ li {
         top: 23.2%;
         height: 3%;
     }
+    .grid4 {
+        height: fit-content;
+    }
 }
 @media only screen and (min-height: 896px)  {
     .grid2 {
         top: 22.3%;
         height: 3%;
     }
+    .grid4 {
+        height: fit-content;
+    }
 }
-/*@media only screen and (min-height: 916px)  {
+@media only screen and (min-height: 916px)  {
     .grid2 {
         margin-bottom: 10%;
         height: 3%;
     }
-}*/
+    .grid4 {
+        height: fit-content;
+    }
+}
 
 @media only screen and (min-height: 926px) {
     .grid2 {
         top:22%;
+    }
+    .grid4 {
+        height: fit-content;
     }
 }
 
@@ -900,6 +960,9 @@ li {
     .grid2 {
         top:31.6%;
         height:4%;
+    }
+    .grid4 {
+        height: fit-content;
     }
 }
 
