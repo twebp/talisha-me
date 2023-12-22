@@ -22,7 +22,7 @@
         justify-items: center;
         grid-template-columns:1fr;
         grid-template-rows: 0.5fr 2.5fr 0.25fr 0.25fr;
-        grid-row-gap:0.25rem;
+        grid-row-gap:0.5%;
         grid-template-areas:
          "header"
          "article"
@@ -32,29 +32,26 @@
     .grid1{
         grid-area:header;
         width: 100%;
-       
+        
     }
    
     .grid2{
      grid-area: article;
      width: 100%;
      height: fit-content;
-   
+     
     }
     .grid3 {
     grid-area: nav;
     width: 100%;
     bottom: 95%;
-    
+   
     }
     .grid4 {
      grid-area: footer;
      width: 100%;
      bottom: 95%;
-    
-    }
-    .flex2{
-      
+     
     }
     .flex1 {
         width:13%;
@@ -210,7 +207,7 @@
         width: fit-content;
         padding: 2% 20%;
         margin-left: 15%;
-        border: 1px solid pink;
+       
     }
 }
 @media only screen and (min-width:375px) {
@@ -247,6 +244,7 @@
         margin-left: 25%;
     }
 }
+
 @media only screen and (min-width:400px) {
     .flex3 {
         top:145%;
@@ -261,6 +259,17 @@
     .grid4 {
         bottom: 65%
     }
+}
+@media only screen and (min-width:428px) {
+    .grid2 {
+        top:0;
+    }
+   .grid3 {
+    bottom: 100%;
+   }
+   .grid4 {
+    bottom: 60%;
+   }
 }
 @media only screen and (min-width:450px) {
     .flex3 {
@@ -384,6 +393,20 @@
     }
    
 }
+@media only screen and (min-height:640px)    {
+  
+    .flex3{
+        width: 30%;
+        top:222%;
+       left:15%;
+    }
+    .flex4 {
+        width: 28%;
+        left:55%;
+        top:225%;
+    }
+   
+}
    
 @media only screen and (min-width:650px) {
     #h1 {
@@ -433,13 +456,19 @@ font-size: 16px;
     }
     .flex3{
         width: 30%;
-        top:190%;
+        top:210%;
        left:15%;
     }
     .flex4 {
         width: 26%;
         left:55%;
-        top:194%;
+        top:214%;
+    }
+    .grid4 {
+        bottom: 60%;
+    }
+    .grid3  {
+        bottom:100%;
     }
 }
 @media only screen and (min-width:700px) {
@@ -461,6 +490,12 @@ font-size: 16px;
            
         }
 }
+@media only screen and (min-height:720px) {
+    .grid4 {
+        bottom: 400%;
+    }
+}
+
 @media only screen and (min-height: 736px){
     .flex1 {
         bottom:48%;
@@ -479,22 +514,20 @@ font-size: 16px;
     }
 
 } 
-@media only screen and (min-height: 800px) {
-    .flex1 {
-        bottom: 53%;
-    }
+@media only screen and (min-width:768px) {
     .flex3{
-        width: 30%;
-        top:145%;
+        width: 25%;
+        top:131%;
        left:15%;
     }
     .flex4 {
-        width: 26%;
+        width: 21%;
         left:55%;
-        top:151%;
+        top:138%;
     }
 
-}
+} 
+
 @media only screen and (min-width:800px) {
    body {margin:0;}
     .miniLogo{
@@ -527,6 +560,9 @@ font-size: 16px;
         width:100%;
         height:36%;
         margin-top:45%;
+    }
+    .grid4 {
+        bottom:5%;
     }
     .flex1 {
        margin: 0;
@@ -563,6 +599,25 @@ font-size: 16px;
         top:150%;
     }
 }
+@media only screen and (min-height:800px){
+    
+    .flex1 {
+        bottom:35%;
+    }
+    .flex3{
+        width: 30%;
+        top:220%;
+        left:15%;
+    }
+    .flex4 {
+        width: 26%;
+        left:55%;
+        top:223%;
+    }
+    .grid4 {
+        bottom:620%;
+    }
+}
 @media only screen and (min-height:812px){
     .flex1 {
         bottom:35%;
@@ -576,6 +631,15 @@ font-size: 16px;
         width: 26%;
         left:55%;
         top:223%;
+    }
+    .grid2 {
+        top:1%;
+    }
+    .grid4 {
+        bottom: 60%;
+    }
+    .grid3  {
+        bottom:100%;
     }
 }
 
@@ -593,16 +657,38 @@ font-size: 16px;
         left:55%;
         top:223%;
     }
+    
+}
+@media only screen and (min-height: 896px) {
+    .flex3{
+        width: 30%;
+        top:240%;
+       left:15%;
+    }
+    .flex4 {
+        width: 26%;
+        left:55%;
+        top:243%;
+    }
+    .grid2 {
+        top:1%;
+    }
+    .grid4 {
+        bottom: 60%;
+    }
+    .grid3  {
+        bottom:100%;
+    }
 }
 
+@media only screen and (min-height: 900px){
+    .grid3 {
+        position: absolute;
+        margin: 0;
+        top:5%;
+        z-index: 2;
+}
 
-@media only screen and (min-height: 926px) {
-    #h1 {
-        margin-top:5%;
-    }
-    blockquote {
-        margin-top: 10%;
-    }
 }
 @media only screen and (min-height: 950px) {
     .grid2 {
@@ -634,7 +720,6 @@ font-size: 16px;
         top:181%;
     }
 }
-
 @media only screen (min-height: 1100px) {
     .flex3{
         width: 30%;
@@ -647,6 +732,7 @@ font-size: 16px;
         top:181%;
     }
 }
+
 
 @media only screen and (height:1180px) {
     .grid3 {
@@ -668,13 +754,16 @@ font-size: 16px;
     }
     .flex3{
         width: 30%;
-        top:199%;
+        top:184%;
        left:15%;
     }
     .flex4 {
         width: 26%;
         left:55%;
-        top:205%;
+        top:190%;
+    }
+    .grid4 {
+        bottom: 10%;
     }
 }
 @media only screen and (min-width: 1280px) {
@@ -694,7 +783,7 @@ font-size: 16px;
     width:45%;
 }
 .grid2 {
-    bottom:64%;
+    bottom:34%;
 }
 blockquote {
     width: 90%;
@@ -704,6 +793,7 @@ blockquote {
 .grid3 {
     height:35%;
     bottom:75%;
+    left: 20%;
 }
 nav ul {
     height: 55%;
@@ -746,10 +836,7 @@ nav ul {
         margin-bottom: 1%;
     }
     .flex2 {
-        width:15%;
-        margin-left: 45%;
-        margin-top:1%;
-        bottom: 0;
+        right:5%;
     }
     blockquote {
         top:90%;
@@ -760,18 +847,19 @@ nav ul {
         width:100%;
         height: 49%;
         margin-top: 1.5%;
+        left:3%;
         margin-right:60%;
     }
     .flex3 {
         width:13%;
-        left:22%;
+        margin-right:10%;
     }
     .flex4 {
         width:12%;
         left:65%;
     }
     .grid4 {
-        bottom: 3%;
+        margin-bottom: 5%;
         right:0.05%;
     }
     nav ul {
@@ -871,201 +959,25 @@ nav ul {
     }
     
 }
-@media only screen and (min-width:1450px) {
-    .grid1{
-        width:44rem;
-    }
-    .grid3  {
-      
-        left: 13rem;
-        margin:0;
-        padding:0;
-    }
-    
-    .grid4 {
-        bottom:9rem;
-        right: 17rem;
-    }
-    
-}
-@media only screen and (min-width:1500px) {
-    .grid1{
-        width:45rem;
-    }
-    .grid3  {
-      
-        left: 14rem;
-        margin:0;
-        padding:0;
-    }
-    
-    .grid4 {
-        bottom:9rem;
-        right: 18rem;
-    }
-}
-@media only screen and (min-width:1550px) {
-    .grid1{
-        width:47rem;
-    }
-    .grid3  {
-      
-        left: 15rem;
-        margin:0;
-        padding:0;
-    }
-    
-    .grid4 {
-        bottom:9rem;
-        right: 18rem;
-    }
-}
-@media only screen and (min-width:1600px) {
-    .grid1{
-        width:49rem;
-    }
-    .grid3  {
-      
-        left: 15rem;
-        margin:0;
-        padding:0;
-    }
-    
-    .grid4 {
-        bottom:9rem;
-        right: 18rem;
-    }
-}
-@media only screen and (min-width:1650px) {
-    .grid1{
-        width:50rem;
-    }
+@media only screen and (min-width: 1920px) {
     .grid2 {
-        top: 1rem;
+        bottom:75%;
     }
-    .grid3  {
-      
-        left: 16rem;
-        margin:0;
-        padding:0;
+    .flex2 {
+        width: 15%;
+        right:10%;
     }
-    
-    .grid4 {
-        bottom:7rem;
-        right: 18rem;
+    .flex3 {
+        width:10.5%;
+        top: 125%;
+        left:30%;
     }
-}
-@media only screen and (min-width:1700px) {
-    .grid1{
-        width:51rem;
+    .flex4 {
+        width: 9.5%;
+        top: 129%;
+       
     }
-    .grid2 {
-        top: 1rem;
-    }
-    .grid3  {
-      
-        left: 17rem;
-        margin:0;
-        padding:0;
-    }
-    
-    .grid4 {
-        bottom:7rem;
-        right: 18rem;
-    }
-}
-@media only screen and (min-width:1750px) {
-    .grid1{
-        width:53rem;
-    }
-    .grid2 {
-        top: 1rem;
-    }
-    .grid3  {
-      
-        left: 18rem;
-        margin:0;
-        padding:0;
-    }
-    
-    .grid4 {
-        bottom:7rem;
-        right: 19rem;
-    }
-}
-@media only screen and (min-width:1800px) {
-    .grid1{
-        width:53rem;
-    }
-    .grid2 {
-        top: 1rem;
-    }
-    .grid3  {
-      
-        left: 18rem;
-        margin:0;
-        padding:0;
-    }
-    
-    .grid4 {
-        bottom:1rem;
-        right: 19rem;
-    }
-}
-@media only screen and (min-width:1850px) {
-    .grid1{
-        width:53rem;
-    }
-    .grid2 {
-        top: 1rem;
-    }
-    .grid3  {
-      
-        left: 19rem;
-        margin:0;
-        padding:0;
-    }
-    
-    .grid4 {
-        bottom:2rem;
-        right: 20rem;
-    }
-}
-@media only screen and (min-width:1900px) {
-    .grid1{
-        width:50rem;
-    }
-    .grid2 {
-        top: 1rem;
-    }
-    .grid3  {
-      
-        left: 20rem;
-        margin:0;
-        padding:0;
-    }
-    
-    .grid4 {
-        bottom:3rem;
-        right: 21rem;
-    }
-}
-@media only screen and (min-width:1950px) {
-    .grid1{
-        width:51rem;
-    }
-    .grid2 {
-        top: 1rem;
-    }
-    .grid3  {
-      
-        left: 21rem;
-        margin:0;
-        padding:0;
-    }
-    
-    .grid4 {
-        bottom:4rem;
-        right: 22rem;
+    .flex7 {
+        margin-left:13%;
     }
 }
