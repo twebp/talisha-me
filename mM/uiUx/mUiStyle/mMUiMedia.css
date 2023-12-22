@@ -23,10 +23,10 @@
     grid-template-rows: 0.5fr 0.05fr 2.5fr 0.2fr 0.05fr;
         grid-row-gap:0.25rem;
         grid-template-areas:
-         "header"
+         "header header"
          "aside article"
-         "nav"
-         "footer"
+         "nav nav"
+         "footer footer"
 }
 .grid1 {
     position: relative;
@@ -202,6 +202,23 @@
 footer ul li {
     display: block;
 }
+@media only screen and (min-width:240px) {
+    .grid1 {
+        width:60%;
+    } 
+    .grid3 {
+        width:60%;
+
+    } 
+    .grid4 {
+        width:60%;
+    } 
+    .grid5 {
+        width:60%;
+
+    }
+    
+}
 @media only screen and (min-width: 320px) {
     .grid1 {
         width:98.8%;
@@ -267,19 +284,28 @@ footer ul li {
 
 @media only screen and (min-width:360px)  {
     .grid1 {
-        width:95%;
+        width:100%;
     } 
     .grid3 {
-        width:95%;
+        width:100%;
 
     } 
     .grid4 {
-        width:95%;
+        width:100%;
 
     } 
     .grid5 {
-        width:95%;
+        width:100%;
 
+    }
+    #aside {
+        margin-right: 78%;
+    }
+    .flex1, .flex2 {
+        left:5%
+    }
+    .flex13 {
+        margin-left: 20%;
     }
 }
 @media only screen and (min-width:375px) {
@@ -306,16 +332,22 @@ footer ul li {
 
 @media only screen and (min-width:380px)  {
     .grid1 {
-        width:20.8%;
+        width:100%;
     } 
     .grid3 {
-        width:20.8%;
+        width:100%;
+
     } 
     .grid4 {
-        width:20.8%;
+        width:100%;
+
     } 
     .grid5 {
-        width:20.8%;
+        width:100%;
+
+    }
+    .flex1, .flex2 {
+        left: 10%;
     }
 }
 @media only screen and (min-width:390px)  {
@@ -337,30 +369,38 @@ footer ul li {
 }
 @media only screen and (min-width:411px) {
     .grid1 {
-     width:22.2%;
-    }
+        width:100%;
+    } 
     .grid3 {
-     width:22.2%;
-    }
+        width:100%;
+
+    } 
     .grid4 {
-     width:22.2%;
+        width:100%;
+
+    } 
+    .grid5 {
+        width:100%;
     }
-    .grid5 {    
-     width:22.2%;
+    .flex13 {
+        margin-left: 30%;
     }
  }
 @media only screen and (min-width:412px) {
     .grid1 {
-     width:22.3%;
-    }
+        width:100%;
+    } 
     .grid3 {
-     width:22.3%;
-    }
+        width:100%;
+
+    } 
     .grid4 {
-     width:22.3%;
-    }
-    .grid5 {    
-     width:22.3%;
+        width:100%;
+
+    } 
+    .grid5 {
+        width:100%;
+
     }
  }
 @media only screen and (min-width:414px) {
@@ -468,15 +508,73 @@ footer ul li {
     .flex13  {
         margin-left:60%;
         font-size:20px;
-        
-       }
-       .flex12 {
-        position: absolute;
-        border:1px solid pink;
        }
 
 }
-
+@media only screen and (min-width:800px) {
+    
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 1fr 0.5fr;
+        grid-row-gap: 1%;
+        grid-template-areas:
+         "header nav"
+         "article article"
+         "footer footer";
+    }
+    .grid1 {
+        width:100%;
+        height: fit-content;
+        grid-area: header;
+       }
+       .grid3 {
+        width:201.5%;
+        grid-area: article;
+       }
+       .grid4 {
+        position: absolute;
+        width:45%;
+        height:5.51%;
+        top:0;
+        left: 50%;
+        grid-area: nav;
+       }
+       .grid5 {    
+        top:0;
+        width:201.5%;
+        grid-area: footer;
+       }
+       .mMlogo {
+        display: none;
+       }
+       .mMlogo2 {
+        display:block;
+       }
+       .minilogo {
+        display: none;
+       }
+       .logo {
+        display: block;
+       }
+       .flex10 {
+        top:10%;
+        width:65%;
+        height: auto;
+       }
+       .flex14 {
+            margin-left:60%;
+            width: 45%;
+       }
+}
+@media only screen and (min-width: 1440px) {
+    
+       .grid4 {
+        width:45%;
+        height:5.51%;
+       }
+    .flex-item {
+        left:15%;
+}
 @media only screen and (min-height:567px) {
     .grid2 {
         top:28%;
