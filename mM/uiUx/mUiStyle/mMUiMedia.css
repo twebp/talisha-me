@@ -13,7 +13,7 @@ blockquote {
     height: 100vh;
     margin: 0 auto;
     padding:0;
-    overflow-x: hidden;
+    overflow-x: visible;
     text-align: center;
     font-size:18px;
     
@@ -92,7 +92,7 @@ a:hover {
     margin: 0;
     padding: 0;
     height: auto;
-    top: 7%;
+    margin-top: 7%;
     width: 16%;
     
 }
@@ -146,7 +146,7 @@ a:hover {
  }
  
 .flex-item {
-    font-size: 14px;
+    font-size:22px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,8 +188,7 @@ a:hover {
     height: fit-content;
     padding:3%;
     margin-left:32%;
-    font-size:20px;
-    
+    font-size:18px;
    }
    .flex13  {
     margin: 0;
@@ -198,7 +197,7 @@ a:hover {
     height: fit-content;
     padding:3%;
     margin-left:10%;
-    font-size:20px;
+    font-size:18px;
     
    }
   
@@ -206,6 +205,7 @@ a:hover {
     width:13.5rem;
 }
 .flex3 {
+   
     
     width:20rem;
 }
@@ -222,8 +222,8 @@ footer ul li {
 .glogo {
     display: none;
 }
-body {
-    font-size:22px;
+.flex13 {
+    font-size: 18px;
 }
 @media only screen and (min-width:240px) {
     .grid1 {
@@ -260,6 +260,7 @@ body {
         width:98.8%;
     }
     .flex-item{
+        margin-right: 20%;
        align-content: space-between;
     }
     .flex-item ul {
@@ -300,11 +301,10 @@ body {
         height: fit-content;
         left:0;
         top:1%;
+        font-size: 18px;
     }
-
-    
+   
 }
-
 @media only screen and (min-width:360px)  {
     .grid1 {
         width:100%;
@@ -330,6 +330,9 @@ body {
     .flex13 {
         margin-left: 10%;
     }
+    .flex11 {
+        margin-right:15%;
+    }
 }
 @media only screen and (min-width:375px) {
     .grid1 {
@@ -351,6 +354,9 @@ body {
         margin-left:25%;
         font-size:20px;
        }
+       .flex1-1, .flex2-2, .flex3-3, .flex4-4 {
+        margin-right: 10%;
+       }
 }
 
 @media only screen and (min-width:380px)  {
@@ -371,6 +377,9 @@ body {
     }
     .flex1, .flex2 {
         left: 10%;
+    }
+    .flex11 {
+        margin-right:10%;
     }
 }
 @media only screen and (min-width:390px)  {
@@ -442,6 +451,9 @@ body {
    .grid5 {    
     width:100%;
    }
+   .flex11 {
+    margin-right:5%;
+}
 }
 @media only screen and (min-width:428px) {
    .grid1 {
@@ -474,7 +486,7 @@ body {
         margin-left:50%;
        }
        .flex7 {
-        margin-left: 15%;
+        margin-left: 25%;
        }
        .flex9 {
         margin-left: 38%;
@@ -634,6 +646,48 @@ body {
        body {
         font-size:24px;
     }
+}
+@media only screen and (min-width:1024px) {
+    
+    .flex7 {
+        margin-left: 55%;
+    }
+    .flex13 {
+        margin-left: 85%; 
+    }
+    .flex14 {
+        width:75%;
+        margin-left: 75%;
+    }
+    .flex8 {
+        margin-right: 5%;
+    }
+    .flex1 {
+        margin-left: 25%;
+    }
+    .flex2 {
+        margin-left: 55%;
+    }
+    .flex3 {
+        margin-left: 25%;
+    }
+    .flex4 {
+        margin-left: 25%;
+    }
+     .flex5 {
+        margin-left: 63%;
+    } 
+     .flex6 {
+        margin-left: 65%;
+    }
+    .flex1-1, .flex2-2 {
+        padding-right: 95%;
+    }
+    .flex3-3 .flex4-4 {
+        padding-right: 95%;
+        
+    }
+    
 }
 @media only screen and (min-width: 1280px) {
 .flex-item {
