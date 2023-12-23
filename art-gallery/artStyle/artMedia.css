@@ -1,6 +1,9 @@
-body {
-    background-color: black;
-    z-index: -110;
+#wrapper{
+    width:90%;
+    margin:0 auto;
+    padding: 0;
+    text-align:start;
+   border: 1px solid red;
 }
 @media only screen and (min-width:300px) {
     body{
@@ -23,20 +26,21 @@ body {
     }
     .grid1 {
         grid-area: header;
-       
+        border: 1px solid pink;
     }
  
     .grid3 {
         grid-area: article;
-    
+        height: 50%;
+        border: 1px solid pink;
     }
     .grid4 {
         grid-area: nav;
-        
+        border: 1px solid pink;
     }
     .grid5 {
         grid-area: footer;
-        
+        border: 1px solid pink;
     }
 
     header {

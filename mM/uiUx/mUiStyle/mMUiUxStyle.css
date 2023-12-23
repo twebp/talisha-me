@@ -1,16 +1,16 @@
-body{
-    
-    background-color: black;
-    z-index: -11;
+body {
+   
+        background-color: black;
+        background-size: cover;
+        z-index: -11;
 }
 .flowerfall {
     position: fixed;
+    top:0;
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    min-height: 100vh;
     background-size: cover;
     overflow: hidden;
     z-index: -10;
@@ -47,6 +47,7 @@ header {
     margin: 5%;
 	display:block;
 }
+
 
 aside {
 	position: absolute;
@@ -132,11 +133,11 @@ article::-webkit-scrollbar {
     display: block;
 }
 .tss1 {
-    width: 10rem;
+    width: 20rem;
     height: auto;
 }/*Signup Login img*/
 .tss2{
-    width: 10rem;
+    width: 15rem;
     height:auto;
     left: 200%;
 }/*Select a movie img*/
@@ -169,7 +170,7 @@ h4 {
 } 
 
 blockquote {
-    font-size: 100%;
+  
     font-style: italic;
     font-family:  garamond, 'courier new';
     color: #000000;
@@ -190,7 +191,6 @@ blockquote {
 }
 .mainList {
     position: relative;
-    font-size: 75%;
     font-weight: bold;
     list-style-type: circle;
 	display: block;
@@ -205,19 +205,22 @@ blockquote {
     background-color: rgb(255, 166, 0, 0.75);
 }
 .flex1-1 {
-   
+   z-index: 4;
    left: 6rem;
    top: 6rem;
 }
 .flex2-2 {
+    z-index: 5;
     left: 36rem;
     top: 7rem;
 }
 .flex3-3{
+    z-index: 6;
     left: 69rem;
     top: 5rem;
 }
 .flex4-4{
+    z-index: 7;
     left: 100rem;
     top: 7rem;
 }
@@ -263,7 +266,6 @@ footer {
     position: relative;
     height: 10%;
     width: 50%;
-    font-size: 100%;
     margin: 25% 0 15% 40%;
     top: 1.7rem;
     
