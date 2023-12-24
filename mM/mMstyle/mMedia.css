@@ -1,7 +1,7 @@
 body {
     background-color: black;
     z-index: -110;
-    
+    margin:0;
     overflow: hidden;
 }
 a:link {
@@ -21,9 +21,11 @@ a:hover {
     height: 100vh;
     margin:0 auto;
     padding: 0;
+    text-align: center;
     text-align:start;
-    overflow-y:scroll ;
+    overflow:scroll ;
     overflow-x:hidden;
+
 }
 .flex {
     display: flex;
@@ -39,6 +41,7 @@ a:hover {
         height:100vh;
         margin:0 auto;
         padding: 0;
+        text-align: center;
         justify-items: center;
         grid-template-columns:1fr;
         grid-template-rows: 0.5fr 2.5fr 0.25fr 0.25fr;
@@ -52,7 +55,7 @@ a:hover {
     .grid1{
         grid-area:header;
         width: 100%;
-        top:0
+        top:0;
     }
    
     .grid2{
@@ -60,7 +63,6 @@ a:hover {
      width: 100%;
      height: fit-content;
      top: 0;
-     
     }
     .grid3 {
     grid-area: nav;
@@ -68,7 +70,6 @@ a:hover {
     height: fit-content;
     top:0;
     font-size: 20px;
-   
     }
     .grid4 {
      grid-area: footer;
@@ -84,25 +85,23 @@ a:hover {
         right: 9%;
         bottom: 35%;
     }
-    #h1 {
-        font-size: 22px;
+    .flex9 {
+        font-size: 24px;
+        width:fit-content;
         margin-left: 15%;
         margin-top:1%;
-        
     }
-    blockquote {
-        font-size: 0.8rem;
+    .flex8 {
+        font-size: 20px;
         top:80%;
         width: 75%;
         height:auto;
-       
     }
     .flex3 {
         top:175%;
-       
     }
     .flex4 {
-        top:280%;
+        top:260%;
     }
   ul {
     width: 85%;
@@ -112,39 +111,39 @@ a:hover {
         margin-left: 0%;
         padding: 3%;
         padding: 3% 11% 3% 11%;
-        
     }
 
    .flex6 {
     margin-right: 13%;
     padding: 3% 15% 3% 11%;
-   
     }
-    footer {
+    .grid4 {
+        font-size: 20px;
         width: 85%;
     }
     .flex7 {
         width: fit-content;
         padding: 2% 20%;
         margin-left: 15%;
-        
     }
   
 }
 @media only screen and (min-width:320px) {
-    #h1 {
-        margin-left: 20%;
+    .flex9 {
+        font-size: 22px;
+        margin-left: 22%;
     }
-    .flex3 {
-        left:10%;
-        top:175%;
-       
+    .flex8 {
+        font-size: 18px;
     }
-    .flex4 {
-        left: 55%;
-        width:32%;
-        top:177%;
+    .flex8 {
+        width: 80%;
     }
+    .grid2{
+        top:0%;
+        height: fit-content;
+    }
+    
 }
 @media only screen and (min-width:350px) {
 
@@ -192,13 +191,13 @@ a:hover {
         right: 1.5rem;
         bottom: 0.5rem;
     }
-    #h1 {
+    .flex9 {
         font-size: 22px;
         margin-left: 15%;
         margin-top:1%;
     }
-    blockquote {
-        font-size: 0.8rem;
+    .flex8 {
+        font-size: 18px;
         top:80%;
         width: 75%;
         height:auto;
@@ -224,7 +223,7 @@ a:hover {
     margin-right: 13%;
     padding: 3% 15% 3% 11%;
     }
-    footer {
+    .grid4{
         width: 85%;
     }
     .flex7 {
@@ -233,16 +232,13 @@ a:hover {
         margin-left: 15%;
        
     }
+    
 }
 @media only screen and (min-width: 360px) {
-    #h1{
-    
-    }
+   
 }
 @media only screen and (min-width:375px) {
-   #h1 {
-    width: 100%;
-    }
+  
     .flex3 {
         width:35%;
     }
@@ -258,14 +254,19 @@ a:hover {
         bottom: 65%
     }
     .flex5{
-        margin-left: 0%;
+        margin-left: 2%;
         padding: 3%;
         padding: 3% 13% 3% 13%;
     }
-
    .flex6 {
-    margin-right: 13%;
+    margin-right: 11%;
     padding: 3% 17% 3% 13%;
+    }
+    .flex9 {
+        padding-left:8%;
+    }
+    .flex7 {
+        margin-left: 22%;
     }
 }
 @media only screen and (min-width:384px) {
@@ -285,7 +286,7 @@ a:hover {
 }
 
 @media only screen and (min-width:390px) {
-    #h1 {
+    .flex9 {
         margin-left: 25%;
     }
 }
@@ -323,6 +324,7 @@ a:hover {
     }
     .grid4 {
        top: 20%;
+       height: 85%;
     }   
     .grid3 {
         margin: 0;
@@ -333,6 +335,14 @@ a:hover {
         margin-left: 38%;
         
 }
+.flex9 {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    padding-left: 11%;
+    margin-bottom: 4%;
+}
+
 }
 
 @media only screen and (min-width:428px) {
@@ -452,13 +462,14 @@ a:hover {
         bottom:15%;
     }
     .flex3{
-        top:200%;
+        width:33%;
+        top:180%;
         left:8%;
 
     }
     .flex4 {
         width: 30.3%;
-        top:203%;
+        top:183%;
         left: 60%;
     }
     blockquote {
@@ -647,7 +658,8 @@ font-size: 16px;
 } 
 
 @media only screen and (min-width:800px) {
-   body {margin:0;}
+   body {margin:0;
+}
     .miniLogo{
         display: none;
     }
@@ -681,7 +693,7 @@ font-size: 16px;
         padding-bottom: 0;
         width:100%;
         height: fit-content;
-       
+       font-size: 24px;
         
     }
    
@@ -707,14 +719,14 @@ font-size: 16px;
         margin-left:15%;
         width:75%;
     }
-    #h1 {
-        
-        margin-left:32%;
-        font-size: 32px;
+    .flex9 {
+        margin-left: 0;
+        padding-left: 12%;
+        font-size: 28px;
     }
-    blockquote {
-        font-size: 18px;
-        margin-left: 8%;
+    .flex8 {
+        font-size: 24px;
+        margin-left: 15%;
     }
     .flex3{
         width: 30%;
@@ -725,6 +737,26 @@ font-size: 16px;
         width: 26%;
         left:55%;
         top:150%;
+    }
+}
+@media only screen and (min-width: 834px) {
+    body {
+        margin:0;
+    }
+    .flex8 {
+        width:5%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .flex8 {
+        margin:0;
+        padding:0;
+        font-size: 34px;
+    }
+    .flex9 {
+        margin: 0;
+        padding: 0;
+        font-size: 36px;
     }
 }
 @media only screen and  (min-height: 740px) {
@@ -807,21 +839,12 @@ font-size: 16px;
     }
     .flex3{
         width: 30%;
-        top:220%;
+        top:240%;
        left:15%;
     }
     .flex4 {
         width: 26%;
         left:55%;
-        top:223%;
-    }
-    
-}
-@media only screen and (min-height: 844px){
-    .flex3{
-        top:240%;
-    }
-    .flex4 {
         top:243%;
     }
   .grid4 {
@@ -866,16 +889,15 @@ font-size: 16px;
         margin-left: 25%;
     }
 }
-#h1 {
-    margin-right: 5%;
-}
+
 @media only screen and (min-height: 950px) {
     .grid2 {
         margin-top:8%;
     }
-    blockquote {
+    .flex8 {
         margin-top: 3%;
     }
+ 
     .flex3 {
         width: 30%;
         margin-top: 4%;
@@ -927,16 +949,20 @@ font-size: 16px;
     }
 }
 @media only screen and (min-height: 1024px){
-    .flex3{
-        width: 30%;
-        top:135%;
-       left:15%;
+    .flex2 {
+        width: 45%;
+        margin-left:25%;
     }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:140%;
+
+    .flex9 {
+        padding-left: 14%;
+        margin-bottom: 15%;
     }
+    .flex8 {
+    width: 90%;
+    margin-left: 12%;
+    }
+    
 }
 @media only screen (min-height: 1100px) {
     .flex3{
@@ -984,15 +1010,45 @@ font-size: 16px;
         bottom: 10%;
     }
 }
+@media only screen and (min-height: 1366px) {
+    .grid2 {
+        margin-top:0%;
+    }
+    .grid4 {
+        margin-top: 15%;
+    }
+    .flex3{
+        width: 30%;
+        top:117%;
+       left:15%;
+    }
+    .flex4 {
+        width: 26%;
+        left:55%;
+        top:120%;
+    }
+    .grid4 {
+        margin-top:25%;
+    }
+}
 @media only screen and (min-width: 1280px) {
     .flex2 {
         width:25%;
         margin-left: 37%;
     }
-    #h1 {
-        margin-left:41%;
-        width: 25%;
+    .flex9 {
         font-size: 32px;
+        margin: 0;
+        padding: 0;
+        right:25%;
+        width: 25%;
+        
+    }
+    .flex8{
+        margin: 0;
+        padding: 0;
+        margin-top: 3%;
+        margin-left: 10%;
     }
 .grid1 {
     height: fit-content;
@@ -1057,7 +1113,7 @@ nav ul {
         width:40%;
     }
     .grid2 {
-        margin-top: 0;
+        margin-top: 5%;
         margin-bottom: 1%;
     }
     .flex2 {
@@ -1076,12 +1132,12 @@ nav ul {
         height: fit-content;
     }
     .flex3 {
-        width:13%;
+        width:23%;
         top: 145%;
-        left:30%;
+        left:20%;
     }
     .flex4 {
-        width:12%;
+        width:22%;
         top: 149%;
         left:60%;
     }
