@@ -1,14 +1,27 @@
 body {
     background-color: black;
     z-index: -110;
+    overflow: hidden;
 }
+a:link {
+    font-size: 20px;
+    text-decoration: overline;
+}
+a:visited {
+    text-decoration: line-through;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
 #wrapper{
     width:90%;
     height: 100vh;
     margin:0 auto;
     padding: 0;
     text-align:start;
-    border: 1px solid red;
+    overflow-x: hidden;
 }
 .flex {
     display: flex;
@@ -52,6 +65,7 @@ body {
     width: 100%;
     height: fit-content;
     top:0;
+    font-size: 20px;
    
     }
     .grid4 {
@@ -59,6 +73,7 @@ body {
      width: 100%;
      top:0;
      height: fit-content;
+     bottom: 15%;
     }
     .flex1 {
         width:13%;
@@ -327,6 +342,9 @@ body {
    }
    .grid4 {
     bottom: 60%;
+   }
+   .flex7 {
+    margin-left: 42%;
    }
 }
 @media only screen and (min-width:450px) {
