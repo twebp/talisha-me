@@ -288,6 +288,7 @@ body {
         bottom: 65%
     }
 }
+
 @media only screen and (min-width: 414px) {
    .grid1 {
     margin: 0;
@@ -839,6 +840,14 @@ font-size: 16px;
         z-index: 2;
 }
 
+}
+@media only screen and (min-height: 916px)  {
+    #h1 {
+        margin-left: 25%;
+    }
+}
+#h1 {
+    margin-right: 5%;
 }
 @media only screen and (min-height: 950px) {
     .grid2 {
