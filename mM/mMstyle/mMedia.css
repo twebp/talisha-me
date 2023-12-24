@@ -217,9 +217,14 @@ body {
        
     }
 }
+@media only screen and (min-width: 360px) {
+    #h1{
+    
+    }
+}
 @media only screen and (min-width:375px) {
-    #h1 {
-        margin-left: 25%;
+   #h1 {
+    width: 100%;
     }
     .flex3 {
         width:35%;
@@ -250,12 +255,12 @@ body {
     .flex5 {
         padding: 0;
         margin-left: 13%;
-        border: 1px solid pink;
+        
     }
     .flex6 {
         padding: 0;
         margin-right: 25%;
-        border: 1px solid pink;
+       
     }
     .flex7 {
         margin-left:19%;
@@ -283,8 +288,10 @@ body {
         bottom: 65%
     }
 }
-@media only screen and (min-width: 412px) {
-   
+@media only screen and (min-width: 414px) {
+   .grid1 {
+    margin: 0;
+   }
     .flex5 {
         padding: 0;
         margin-left:15%;
@@ -293,13 +300,23 @@ body {
         padding:0;
         margin-right:25%;
     }
+    .grid2 {
+        margin: 0;
+    }
     .grid4 {
-        margin-top: 10%;
+       top: 20%;
+    }   
+    .grid3 {
+        margin: 0;
+        bottom:100%;
     }
     .flex7 {
-        margin:5%;
+        padding: 0;
+        margin-left: 38%;
+        
 }
 }
+
 @media only screen and (min-width:428px) {
     .grid2 {
         top:0;
@@ -448,23 +465,23 @@ body {
         bottom:55%;
     }
     #h1 {
-        margin-left:26%;
+        margin-left:21%;
     }
     blockquote {
         margin-left:17%;
     }
     .flex3{
         width: 30%;
-        top:178%;
+        top:188%;
        left:15%;
     }
     .flex4 {
         width: 27%;
         left:55%;
-        top:180%;
+        top:190%;
     }
     .grid4 {
-        margin-bottom:5%;
+        margin-top:5%;
     }
 }
    
@@ -537,7 +554,6 @@ font-size: 16px;
     }
     .flex5{
         margin-left: 7%;
-        padding: 3%;
         padding: 3% 22% 3% 13%;
     }
     .flex6 {
@@ -551,8 +567,27 @@ font-size: 16px;
         }
 }
 @media only screen and (min-height:720px) {
+    .flex2 {
+        left:2%;
+    }
+    .grid2 {
+        top: 15%;
+    }
+    .grid3 {
+        margin: 0;
+        padding: 0;
+    }
     .grid4 {
-        bottom: 400%;
+        margin-top: 0;
+        bottom: 25%;
+    }
+    .flex3 {
+        top:161%;
+       
+    }
+    .flex4 {
+       
+        top:168%;
     }
 }
 @media only screen and (min-height:732px) {
@@ -584,17 +619,10 @@ font-size: 16px;
 
 } 
 @media only screen and (min-width:768px) {
-    .flex3{
-        width: 25%;
-        top:131%;
-       left:15%;
+    blockquote {
+        width: 75%;
+        left:0%;
     }
-    .flex4 {
-        width: 21%;
-        left:55%;
-        top:138%;
-    }
-
 } 
 
 @media only screen and (min-width:800px) {
@@ -620,22 +648,22 @@ font-size: 16px;
     .grid1 {
         width: 100%;
         height: fit-content;
-        border: 1px solid pink;
+        
     }
     .grid2 {
-        top: 0%;
-        
-        border: 1px solid pink;
+        margin-top: 0%;
+        margin-bottom: 50%;
+       
     }
     .grid3 {
+        margin-bottom: 0;
+        padding-bottom: 0;
         width:100%;
         height: fit-content;
-        border: 1px solid pink;
+       
         
     }
-    .grid4 {
-        border: 1px solid pink;
-    }
+   
     .flex1 {
        margin: 0;
        width: 60%;
@@ -651,13 +679,16 @@ font-size: 16px;
         margin-right: 25%;
     }
     .flex7 {
-        margin-left:4%;
+        font-size:32px;
+        margin-left:8%;
     }
     nav ul {
         margin-left:15%;
         width:75%;
     }
-    h1 {
+    #h1 {
+        
+        margin-left:32%;
         font-size: 32px;
     }
     blockquote {
@@ -673,6 +704,22 @@ font-size: 16px;
         width: 26%;
         left:55%;
         top:150%;
+    }
+}
+@media only screen and  (min-height: 740px) {
+    .flex3{
+        top:220%;
+        
+    }
+    .flex4 {
+       
+        top:223%;
+    }
+    .grid4 {
+        margin-top: 5%;
+    }
+    #h1 {
+        margin-left:20%;
     }
 }
 @media only screen and (min-height:800px){
@@ -705,9 +752,8 @@ font-size: 16px;
         top:223%;
     }
     .flex7 {
-        margin-bottom: 3%;
+        margin-top: 10%;
     }
-    
 }
 @media only screen and (min-height:812px){
     .flex1 {
@@ -750,6 +796,18 @@ font-size: 16px;
     }
     
 }
+@media only screen and (min-height: 844px){
+    .flex3{
+        top:240%;
+    }
+    .flex4 {
+        top:243%;
+    }
+  .grid4 {
+    margin-top: 10%;
+  }
+    
+}
 @media only screen and (min-height: 896px) {
     .flex3{
         width: 30%;
@@ -770,6 +828,7 @@ font-size: 16px;
     .grid3  {
         bottom:100%;
     }
+
 }
 
 @media only screen and (min-height: 900px){
@@ -838,6 +897,18 @@ font-size: 16px;
         top:181%;
     }
 }
+@media only screen and (min-height: 1024px){
+    .flex3{
+        width: 30%;
+        top:135%;
+       left:15%;
+    }
+    .flex4 {
+        width: 26%;
+        left:55%;
+        top:140%;
+    }
+}
 @media only screen (min-height: 1100px) {
     .flex3{
         width: 30%;
@@ -861,7 +932,7 @@ font-size: 16px;
 
 @media only screen and (min-height: 1280px) {
     .grid3 {
-        height:50%;
+        height:fit-content;
         bottom:51%;
     }
     #h1 {
@@ -886,8 +957,8 @@ font-size: 16px;
 }
 @media only screen and (min-width: 1280px) {
     .flex2 {
-        width:20%;
-        margin-left: 40%;
+        width:25%;
+        margin-left: 37%;
     }
     #h1 {
         margin-left:41%;
@@ -920,14 +991,14 @@ nav ul {
     margin-bottom: 2%;
 }
 .flex3 {
-    top:125%;
-    left:25%;
-    width:13%;
+    top:145%;
+    left:22%;
+    width:20%;
 }
 .flex4 {
-    top:125%;
-    left:65%;
-    width:12%;
+    top:145%;
+    left:62%;
+    width:19%;
 }
 .flex5 {
     width: 15%;
@@ -951,7 +1022,7 @@ nav ul {
         width:85%;
         height: fit-content;
         margin-bottom: 0;
-        border: 1px solid pink;
+       
     }
     .flex1 {
         width:40%;
@@ -959,7 +1030,6 @@ nav ul {
     .grid2 {
         margin-top: 0;
         margin-bottom: 1%;
-        border: 1px solid pink;
     }
     .flex2 {
         width:20%;
@@ -969,13 +1039,12 @@ nav ul {
     blockquote {
         font-size: 24px;
         top:90%;
-        left:5%;
+        left:15%;
         width: 60%;
     }
     .grid3 {
         width: 100%;
         height: fit-content;
-        border: 1px solid pink;
     }
     .flex3 {
         width:13%;
@@ -1007,7 +1076,6 @@ nav ul {
     .grid4 {
         margin-top: 25%;
         height:100%;
-        border: 1px solid pink;
     }
     .flex7 {
         font-size: 28px;
@@ -1017,24 +1085,29 @@ nav ul {
     
 }
 @media only screen and (min-width: 1920px) {
-    .grid2 {
-        bottom:75%;
+   
+    blockquote {
+        margin-left:5%;
     }
     .flex2 {
-        width: 15%;
-        right:10%;
+        width: 20%;
+        left:0%;
     }
     .flex3 {
-        width:10.5%;
+        width:20.5%;
         top: 125%;
-        left:30%;
+        left:20%;
     }
     .flex4 {
-        width: 9.5%;
+        width: 18%;
         top: 129%;
-       
+        left:60%;
     }
     .flex7 {
-        margin-left:13%;
+        margin-left:10%;
+    }
+    .grid4 {
+        margin: 0;
+        top:105%;
     }
 }
