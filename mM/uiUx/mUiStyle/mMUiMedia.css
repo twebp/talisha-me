@@ -305,7 +305,9 @@ footer ul li {
         top:1%;
         font-size: 18px;
     }
-   
+    .mMlogo2 {
+        display: none;
+       }
 }
 @media only screen and (min-width:360px)  {
     .grid1 {
@@ -335,6 +337,9 @@ footer ul li {
     .flex11 {
         margin-right:15%;
     }
+    .mMlogo2 {
+        display: none;
+       }
 }
 @media only screen and (min-width:375px) {
     .grid1 {
@@ -358,6 +363,9 @@ footer ul li {
        }
        .flex1-1, .flex2-2, .flex3-3, .flex4-4 {
         margin-right: 10%;
+       }
+       .mMlogo2 {
+        display: none;
        }
 }
 
@@ -383,6 +391,7 @@ footer ul li {
     .flex11 {
         margin-right:10%;
     }
+    
 }
 @media only screen and (min-width:390px)  {
     .grid1 {
@@ -400,6 +409,7 @@ footer ul li {
         width:100%;
 
     }
+   
 }
 @media only screen and (min-width:411px) {
     .grid1 {
@@ -469,6 +479,10 @@ footer ul li {
    }
    .grid5 {    
     width:100%;
+   }
+   .flex-item {
+    display: flex;
+    justify-content: center;
    }
 }
 @media only screen and (min-width:600px) {
@@ -704,7 +718,7 @@ footer ul li {
     margin-left:60%;
 }
 .flex9 {
-    margin-left: 45%;
+    margin-left: 40%;
 }
 li {
     font-size:32px ;
@@ -748,6 +762,9 @@ li {
 }
 body {
     font-size:34px;
+}
+.grid5 {
+    height: fit-content;
 }
 
 }
