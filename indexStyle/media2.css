@@ -186,8 +186,11 @@ body {
         color:yellow;
         text-decoration: underline;
     }
-    .flex9 {
-        display: none;
+    .mMtext {
+        visibility: hidden;
+    }
+    .mMlogo{
+        visibility: visible;
     }
     .flex4 {
         margin-top: 400px;
@@ -488,7 +491,6 @@ body {
      margin-right: 30%;
     }
     .flex3 {
-        position: relative;
         margin: 0;
         padding: 0;
         float:left;
@@ -516,9 +518,7 @@ body {
     .flex1 {
         width:65%;
     }
-    .flex9 {
-        display: none;
-    }
+   
 }
 @media screen and (min-height:1280px) {
     #article {
@@ -576,10 +576,7 @@ body {
         left: 70%;
         z-index: 92;
     }
-    .flex3 {
-      
-        border: 1px solid pink;
-    }
+   
     #nav {
         left:50%;
         bottom:95%;

@@ -1,10 +1,10 @@
-var _mMunchiesS = document.getElementById('.flex3');
-var _mM1 = document.getElementById('.flex9');
+var _mMunchiesS = document.querySelector('mMlogo');
+var _mM1 = document.querySelector('.mMtext');
 
 var logoStatus = true;
 var wordStatus = false;
 
-_mMunchiessS.style.visibility= "visible";
+_mMunchiesS.style.visibility= "visible";
 _mM1.style.visibility = "hidden";
 
 var mlogoToggleOff = function() {
