@@ -1,0 +1,62 @@
+.flowerfall {
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -100;
+
+}
+body{
+    background-color: black;
+    margin: 0;
+    overflow:hidden;
+    z-index: -101;
+}
+#wrapper{
+    width:90%;
+    margin:0 auto;
+    height: 100vh;
+    padding: 0;
+    text-align:start;
+    border: 1px solid red;
+}
+
+    .grid-container {
+            display:grid;
+            width:100%;
+            height:100vh;
+            margin:0 auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 0.5fr 2fr 1fr 1fr;
+            grid-template-areas: 
+            "header"
+            "aside"
+            "article"
+            "nav"
+            "footer"
+            ;
+    }
+    #header {
+        grid-area: header;
+        border: 1px solid pink;
+    }
+    #aside{
+        grid-area: aside;
+        border: 1px solid pink;
+    }
+    #article {
+        grid-area: article;
+        border: 1px solid pink;
+    }
+    #nav {
+        grid-area: nav;
+        border: 1px solid pink;
+    }
+    #footer {
+        grid-area: footer;
+        border: 1px solid pink;
+    }

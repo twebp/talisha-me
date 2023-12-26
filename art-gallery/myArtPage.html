@@ -4,36 +4,36 @@
 		    <meta charset="utf-8">
 		    <title>My Art</title>
 		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		    <link rel="stylesheet" type="text/css" href="artStyle/artStyle.css">
-            <link media="all" type="text/css" href="artStyle/artMedia.css">
+		    <!--<link rel="stylesheet" type="text/css" href="artStyle/artStyle.css">-->
+            <link media="all" type="text/css" href="artStyle/artMedia2.css">
             <link rel="stylesheet" type="text/css" href="../indexStyle/transitionStyle.css">
             </head>
-        <body id="wrapper">
+        <body>
                 <video autoplay loop muted class="flowerfall">
                     <source src="../videos/flowerfall.webm" type="video/webm">
                 </video>
 	    <!-- content start-->
+    <div id="wrapper">
         <div class="grid-container">
-
-            <header class="grid1">
+            <header id="header">
                 <a href="../index.html"><img src="../images/MyLogoNewColor.png" alt="Talisha's Web Development" class="logo"></a>
                 <a href="../index.html"><img src="../images/miniLogoNoBg.png" alt="Talisha's Web Development" class="minilogo"></a>
             </header>
-            <aside class="lArrow grid2">
+            <aside class="lArrow" id="aside">
                 <img src="../images/PkDwnL.png" alt="swipe left" class="fadeLoop grAro">
                 <img src="../images/GrnDwnL.png" alt="swipe left" class="pkAro">
             </aside>
-            <article class="grid3">
+            <article id="article">
                 <div class="quote">
                     <h4 style="font-family: garamond, 'courier new' ; color: hsla(316, 21%, 86%, 0.7) ; margin-left: 7%;">"Art is too important not to share"</h4>
                     <p  style="font-family: garamond, 'courier new' ; color: hsla(316, 21%, 86%, 0.7) ; margin-left: 17%;">-Romeo Britto</p>
                 </div>
-                <figure>
+                <figure id="figure">
                     <img src ="../images/satbury-villageMax.jpg" alt="satbury village max" id="mainImg">
                 </figure>
                 
                 <div class="horizontal-list" onscroll="rtArrowStatus()">
-                <ul>
+                <ul id="list1">
                     <li><img src ="artImgs/BigBad-Small.png" alt="Big Bad Wolf max"></li>
                     <li><img src ="artImgs/satburyVillage-Small.png" alt="satbury village max"><li>
                     <li><img src ="artImgs/calypso-Small.png" alt="Calypso max"></li>
@@ -47,7 +47,7 @@
                 </ul>
                 </div>
                 <div class="thumbnail_List">
-                    <ul>
+                    <ul id="list2">
                         <li><img src ="../images/talisha-barner-big-bx-1Max.jpg" alt="Big Bad Wolf max" id="thumbImg1"></li>
                         <li><img src ="../images/talisha-barner-calypsoMax.jpg" alt="Calypso max" id="thumbImg3"></li>
                         <li><img src ="../images/talisha-barner-saundorMax.jpg" alt="Saundor max" id="thumbImg5"></li>
@@ -62,7 +62,7 @@
             </article>
 
             <nav class="grid4">
-                <ul>
+                <ul id="list3">
                     <li><a href="https://www.instagram.com/tdb.webdev/" target="_blank"><img src="../images/Insta-logo-icon-1-2.png" alt="instagram link" class="insta"></a></li>
                     <li><a href="https://www.linkedin.com/in/talisha-barner-44a695218/" target="_blank"><img src="../images/linkedin-line-icon-1-2.png" alt="linkedin link" class="linkedin"></a></li>
                     
@@ -72,6 +72,7 @@
 		        <!--<a href="connect/contactMe.html"><p>Contact</p></a>-->
             </footer>
         </div>
+    </div>
         <script src="art-gallery/artJs/thumbMax.js"></script>
         <script src="../indexJs/transition.js"></script>
         <script src="art-gallery/artJs/escArrowArt.js"></script>
