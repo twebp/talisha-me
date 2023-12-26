@@ -22,8 +22,7 @@ body {
     margin: 0 auto;
     width:90%;
     height: 100vh;
-    overflow-x: hidden;
-    overflow: scroll;
+    overflow: hidden;
     border:1px solid red;
 }
 .flex-container {
@@ -35,7 +34,7 @@ body {
 .flex-item {
     display: flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
     .grid-container{
@@ -54,41 +53,40 @@ body {
     }
     .grid1 {
        grid-area: header;
-       width: 97%;
+       width: 100%;
        border:1px solid pink;
     }
     .grid2 {
         grid-area: aside;
-        width: 97%;
+        width: 100%;
         height: fit-content;
         border:1px solid pink;
     }
     .grid3 {
         grid-area: article;
-        width: 97%;
+        width: 100%;
         border:1px solid pink;
     }
     .grid4 {
        grid-area: nav;
-       width: 97%;
+       width: 100%;
        height: fit-content;
        border:1px solid pink;
         
     }
     .grid5 {
        grid-area: footer;
-       width: 97%;
+       width: 100%;
        height: fit-content;
        border:1px solid pink;
     }
     #article {
         position: absolute;
         width:70%;
-        height: 10%;
+        height:35%;
         margin-left:7%;
         padding-left: 0;
-        padding-top: 70%;
-        bottom:20% ;
+        bottom:30% ;
         overflow: scroll;
         overflow-x:hidden; 
         border:1px solid pink;
@@ -99,9 +97,11 @@ body {
    }
     .flex3 {
         position: absolute;
+        width: 100%;
+        right:0.02%;
         z-index: 95;
     }
-    
+
     #aside {
         position: absolute;
         width: fit-content;
@@ -128,6 +128,7 @@ body {
     } 
     .flex2 {
         position: absolute;
+        width:8%;
         z-index: 99;
     }
     ul {
@@ -170,6 +171,11 @@ body {
     .linkedinD, .linkedinL,.linkedinM {
         display: none;
     }
+   .flex9, .flex4, .flex5 {
+    width:fit-content;
+    height:fit-content;
+    border:1px solid pink;
+   }
     :link {
         color: pink;
        text-decoration:overline; 
@@ -183,5 +189,543 @@ body {
         color:yellow;
         text-decoration: underline;
     }
+    .flex9 {
+        display: none;
+    }
+    .flex4 {
+        margin-top: 400px;
+    }
+}
 
+@media screen and (min-height:640px) {
+    #aside {
+        margin-bottom: 25%;
+    }
+    #nav {
+        margin-top: 5%;
+    }
+    #footer {
+        margin-top: 0%;
+    }
+}
+@media screen and (min-height:667px) {
+    #aside {
+        margin-bottom: 25%;
+    }
+    #nav {
+        margin-top: 5%;
+    }
+    #footer {
+        margin-top: 5%;
+    }
+}
+@media screen and (min-width:720px) {
+    #nav {
+        bottom:92%;
+        left:50%;
+    }
+    .flex9 {
+        position: fixed;
+        left:10%;
+        bottom:34%;
+        z-index: 94;
+    }
+    .flex5 {
+        position: fixed;
+        left:75%;
+        z-index: 92;
+    }
+    .flex4 {
+        position: fixed;
+        left:45%;
+        z-index: 93;
+    }
+  
+    #footer {
+        top:70%;
+    }
+}
+@media screen and (min-height:731px) {
+    #aside {
+        margin-bottom: 25%;
+    }
+    article {
+        margin-top:10%;
+    }
+    #nav {
+        margin-top: 10%;
+    }
+    #footer {
+        margin-top: 5%;
+    }
+}
+@media screen and (min-height:736px) {
+    #article {
+        height:35%;
+        bottom:35%;
+    }
+    article {
+        margin-top:5%;
+    }
+    #aside {
+        margin-bottom: 35%;
+    }
+}
+@media screen and (min-height:760px) {
+    #article {
+        height:30%;
+        bottom:35%;
+    }
+    article {
+        margin-top:16%;
+    }
+    #aside {
+        margin-bottom: 40%;
+    }
+    #nav {
+        margin-top:16%;
+    }
+    #footer {
+        margin-top:16%;
+    
+}
+}
+@media screen and (min-height:800px) {
+    
+    #article {
+        height:30%;
+        bottom:35%;
+    }
+    article {
+        margin-top:20%;
+    }
+    #aside {
+        margin-bottom: 35%;
+    }
+    #nav {
+        margin-top:20%;
+    }
+    #footer {
+        margin-top:20%;
+    }
+}
+@media screen and (min-height:812px) {
+    #article {
+        height:30%;
+        bottom:40%;
+    }
+    article {
+        margin-top:20%;
+    }
+    #aside {
+        margin-bottom: 55%;
+    }
+    #nav {
+        margin-top:20%;
+    }
+    #footer {
+        margin-top:20%;
+    }
+}
+@media screen and (min-height:812px) {
+    #article {
+        height:30%;
+        bottom:35%;
+    }
+    article {
+        margin-top:15%;
+    }
+    #aside {
+        margin-bottom: 35%;
+    }
+    #nav {
+        margin-top:15%;
+    }
+    #footer {
+        margin-top:15%;
+    }
+}
+@media screen and (min-height:844px) {
+    #article {
+        height:30%;
+        bottom:40%;
+    }
+    article {
+        margin-top:20%;
+    }
+    #aside {
+        margin-bottom: 55%;
+    }
+    #nav {
+        margin-top:20%;
+    }
+    #footer {
+        margin-top:20%;
+    }
+}
+@media screen and (min-height:846px) {
+    #article {
+        height:30%;
+        bottom:40%;
+    }
+    article {
+        margin-top:18%;
+    }
+    #aside {
+        margin-bottom: 55%;
+    }
+    #nav {
+        margin-top:18%;
+    }
+    #footer {
+        margin-top:18%;
+    }
+}
+
+@media screen and (min-height:926px) {
+    #article {
+        bottom:40%;
+    }
+    article {
+        margin-top:20%;
+    }
+    #aside {
+        margin-bottom: 55%;
+    }
+    #nav {
+        margin-top:20%;
+    }
+    #footer {
+        margin-top:20%;
+    }
+}
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-height:950px) {
+    #article {
+        height:45%;
+        bottom:25%;
+    }
+    article {
+        margin-top:5%;
+    }
+    #nav {
+        margin-bottom:0;
+    }
+    #footer {
+       margin-top: 0;
+       margin-bottom: 75%;
+    }
+    .flex-item {
+        justify-items: baseline;
+    }
+    .flex9 {
+        margin-top: 75%;
+    }
+    .flex4 {
+        margin-top: 110%;
+        margin-bottom: 95%;
+    }
+    .flex5 {
+        margin-bottom: 85%;
+    }
+}
+
+@media screen and (min-width:800px){
+    .grid-container {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header nav"
+        "article article"
+        "footer footer"
+    }
+    .grid1 {
+        grid-area: header;
+        width: 49%;
+        margin-top:2%;
+        height: fit-content;
+     }
+     .grid2 {
+         grid-area: aside;
+         display: none;
+     }
+     .grid3 {
+         grid-area: article;
+     }
+     .grid4 {
+        grid-area: nav;
+        position: fixed;
+        z-index: 90;
+        height: 4.5%;
+        width: 43.5%;
+        margin: 0;
+        top: %;
+     }
+     .grid5 {
+        grid-area: footer;
+        position: fixed;
+        top:65%;
+        width:88%;
+     }
+    
+    #article {
+        overflow: visible;
+        width: 87.8%;
+        margin-left:0 ;
+        padding: 0;
+    }
+    body {
+        font-size: 24px;
+        overflow: hidden;
+    }
+    .flex6 {
+        margin-left:25%;
+    }
+    .flex7 {
+     margin-right: 30%;
+    }
+    .flex3 {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        float:left;
+        width: 45%;
+    }
+    .flex-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+    }
+    .flex9, .flex5, .flex4 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .flex4 {
+        right:50%;
+    }
+    .mylogoL, .minilogoM, .minilogoS {
+        display: none;
+    }
+    .mylogoL {
+        display: block;
+    }
+    .flex1 {
+        width:65%;
+    }
+    .flex9 {
+        display: none;
+    }
+}
+@media screen and (min-height:1280px) {
+    #article {
+        height:45%;
+        bottom:30%;
+    }
+    article {
+        margin-top:10%;
+    }
+    #aside {
+        margin-bottom: 35%;
+    }
+    #nav {
+        margin-top:10%;
+    }
+    #footer {
+        margin-top:10%;
+    }
+    .flex-item {
+        justify-items: baseline;
+    }
+    .flex9 {
+        margin-top: 100%;
+    }
+    .flex4 {
+        margin-top: 230%;
+        margin-bottom: 175%;
+    }
+    .flex5 {
+        margin-bottom: 125%;
+    }
+}
+@media screen and (min-width:800px) and (min-height: 1280px)    {
+
+    #article ul li{
+        display: inline;
+    }
+    .flex9, .flex5, .flex4, .flex3 {
+        margin: 0;
+        font-size: 34px;       
+    }
+    .flex9 {
+        display: none;
+        position: fixed;
+        right: 70%;
+        z-index: 94;
+    }
+    .flex4 {
+        position: fixed;
+        left:45%;
+        z-index: 93;       
+    }
+    .flex5 {
+        position: fixed;
+        left: 70%;
+        z-index: 92;
+    }
+    .flex3 {
+      
+        border: 1px solid pink;
+    }
+    #nav {
+        left:50%;
+        bottom:95%;
+     }
+     .flex3 {
+        position: fixed;
+        z-index: 91;
+        width: 25%;
+        left:9%;
+        bottom: 43%;
+     }
+     #footer {
+        top:75%;
+     }
+}
+@media screen and (min-width:1280px) and (min-height:720px) {
+.flex3 {
+    position: fixed;
+    width: 25%;
+    bottom:20%;
+    left:5%;
+    z-index: 89;
+}
+}
+    
+
+@media screen and (min-width:1280px) and (min-height:800px) {
+    h4 {
+        margin-bottom:80%;
+    }
+
+    article {
+        margin-top: 5%;
+    }
+    #article {
+        top:40%;
+    }
+
+    #footer {
+        top:55%;
+    }
+    .grid3 {
+        width: 99%;
+        height: 25%;
+    }
+    .flex9, .flex5, .flex4, .flex3 {
+        margin: 0;
+        font-size: 34px;       
+    }
+    .grid4 {
+        width:44%;
+        left:50%;
+        bottom:90%;
+     }
+    .flex3 {
+        position: fixed;
+        z-index: 91;
+        width: 20%;
+        left:15%;
+        bottom: 25%;
+     }
+    .flex9 {
+        position: fixed;
+        right: 70%;
+        bottom: 37%;
+        z-index: 94;
+    }
+    .flex5 {
+        position: fixed;
+        left: 70%;
+        bottom: 37%;
+        z-index: 92;
+    }
+    
+    .grid5 {
+        position: fixed;
+        width:88%;
+        top:75%;
+    }
+}
+@media screen and (min-width:1280px) and (min-height:950px) {
+
+    .grid3 {
+        width: 99%;
+        height: 25%;
+    }
+    .flex9, .flex5, .flex4, .flex3 {
+        margin: 0;
+        font-size: 34px;       
+    }
+    .grid4 {
+        width:44%;
+        left:50%;
+        bottom:90%;
+     }
+    .flex3 {
+        position: fixed;
+        z-index: 91;
+        width: 20%;
+        left:15%;
+        bottom: 38%;
+     }
+    .flex9 {
+        position: fixed;
+        right: 70%;
+        bottom: 48%;
+        z-index: 94;
+    }
+    .flex5 {
+        position: fixed;
+        left: 70%;
+        bottom: 46%;
+        z-index: 92;
+    }
+    
+    .grid5 {
+        position: fixed;
+        width:88%;
+        top:75%;
+    }
+}
+@media screen and (min-height:950px) {
+    #footer {
+        margin-top: 25%;;
+    }
+    article {
+        margin: 0;
+        padding: 0;
+        margin-top: 4%;
+        height:25%;
+    }
+   
+}
+@media screen and (min-height: 960px) {
+    #nav {
+        margin-top:5%;
+    }
+    #aside {
+        margin-bottom: 25%;
+    }
+}
+@media screen and (min-height: 960px) {
+    #footer {
+        bottom:100%;
+    }
 }
