@@ -54,31 +54,30 @@ body {
     .grid1 {
        grid-area: header;
        width: 100%;
-       border:1px solid pink;
+       
     }
     .grid2 {
         grid-area: aside;
         width: 100%;
         height: fit-content;
-        border:1px solid pink;
+        
     }
     .grid3 {
         grid-area: article;
         width: 100%;
-        border:1px solid pink;
+      
     }
     .grid4 {
        grid-area: nav;
        width: 100%;
        height: fit-content;
-       border:1px solid pink;
         
     }
     .grid5 {
        grid-area: footer;
        width: 100%;
        height: fit-content;
-       border:1px solid pink;
+       
     }
     #article {
         position: absolute;
@@ -89,7 +88,6 @@ body {
         bottom:30% ;
         overflow: scroll;
         overflow-x:hidden; 
-        border:1px solid pink;
         z-index: 96;
     }
    .flex4, .flex5, .flex9 {
@@ -174,7 +172,6 @@ body {
    .flex9, .flex4, .flex5 {
     width:fit-content;
     height:fit-content;
-    border:1px solid pink;
    }
     :link {
         color: pink;
