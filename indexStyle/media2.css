@@ -198,6 +198,9 @@ body {
     .flex4 {
         margin-top: 400px;
     }
+    .flex13 {
+        
+    }
 @media screen and (min-width:320px) and (min-height:568px) {
    
 }
@@ -293,6 +296,18 @@ body {
         margin-top:16%;
     
 }
+}
+@media screen and (min-width:800px) {
+    .flex3 {
+        position: relative;
+        margin-top: 0;
+    }
+    .flex4 {
+        position: relative;
+    }
+    .flex5 {
+        position: relative;
+    }
 }
 @media screen and (min-height:800px) {
     
@@ -439,7 +454,7 @@ body {
     }
 }
 
-@media screen and (min-width:800px){
+@media screen and (min-width:1280px){
     .grid-container {
         display: grid;
         grid-template-columns:1fr 1fr;
@@ -556,7 +571,7 @@ body {
     }
 }
 @media screen and (min-width:800px) and (min-height: 1280px)    {
-
+   
     #article ul li{
         display: inline;
     }
@@ -568,14 +583,15 @@ body {
         position: absolute;
         right: 70%;
         z-index: 94;
+      
     }
     .flex4 {
-        position: fixed;
+        position: absolute;
         left:45%;
-        z-index: 93;       
+        z-index: 93;   
     }
     .flex5 {
-        position: fixed;
+        position: absolute;
         left: 70%;
         z-index: 92;
     }
@@ -589,7 +605,7 @@ body {
         z-index: 91;
         width: 25%;
         left:9%;
-        bottom: 43%;
+        bottom: 28%;
      }
      #footer {
         top:75%;
@@ -602,8 +618,10 @@ body {
     bottom:20%;
     left:5%;
     z-index: 89;
+    }
+    
 }
-}
+
     
 
 @media screen and (min-width:1280px) and (min-height:800px) {
@@ -639,18 +657,25 @@ body {
         z-index: 91;
         width: 20%;
         left:15%;
-        bottom: 25%;
+        bottom:1%;
      }
     .flex9 {
+        display: block;
         position: absolute;
         right: 70%;
         bottom: 37%;
         z-index: 94;
     }
+    .flex4 {
+        position: absolute;
+        left:45%;
+        bottom:28%;
+        z-index: 93;       
+    }
     .flex5 {
-        position: fixed;
+        position: absolute;
         left: 70%;
-        bottom: 37%;
+        bottom: 28%;
         z-index: 92;
     }
     
@@ -688,15 +713,21 @@ body {
         bottom: 48%;
         z-index: 94;
     }
-    .flex5 {
+    .flex4 {
         position: fixed;
+        
+        bottom: 37%;
+        z-index: 92;
+    }
+    .flex5 {
+        position: absolute;
         left: 70%;
-        bottom: 46%;
+        bottom: 54%;
         z-index: 92;
     }
     
     .grid5 {
-        position: fixed;
+        position: absolute;
         width:88%;
         top:75%;
     }
