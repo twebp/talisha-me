@@ -1,3 +1,9 @@
+body{
+    background-color: black;
+    margin: 0;
+    overflow:hidden;
+    z-index: -101;
+}
 .flowerfall {
     position: fixed;
     margin: 0 auto;
@@ -10,12 +16,7 @@
     z-index: -100;
 
 }
-body{
-    background-color: black;
-    margin: 0;
-    overflow:hidden;
-    z-index: -101;
-}
+
 #wrapper{
     width:90%;
     margin:0 auto;
@@ -59,4 +60,38 @@ body{
     #footer {
         grid-area: footer;
         border: 1px solid pink;
+    }
+    
+    /*horizontally scrolling list of images*/
+    .horizontal-list {
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        overflow: scroll;
+        z-index: 1000;
+        display: block;
+    }
+    .horizontal_list ul {
+        position: relative;
+        padding: 0;
+        list-style-type: none;
+        z-index: 1000;
+        display: inline-block;
+    }
+    .horizontal-list ul li {
+        position: relative;
+        display: inline;
+        z-index: 1000;
+    }
+    
+    .horizontal-list ul li img {
+        position: relative;
+        display: inline;
+        width: 100%;
+        margin-right: 20% ;
+        border: 0.05rem solid pink;
+        z-index: 1000;
+    }
+    .thumbnail_List {
+        display: none;
     }
