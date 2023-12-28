@@ -1,11 +1,19 @@
-h1 {
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+#title {
     margin-left:1%;
     font-style: italic;
     color: antiquewhite;
+    margin-top: 0;
+    margin-bottom: 5%;
 }
-blockquote {
-    font-size: 18px;
+#quote {
+    font-size: 16px;
     color: hsl(34, 78%, 91%, 75%);
+   
 }
 
 #wrapper {
@@ -39,10 +47,11 @@ a:hover {
     margin-left:0;
     gap:1%;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-row-gap:0.25rem;
         grid-template-areas:
          "header header"
+         "heading heading"
          "article article"
          "nav nav"
          "footer footer"
@@ -102,6 +111,10 @@ a:hover {
     width: 100%;
     font-size:20px;
     height:fit-content;
+    border: 1px solid pink;
+}
+.grid6{
+    grid-area: heading;
     border: 1px solid pink;
 }
  #aside {
@@ -229,9 +242,7 @@ footer ul li {
    .grid1{
     width: 100%;
    }
-   .grid2 {
 
-   }
    .grid3 {
     width: 9.5%;
     height:1%;
@@ -249,6 +260,7 @@ footer ul li {
     height:fit-content;
    }
    #article {
+    height:95% ;
     bottom:0%;
     right:0;
     left:0%
@@ -267,8 +279,8 @@ footer ul li {
         position: relative;
         justify-content: center;
         align-items: center;
-        margin-top: 20%;
-        margin-bottom: 20%;
+        margin-top: 40%;
+        margin-bottom: 40%;
     }
     .flex-item ul {
         list-style-type: none;
@@ -470,6 +482,10 @@ footer ul li {
         width:100%;
 
     }
+    .flex13 {
+        margin-left: 0;
+        right: 10%;
+    }
  }
  @media only screen and (min-width:414px) {
     .grid3 {
@@ -500,22 +516,27 @@ footer ul li {
         width:100%;
        }
        .grid3 {
+        height: 50%;
         width:100%;
        }
        .grid4 {
         width:100%;
        }
-       .grid5 {    
+       .grid5 {  
+        margin-bottom:15%;  
         width:100%;
        }
        .flex13 {
-        margin-left:50%;
+        margin-right:20%;
        }
        .flex7 {
         margin-left: 25%;
        }
        .flex9 {
         margin-left: 38%;
+       }
+       .flex-item {
+        left:10%;
        }
 }
 @media only screen and (min-width:768px) {
@@ -585,95 +606,35 @@ footer ul li {
 
 }
 @media only screen and (min-width:800px) {
-    
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.5fr 1fr 0.5fr;
-        grid-row-gap: 1%;
-        grid-template-areas:
-         "header nav"
-         "article article"
-         "footer footer";
+
+    #article ul li {
+        margin-right: 45%;
     }
-    .grid1 {
-        width:100%;
-        height: fit-content;
-        grid-area: header;
-       }
-       .grid3 {
-        width:201.5%;
-        grid-area: article;
-       }
-       .grid4 {
-        position: absolute;
-        width:45%;
-        height:5.51%;
-        top:0;
-        left: 50%;
-        grid-area: nav;
-       }
-       .grid5 {    
-        top:0;
-        width:201.5%;
-        grid-area: footer;
-       }
-       .mMlogo {
-        display: none;
-       }
-       .mMlogo2 {
-        display:block;
-       }
-       .minilogo {
-        display: none;
-       }
-       .logo {
-        display: block;
-       }
-       .flex10 {
-        top:10%;
-        width:65%;
-        height: auto;
-       }
-       .flex14 {
-            margin-left:60%;
-            width: 45%;
-       }
-       .flex2 {
-        width: 70%;
-        margin-left: 25%;
-       }
-      
-       .flex1-1, .flex2-2 {
-        width: 85%;
-        padding-right: 65%;
-        
-       }
-       .flex3-3, .flex4-4  {
-        width: 85%;
-        padding-right: 65%;
-       }
+            
        .flex5 {
-        width: 80%;
-        margin-left: 25%;
+        width: 75%;
+       padding: 35%;
        }
        .flex6 {
-        width: 80%;
-        margin-left: 40%;
+        width: 75%;
+        padding: 35%;
+        padding: 35% 35% 0 40%;
+       
        }
        .flex13 {
-        margin-left:55%;
+        padding: 45%;
        }
-       li {
-        font-size:20px ;
+       .flex1, .flex2, .flex3, .flex4 {
+        padding-bottom: 30%;
+       }   
+       .flex2, .flex3, .flex4 {
+        padding-top: 30%;
        }
-       .grid2 {
-        display: none;
-       }
-       body {
-        font-size:24px;
-    }
+
+    
 }
 @media only screen and (min-width:1024px) {
+  
     
     .flex7 {
         margin-left: 55%;
@@ -897,6 +858,9 @@ body {
         top:30.8%;
         height:4%;
     }
+    .grid3 {
+        width: 10%;
+    }
     .grid4 {
         height: fit-content;
     }
@@ -923,8 +887,49 @@ body {
         top:27.6%;
         height:4%;
     }
+    .grid3 {
+        width: 10%;
+        height: 0%;
+    }
+    #article {
+        height: 95%;
+        bottom: 5%;
+    }
     .grid4 {
+        top:0;
+        margin-top: 0;
         height: fit-content;
+    }
+    .grid5 {
+        top:0;
+    }
+    .flex13 {
+        right:10%;
+    }
+}
+@media only screen and (min-height: 732px) {
+    .grid2 {
+        top:27.6%;
+        height:4%;
+    }
+    .grid3 {
+        width: 10%;
+        height: 0%;
+    }
+    #article {
+        height: 95%;
+        bottom: 5%;
+    }
+    .grid4 {
+        top:0;
+        margin-top: 0;
+        height: fit-content;
+    }
+    .grid5 {
+        top:0;
+    }
+    .flex13 {
+        left:12%;
     }
 }
 
@@ -975,6 +980,13 @@ body {
         top: 24.7%;
         height: 3%;
     }
+    #article {
+        bottom:25%;
+        margin-top: 0;
+    }
+    .flex13 {
+        right:13%;
+    }
 }
 @media only screen and (min-height: 846px)  {
     .grid2 {
@@ -989,6 +1001,14 @@ body {
     .grid2 {
         top: 23.3%;
         height: 3%;
+    }
+    
+    #article {
+        bottom:25%;
+        margin-bottom: 0;
+    }
+    .flex13 {
+        right:13%;
     }
     .grid4 {
         height: fit-content;
@@ -1016,6 +1036,10 @@ body {
     .grid2 {
         margin-bottom: 10%;
         height: 3%;
+    }
+    
+    #article {
+        bottom:25%;
     }
     .grid4 {
         height: fit-content;
@@ -1061,7 +1085,116 @@ body {
         height: fit-content;
     }
 }
+@media only screen and (min-height:1280px) {
+    #wrapper {
+        width:90%;
+        height: 100vh;
+        margin: 0 auto;
+        padding:0;
+        overflow-y: visible;
+        overflow-x: hidden;
+        text-align: center;
+        border: 1px solid red;
+        
+    }
+    .flex-item {
+        display: flex;
+        justify-content: left;
+        align-self: flex-start;
+        margin-bottom: 0;
+        margin-top: 10%;
+    }
+    .grid-container {
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.25fr 2fr 0.25;
+        grid-row-gap: 1%;
+        grid-template-areas:
+         "header nav"
+         "heading heading"
+         "article article"
+         "footer footer"
+         ;
+    }
+    .grid1 {
+        width:100%;
+        height: fit-content;
+        grid-area: header;
+       }
+       .grid3 {
+        width:100%;
+        height: 190%;
+        overflow-y: visible;
+        overflow-x: hidden;
+        grid-area: article;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50%;
+       }
+       .grid6 {
+        margin: 0;
+        top:0;
+        height:100%;
+        width: 100%;
+       }
+       .grid4 {
+        width:100%;
+        height:fit-content;
+        top:0;
+        grid-area: nav;
+       }
+       .grid5 {    
+        top:177%;
+        width:100%;
+        height:fit-content;
+        grid-area: footer;
+       }
+       #article {
+        width:100%;
+        top:0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 175%;       
+       }
+       .mMlogo {
+        display: none;
+       }
+       .mMlogo2 {
+        display:block;
+       }
+       .minilogo {
+        display: none;
+       }
+       .logo {
+        display: block;
+       }
+       .flex10 {
+        top:10%;
+        width:65%;
+        height: auto;
+       }
+       .flex14 {
+            margin-left:60%;
+            width: 45%;
+       }
+      
+       .flex-item {
+        margin-left: 0;
+       }
+       
+       li {
+        font-size:20px ;
+       }
+       .grid2 {
+        display: none;
+       }
+       body {
+        font-size:24px;
+        overflow: hidden;
+    }
+}
 @media only screen and (min-height: 1366px) {
+   
     .grid1 {
         width:100%;
     } 
@@ -1084,7 +1217,7 @@ body {
 
     }
     .flex13  {
-        margin-left:20%;
+        margin-left:34%;
         font-size:20px;
        }
        .flex1-1, .flex2-2, .flex3-3, .flex4-4 {
@@ -1093,5 +1226,6 @@ body {
        .mMlogo2 {
         display: none;
        }
+       
 }
 
