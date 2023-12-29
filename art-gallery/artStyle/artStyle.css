@@ -24,7 +24,7 @@ body{
     height: 100vh;
     padding: 0;
     text-align:start;
-    border: 1px solid red;
+    
 }
 .grid-container {
 	display:grid;
@@ -42,7 +42,7 @@ body{
 }
 #header {
 grid-area: header;
-border: 1px solid pink;
+
 }
 #minilogo {
 	width:18%;
@@ -54,7 +54,7 @@ border: 1px solid pink;
 	margin-top: 60%;
 	margin-right: 25%;
 grid-area: aside;
-border: 1px solid pink;
+
 z-index: -99;
 right: 0%;
 animation: moveLeftRight 3s ease-in-out infinite;
@@ -89,12 +89,12 @@ animation: moveLeftRight 3s ease-in-out infinite;
 #article {
 	margin-top: 10%;
 grid-area: article;
-border: 1px solid pink;
+
 }
 #nav {
 	margin-bottom: 15%;
 grid-area: nav;
-border: 1px solid pink;
+
 }
 
 
@@ -274,7 +274,12 @@ figure {
 	#aside {
 		margin-top: 60%;
 	}
-	
+	.insta {
+		padding-left: 20%;
+	}
+	.linked {
+		padding-left: 5%;
+	}
 }
 
 @media screen and (min-height:926px) {
@@ -315,6 +320,12 @@ figure {
 	#nav {
 		width:100%;
 		height: fit-content;
+	}
+	.insta {
+		padding-left:5%;
+	}
+	.linked {
+		padding-right: 5%;
 	}
 	#aside {
 		display: none;
@@ -437,7 +448,12 @@ figure img {
 	.list2 {
 		display: none;
 	}
-
+	.insta {
+		padding-left: 15%;
+	}
+	.linked {
+		padding-left: 5%;
+	}
 	#minilogo{
 		display: none;
 	}
@@ -557,7 +573,18 @@ figure img {
 	}
 	
 }
-
+@media screen and (min-height: 1080px) {
+	.quote  {
+		margin: 0;
+		margin-left: 30%;
+	}
+	.insta {
+		margin-left: 15%;
+	}
+	.linked {
+		margin-left:5%;
+	}
+}
 
 
 
