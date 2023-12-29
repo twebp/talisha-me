@@ -425,6 +425,9 @@ figure img {
 	body {
 		font-size: 24px;
 	}
+	.quote {
+		margin-left:22%;
+	}
 	.mainImg2{
 		display: none;
 	}
