@@ -87,6 +87,7 @@ body {
         overflow: scroll;
         overflow-x:hidden; 
         z-index: 96;
+        
     }
    .flex4, .flex5, .flex9 {
     font-size: 50px;
@@ -173,7 +174,7 @@ body {
     width:fit-content;
     height:fit-content;
    }
-    :link {
+    a:link {
         color: pink;
        text-decoration:overline; 
        font-size: 20px;
@@ -246,7 +247,7 @@ body {
         left:45%;
         z-index: 93;
     }
-  
+   
     #footer {
         top:70%;
     }
@@ -297,6 +298,19 @@ body {
 }
 }
 @media screen and (min-width:800px) {
+    a:link {
+        color: pink;
+       text-decoration:overline; 
+       font-size: 24px;
+    }
+    a:visited {
+        color: red;
+        text-decoration: line-through;
+    }
+    a:hover {
+        color:yellow;
+        text-decoration: underline;
+    }
     .flex3 {
         position: relative;
         margin-top: 0;
@@ -452,7 +466,24 @@ body {
         margin-bottom: 85%;
     }
 }
-
+@media screen and (min-width:1000px) {
+    a:link {
+        color: pink;
+       text-decoration:overline; 
+       font-size: 32px;
+    }
+    a:visited {
+        color: red;
+        text-decoration: line-through;
+    }
+    a:hover {
+        color:yellow;
+        text-decoration: underline;
+    }
+    #article {
+        font:
+    }
+}
 @media screen and (min-width:1280px){
     .grid-container {
         display: grid;
@@ -612,12 +643,22 @@ body {
 }
 @media screen and (min-width:1280px) and (min-height:720px) {
 .flex3 {
-    position: absolute;
+   
     width: 25%;
-    bottom:20%;
-    left:5%;
-    z-index: 89;
+    top:0;
+    left:10%;
+    top:25%;
     }
+    .flex4 {
+        margin: 0;
+        margin-top:95%;
+        margin-left:40%;
+    }
+   .flex5 {
+    margin: 0;
+    margin-top:80%;
+    margin-left:70%;
+   }
     
 }
 
@@ -754,5 +795,52 @@ body {
 @media screen and (min-height: 960px) {
     #footer {
         bottom:100%;
+    }
+}
+@media screen and (min-width:1920px) {
+   
+}
+@media screen and (min-height:1080px) {
+
+    .flex10 {
+        font-size: 32px;
+        margin-left: 8%;
+    }
+    .flex3 {
+        margin: 0;
+        top:0;
+    }
+    .flex4 {
+        margin: 0;
+     margin-left: 5%;
+    }
+    .flex5 {
+        margin: 0;
+        margin-left: 5%;
+    }
+    
+    #footer {
+        margin: 0;
+       top:85%;
+       left:8%;
+    }
+    .flex6 {
+        margin: 0;
+        margin-left: 75%;
+    }
+    .flex7 {
+        margin: 0;
+        
+    }
+    .flex1 {
+        margin: 0;
+        width:50%;
+    }
+    .grid1 {
+        margin: 0;
+    }
+    .grid3 {
+        height: fit-content;
+        margin: 0;
     }
 }
