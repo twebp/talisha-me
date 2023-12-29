@@ -49,7 +49,7 @@ header {
 }
 
 
-aside {
+/*aside {
 	position: absolute;
     height: 35%;
     width: 20%;
@@ -57,9 +57,8 @@ aside {
     top: 10rem;
 	z-index: -1;
 	right: 0;
-    animation: moveLeftRight 4s ease-in-out infinite; /*arrow animation*/
 }
-/*arrow animation*/
+
 @keyframes moveLeftRight {
 	0%, 100% {
 		right: 0%;
@@ -94,7 +93,7 @@ aside {
 }
 
 /*middle*/
-article {
+/*article {
     display: flex;
     position: relative;
     width: 100%;
@@ -106,7 +105,7 @@ article {
     color: #000000;
 	z-index: 3;
     
-}
+}*/
 article::-webkit-scrollbar {
 	width: 0rem;
 }
