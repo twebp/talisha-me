@@ -25,7 +25,7 @@
     padding:0;
     overflow-x: visible;
     text-align: center;
-    border: 1px solid red;
+  
     
 }
 a:link {
@@ -66,14 +66,14 @@ a:hover {
     left:0;
     width:100%;
     height:fit-content;
-    border: 1px solid pink;
+    
 }
 .grid2 {
     position:relative;
     grid-area: aside;
     width: 90%;
     padding-bottom:800%;
-    border: 1px solid pink;
+    
 }
 .grid3 {
     position: relative;
@@ -85,7 +85,6 @@ a:hover {
     left: 0;
     text-align: center;
     font-size:20px;
-    border: 1px solid pink;
 }
 #article {
     position: absolute;
@@ -94,7 +93,7 @@ a:hover {
     overflow: scroll;
     overflow-x:hidden; 
     z-index: 96;
-    border: 1px solid pink;
+   
 }
 .grid4 {
     position: relative;
@@ -102,7 +101,7 @@ a:hover {
     top:6%;
     width: 100%;
     height: fit-content;
-    border: 1px solid pink;
+    
 }
 .grid5 {
     position: relative;
@@ -112,11 +111,11 @@ a:hover {
     width: 100%;
     font-size:20px;
     height:fit-content;
-    border: 1px solid pink;
+   
 }
 .grid6{
     grid-area: heading;
-    border: 1px solid pink;
+    
 }
  #aside {
         position: absolute;
