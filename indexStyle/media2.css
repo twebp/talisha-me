@@ -22,7 +22,6 @@ body {
     width:90%;
     height: 100vh;
     overflow: hidden;
-    border:1px solid red;
 }
 .flex-container {
     display: flex;
