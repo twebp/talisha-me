@@ -132,34 +132,32 @@ article::-webkit-scrollbar {
     display: block;
 }
 .tss1 {
-    width: 20rem;
+    width: 100%;
     height: auto;
 }/*Signup Login img*/
 .tss2{
-    width: 15rem;
+    width: 50%;
     height:auto;
-    left: 200%;
+  
 }/*Select a movie img*/
 .tss3 {
-    width: 16rem;
+    width: 100%;
     height: auto;
-    left: 250%;
+   
 }/*Selec a theater, time and confirmation img*/
 .tss4 {
-    width: 16rem;
+    width: 100%;
     height:auto;
-    left: 350%;
+   
 }/*preorder food img*/
 .tss5c {
     width:13.5rem;
     height:auto;
-    left: 520%;
     margin-top: 25%;
 }
 .tss6t {
     width: 15.5rem;
     height:auto;
-    left:515%;
     margin-top: 35%;
     padding-right: 15%;
 }
@@ -190,7 +188,7 @@ blockquote {
 }
 .mainList {
     position: relative;
-    font-weight: bold;
+    font-weight:lighter;
     list-style-type: circle;
 	display: block;
     margin-top: 5%;
@@ -201,7 +199,7 @@ blockquote {
     position: absolute;
     width: 18rem;
     height:auto;
-    background-color: rgb(255, 166, 0, 0.75);
+    color:white;
 }
 .flex1-1 {
    z-index: 4;
