@@ -8,6 +8,73 @@ overflow-x:hidden;
     justify-content:center;
     align-items: center;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: antiquewhite;
+}
+#flex6-6 {
+    position: relative;
+    width:75%;
+    margin-left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: antiquewhite;
+}
+#flex1-1, #flex2-2, #flex3-3, #flex4-4, #flex5-5 {
+    position: relative;
+    width:65%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: antiquewhite;
+}
+#flex4-1 {
+   position: absolute;
+   left:11%;
+   bottom: 54.8%;
+   z-index: 3;
+}
+#flex5{
+margin-right: 15%;
+}
+#flex5-1 {
+    position: absolute;
+    left:13%;
+    bottom: 44.6%;
+    z-index: 4;
+}
+#flex6{
+    margin-left:20%;
+}
+#flex6-1 {
+    position: absolute;
+    margin-left:20%;
+    bottom: 34.5%;
+    z-index: 7;
+}
+#flex7{
+margin-right: 15%;
+}
+#flex7-1 {
+    position: absolute;
+    right: 5%;
+    bottom:24.5%;
+    z-index: 8;
+}
+blockquote {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 85%;
+    font-size: 18px;
+    color: #faebd7;
+}
+#goals {
+
+}
+#frustrations {
+    
+}
+#wait1, #wait2, #wait3 {
+    display: none;
+}
 #title {
     margin-left:1%;
     font-style: italic;
@@ -116,6 +183,7 @@ a:hover {
     height: fit-content;
     border: 1px solid pink;
 }
+
 #heroSm {
     position: relative;
     width: 100%;
@@ -166,12 +234,15 @@ a:hover {
 
  
 .flex-item {
-    font-size:22px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 12%;
+    margin-top: 20%;
+}
+.grid3 ul {
+    list-style-type: none;
+    margin-right:15%;
 }
 .flex10 {
     margin: 0;
@@ -208,36 +279,16 @@ a:hover {
     padding:3%;
     font-size:18px;
    }
-   .flex13  {
-    margin: 0;
-    padding: 0;
-    width: fit-content;
-    height: fit-content;
-    padding:3%;
-    margin-left: 10%;
-    font-size: 18px;
+   #flex13  {
+    font-size: 20px;
    }
 
-  .flex1 {
-    width: 100%;
+  #flex1 {
     height: auto;
-    float: left;
+    margin-top: 0%;
     border: 1px solid pink;
   }
-.flex2 {
-    width:100%;
-    height: auto;
-}
-.flex3 {
-    width:100%;
-}
-.flex4 {
-    
-    width:30%;
-}
-.flex5, .flex6 {
 
-}
 footer ul li {
     display: block;
 }
@@ -331,6 +382,7 @@ overflow-x:hidden;
         width:85%;
         height: fit-content;
         left:0;
+        margin-bottom: 0%;
         top:1%;
         font-size: 16px;
     }

@@ -197,30 +197,11 @@ blockquote {
 
 .flex1-1, .flex2-2, .flex3-3, .flex4-4, .flex5s-5, .flex6t-6 {
     position: absolute;
-    width: 18rem;
+   
     height:auto;
     color:white;
 }
-.flex1-1 {
-   z-index: 4;
-   left: 6rem;
-   top: 6rem;
-}
-.flex2-2 {
-    z-index: 5;
-    left: 36rem;
-    top: 7rem;
-}
-.flex3-3{
-    z-index: 6;
-    left: 69rem;
-    top: 5rem;
-}
-.flex4-4{
-    z-index: 7;
-    left: 100rem;
-    top: 7rem;
-}
+
 
 /*Naviation at the bottom of the page*/
 nav ul {
