@@ -1,35 +1,6 @@
 
 
-header {
-    position: relative;
-    top:0.25rem;
-    width: 75%;
-    height: auto;
-  
-}
-.mMlogo {
-    position: relative;
-    top: 0.03rem;
-    width: 45%;
-    height: auto;
-    left: 45%;
-    visibility: visible;
-}
 
-.logo {
-    position:relative;
-    height: 5%;
-    width: 50%;
-    display: none; /*mobile first design setting. 
-	Displayed on larger screens*/
-}
-.minilogo {
-    position: relative;
-    width: 15%;
-    height: auto;
-    margin: 5%;
-	display:block;
-}
 
 
 /*aside {
@@ -115,17 +86,6 @@ header {
 
 
 /*Link behavior*/
-a:link {
-    color: rgb(180, 99, 0);
-    text-decoration:overline; 
-}
-a:visited {
-    color: rgb(252, 203, 106);
-    
-}
-a:hover {
-    color:red;
-}
 
 
 
