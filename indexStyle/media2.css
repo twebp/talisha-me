@@ -55,6 +55,7 @@ body {
        
     }
     .grid2 {
+        display: none;
         grid-area: aside;
         width: 100%;
         height: fit-content;
@@ -89,7 +90,7 @@ body {
         z-index: 96;
         
     }
-   .flex4, .flex5, .flex9 {
+    .flex9 {
     font-size: 50px;
    }
     .flex3 {
@@ -174,6 +175,7 @@ body {
     width:fit-content;
     height:fit-content;
    }
+ 
     a:link {
         color: pink;
        text-decoration:overline; 
@@ -191,18 +193,31 @@ body {
         position: absolute;
         visibility: hidden;
     }
-    #mMlogo{
-        position: absolute;
-        visibility: visible;
-    }
+   
     .flex4 {
         margin-top: 400px;
     }
-    .flex13 {
-        
-    }
-@media screen and (min-width:320px) and (min-height:568px) {
-   
+@media screen and (min-width:320px) {
+    .flex3 {
+        position: relative;
+        margin-left:8%;
+        width: 80%;
+       }
+       .flex5 {
+        position: relative;
+        width:75%;
+        margin-top:14%;
+        margin-left:11%;
+       }
+       #mMlogo, #guardian {
+        tansition: all 0.3s ease-in-out;
+       }
+       #mMlogo:hover {
+        transform: scale(1.2);
+       }
+       #guardian:hover {
+        transform: scale(1.2);
+       }
 }
 @media screen and (min-height:640px) {
     #aside {
@@ -237,11 +252,7 @@ body {
         bottom:34%;
         z-index: 94;
     }
-    .flex5 {
-        position: fixed;
-        left:75%;
-        z-index: 92;
-    }
+    
     .flex4 {
         position: fixed;
         left:45%;
@@ -268,6 +279,7 @@ body {
 }
 @media screen and (min-height:736px) {
     #article {
+        display: block;
         height:35%;
         bottom:35%;
     }
@@ -325,6 +337,7 @@ body {
 @media screen and (min-height:800px) {
     
     #article {
+        
         height:30%;
         bottom:35%;
     }
@@ -377,6 +390,7 @@ body {
         margin-top:15%;
     }
 }
+
 @media screen and (min-height:844px) {
     #article {
         height:30%;
@@ -395,6 +409,7 @@ body {
         margin-top:20%;
     }
 }
+
 @media screen and (min-height:846px) {
     #article {
         height:30%;
@@ -458,12 +473,9 @@ body {
     .flex9 {
         margin-top: 75%;
     }
-    .flex4 {
-        margin-top: 110%;
-        margin-bottom: 95%;
-    }
-    .flex5 {
-        margin-bottom: 85%;
+  
+    .flex5{
+       
     }
 }
 @media screen and (min-width:1000px) {
@@ -480,11 +492,12 @@ body {
         color:yellow;
         text-decoration: underline;
     }
-    #article {
-        font:
-    }
+
 }
 @media screen and (min-width:1280px){
+  h4 {
+    font-size: 36pt;
+  }
     .grid-container {
         display: grid;
         grid-template-columns:1fr 1fr;
@@ -534,10 +547,10 @@ body {
         overflow: hidden;
     }
     .flex6 {
-        margin-left:25%;
+        margin-left:50%;
     }
     .flex7 {
-     margin-right: 30%;
+     margin-right: 10%;
     }
     .flex3 {
         margin: 0;
@@ -551,13 +564,11 @@ body {
         justify-content: center;
         align-items:center;
     }
-    .flex9, .flex5, .flex4 {
+    .flex9 {
         margin-top: 0;
         margin-bottom: 0;
     }
-    .flex4 {
-        right:50%;
-    }
+    
     .mylogoL, .minilogoM, .minilogoS {
         display: none;
     }
@@ -567,7 +578,16 @@ body {
     .flex1 {
         width:65%;
     }
-   
+   #guardian {
+    position: relative;
+    margin-top:10%;
+    width:25%;
+   }
+   #mMlogo {
+    width: 35%;
+    top:8%;
+    left:5%;
+   }
 }
 @media screen and (min-height:1280px) {
     #article {
