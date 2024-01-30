@@ -262,6 +262,9 @@ body {
     #footer {
         top:70%;
     }
+    #mMlogo {
+        width: 75%;
+    }
 }
 @media screen and (min-height:731px) {
     #aside {
@@ -612,10 +615,7 @@ body {
     .flex9 {
         margin-top: 100%;
     }
-    .flex4 {
-        margin-top: 230%;
-        margin-bottom: 175%;
-    }
+   
     .flex5 {
         margin-bottom: 125%;
     }
@@ -686,6 +686,7 @@ body {
 
 @media screen and (min-width:1280px) and (min-height:800px) {
     h4 {
+        margin: 0;
         margin-bottom:80%;
     }
 
@@ -712,12 +713,17 @@ body {
         left:50%;
         bottom:90%;
      }
-    .flex3 {
-        position: absolute;
-        z-index: 91;
-        width: 20%;
+    
+     #mMlogo {
+        position: relative;
+        width:30%;
         left:15%;
-        bottom:1%;
+     }
+     #guardian {
+        position: relative;
+        width: 30%;
+        margin:0;
+        left:25%;
      }
     .flex9 {
         display: block;
@@ -726,19 +732,7 @@ body {
         bottom: 37%;
         z-index: 94;
     }
-    .flex4 {
-        position: absolute;
-        left:45%;
-        bottom:28%;
-        z-index: 93;       
-    }
-    .flex5 {
-        position: absolute;
-        left: 70%;
-        bottom: 28%;
-        z-index: 92;
-    }
-    
+  
     .grid5 {
         position: fixed;
         width:88%;
@@ -826,17 +820,20 @@ body {
         font-size: 32px;
         margin-left: 8%;
     }
-    .flex3 {
+    
+   #mMlogo{
+    position: relative;
+    width:25%;
+    margin: 0;
+    left:25%;
+   }
+
+    #guardian {
+        position: relative;
         margin: 0;
-        top:0;
-    }
-    .flex4 {
-        margin: 0;
-     margin-left: 5%;
-    }
-    .flex5 {
-        margin: 0;
-        margin-left: 5%;
+        left:35%;
+        width:25%;
+        margin-bottom: 5%;
     }
     
     #footer {
