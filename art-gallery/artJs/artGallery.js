@@ -25,6 +25,12 @@ var thumbImg8Src = document.getElementById('thumbImg8').src;
 var thumbImg9 = document.getElementById('thumbImg9');
 var thumbImg9Src = document.getElementById('thumbImg9').src;
 
+var thumbImg9 = document.getElementById('thumbImg10');
+var thumbImg9Src = document.getElementById('thumbImg10').src;
+
+var thumbImg9 = document.getElementById('thumbImg11');
+var thumbImg9Src = document.getElementById('thumbImg11').src;
+
 thumbImg1.addEventListener("click" , function(){
     if(thumbImg1Src)
     mainImg.src = thumbImg1Src
