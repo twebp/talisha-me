@@ -1,1745 +1,317 @@
-body {
-    background-color: black;
-    z-index: -110;
-    margin:0;
-    overflow: hidden;
-}
-a:link {
-    font-size: 20px;
-    text-decoration: overline;
-}
-a:visited {
-    text-decoration: line-through;
-}
-a:hover {
-    color: red;
-    text-decoration: underline;
-}
-
-#wrapper{
+#wrapper {
+    margin: 0 auto;
     width:90%;
     height: 100vh;
-    margin:0 auto;
-    padding: 0;
-    text-align: center;
-    text-align:start;
-    overflow:scroll ;
-    overflow-x:hidden;
-
+    overflow: hidden;
+    border:1px solid red;
 }
-.flex {
+
+body {
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+}
+.flex-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
+    align-items: center;
 }
-
-   
-    .grid-container{
-        display:grid;
-        position:relative;
-        height:100vh;
-        margin:0 auto;
-        padding: 0;
-        text-align: center;
-        justify-items: center;
-        grid-template-columns:1fr;
-        grid-template-rows: 0.5fr 2.5fr 0.25fr 0.25fr;
-        grid-row-gap:0.5%;
-        grid-template-areas:
-         "header"
-         "article"
-         "nav"
-         "footer"
-    }
-    .grid1{
-        grid-area:header;
-        width: 100%;
-        top:0;
-        
-    }
-   
-    .grid2{
-     grid-area: article;
-     width: 100%;
-     height: fit-content;
-     top: 0;
-    }
-    .grid3 {
-    grid-area: nav;
-    width: 100%;
-    height: fit-content;
-    top:0;
-    font-size: 20px;
-    }
-    .grid4 {
-     grid-area: footer;
-     width: 100%;
-     top:0;
-     height: fit-content;
-     bottom: 15%;
-    }
-    .flex1 {
-        width:13%;
-        height: auto;
-        padding:0.5rem;
-        right: 9%;
-        bottom: 35%;
-    }
-    .flex9 {
-        font-size: 22px;
-        width:fit-content;
-        margin-left: 15%;
-        margin-top:1%;
-    }
-    .flex8 {
-        font-size: 20px;
-        top:80%;
-        width: 75%;
-        height:auto;
-    }
-    .flex3 {
-        top:175%;
-    }
-    .flex4 {
-        top:260%;
-    }
-  ul {
-    width: 85%;
-    
- }
-    .flex5{
-        margin-left: 0%;
-        padding: 3%;
-        padding: 3% 11% 3% 11%;
-    }
-
-   .flex6 {
-    margin-right: 13%;
-    padding: 3% 15% 3% 11%;
-    }
-    .grid4 {
-        font-size: 20px;
-        width: 85%;
-    }
-    .flex7 {
-        width: fit-content;
-        padding: 2% 20%;
-        margin-left: 15%;
-    }
+#mMUiUx{
+    transition: all 0.3s ease-in-out;
+   }
+   #mMUiUx:hover {
+    transform: scale(1.2);
+   }
   
-
-@media only screen and (min-width:320px) {
-    .flex9 {
-        font-size: 22px;
-        margin-left: 20%;
-    }
-    .flex8 {
-        font-size: 18px;
-    }
-    .flex8 {
-        width: 80%;
-    }
-    .grid2{
-        top:0%;
-        height: fit-content;
-    }
-    .glogo {
-        display: none;
-    }
+a:link {
+    color: pink;
+   text-decoration:overline; 
+   font-size: 20px;
 }
-@media only screen and (min-width:350px) {
-
-    .grid-container{
-        display:grid;
-        position:relative;
-        height:100vh;
-        margin:0 auto;
-        padding: 0;
-        justify-items: center;
-        grid-template-columns:1fr;
-        grid-template-rows: 0.5fr 2.5fr 0.25fr 0.25fr;
-        grid-row-gap:0.25rem;
-        grid-template-areas:
-         "header"
-         "article"
-         "nav"
-         "footer"
+a:visited {
+    color: red;
+    text-decoration: line-through;
+}
+a:hover {
+    color:yellow;
+    text-decoration: underline;
+}
+#myLogoD, #myLogoL, #minilogoM, #minilogoS {
+    display: none;
+}
+#mMlogo {
+    display: none;
+}
+#mMtitle {
+    display: none;
+}
+#art {
+    display:none;
+}
+#quote {
+    display: none;
+}
+#mMUiUx{
+    display: none;
+}
+#uiUx{
+    display: none;
+}
+#mMApp{
+    display: none;
+}
+#mMAppDead {
+    display: none;
+}
+#instaL, #instaM, #instaD, #instaS {
+    display: none;
+}
+#linkedinL, #linkedinD, #linkedinM, #linkedinS {
+    display: none;
+}
+#art {
+    display: none;
+}
+@media screen and (min-width:360px) {
+    body{
+        font-family:  garamond, 'courier new';
+        color: antiquewhite;
+        font-size: 24pt;
     }
-    .grid1{
-        grid-area:header;
-        width: 100%;
+    a:link {
+        font-family:  garamond, 'courier new';
+        color: antiquewhite;
+        font-size: 24pt;
     }
-   
-    .grid2{
-     grid-area: article;
-     width: 100%;
-     height: fit-content;
-    }
-    .grid3 {
-    grid-area: nav;
-    width: 100%;
-    bottom: 95%;
-    }
-    .grid4 {
-     grid-area: footer;
-     width: 100%;
-     bottom: 95%;
-    }
-   
-    .flex1 {
-        width:13%;
-        height: auto;
-        padding:0.5rem;
-        right: 1.5rem;
-        bottom: 0.5rem;
-    }
-    .flex9 {
-        font-size: 22px;
-        margin-left: 15%;
-        margin-top:1%;
-    }
-    .flex8 {
-        font-size: 20px;
-        top:80%;
-        width: 75%;
-        height:auto;
-    }
-    .flex3 {
-        top:155%;
-       
-    }
-    .flex4 {
-        top:250%;
-        right:35%;
-    }
-  ul {
-    width: 85%;
- }
-    .flex5{
-        margin-left: 0%;
-        padding: 3%;
-        padding: 3% 11% 3% 11%;
-    }
-
-   .flex6 {
-    margin-right: 13%;
-    padding: 3% 15% 3% 11%;
-    }
-    .grid4{
-        width: 85%;
-    }
-    .flex7 {
-        width: fit-content;
-        padding: 2% 20%;
-        margin-left: 15%;
-       
+    #wrapper {
+        overflow-y: scroll;
     }
     
-}
-
-@media only screen and (min-width:384px) {
-    .flex5 {
-        padding: 0;
-        margin-left: 13%;
-        
-    }
-    .flex6 {
-        padding: 0;
-        margin-right: 25%;
-       
-    }
-    .flex7 {
-        margin-left:19%;
-    }
-}
-
-@media only screen and (min-width:390px) {
-    .flex9 {
-        margin-left: 25%;
-    }
-}
-
-@media only screen and (min-width:400px) {
-    .flex3 {
-        top:145%;
-        width:30%;
-    }
-    .flex4 {
-        width:28%;
-    }
-    .grid3 {
-        bottom: 65%
-    }
-    .grid4 {
-        bottom: 65%
-    }
-}
-
-@media only screen and (min-width: 414px) {
-   .grid1 {
-    margin: 0;
-   }
-    .flex5 {
-        padding: 0;
-        margin-left:25%;
-    }
-    .flex6 {
-        padding:0;
-        margin-right:35%;
-    }
-    .grid2 {
-        margin: 0;
-    }
-    .grid4 {
-       top: 20%;
-       height: 85%;
-    }   
-    .grid3 {
-        margin: 0;
-        bottom:100%;
-    }
-    .flex7 {
-        padding: 0;
-        margin-left: 38%;
-        
-}
-.flex9 {
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
-    padding-left: 6%;
-    margin-bottom: 4%;
-}
-.flex5 {
-    margin-left:  15%;
-}
-
-.flex6 {
-    margin-right:  25%;
-}
-}
-@media only screen and (min-width:428px) {
-    .flex8 {
-        font-size: 20px;
-    }
-    .grid2 {
-        top:0;
-    }
-   .grid3 {
-    bottom: 100%;
-   }
-   .grid4 {
-    bottom: 60%;
-   }
-   .flex7 {
-    margin-left: 42%;
-   }
-}
-@media only screen and (min-width:450px) {
-    .flex3 {
-        top:135%;
-        width:27%;
-        left: 35%;
-    }
-    .flex4 {
-        width:25%;
-        top:215%;
-        right: 38%;
-    }
-  
-    .flex5{
-        margin-left: 0%;
-        padding: 3%;
-        padding: 3% 18% 3% 13%;
-    }
-    .flex6 {
-        margin-right: 11%;
-        padding: 3% 17% 3% 14%;
-        }
-    .flex7{
-        padding: 2% 30% 2% 35%;
-        margin-left: 7%;
-       
-    }
-    .flex9 {
-        margin-left:27%;
-    }
-    .flex8 {
-        left:5%;
-    }
-}
-@media only screen and (min-width:500px) {
-    .flex8 {
-        top:85%;
-        left:5%;
-    }
-    .flex3{
-        width: 30%;
-        top:147%;
-       left:15%;
-    }
-    .flex4 {
-        width: 28%;
-        left:55%;
-        top:150%;
-    }
-    .flex5{
-        margin-left: 2%;
-        padding: 3%;
-        padding: 3% 20% 3% 13%;
-    }
-    .flex6 {
-        margin-right: 9%;
-        padding: 3% 17% 3% 16%;
-        }
-    
-}
-@media only screen and (min-width:550px)    {
-    .flex8 {
-        top:85%;
-        left:5%;
-    }
-    .flex3{
-        width: 30%;
-        top:147%;
-       left:15%;
-    }
-    .flex4 {
-        width: 28%;
-        left:55%;
-        top:150%;
-    }
-    .flex5{
-        margin-left: 4%;
-        padding: 3%;
-        padding: 3% 21% 3% 13%;
-    }
-    .flex6 {
-        margin-right: 7%;
-        padding: 3% 17% 3% 17%;
-        }
-    .flex7{
-            padding: 2% 32% 2% 37%;
-            margin-left: 6%;
-           
-        }
-}
-@media only screen and (min-height: 568px) {
-    .grid1 {
-        height: fit-content;
-    }
-    .grid2 {
-        bottom:13%;
-    }
-    .grid3 {
-    bottom: 15%;
-    }
-    .grid4 {
-        bottom:15%;
-    }
-    .flex3{
-        width:33%;
-        top:180%;
-        left:8%;
-
-    }
-    .flex4 {
-        width: 30.3%;
-        top:183%;
-        left: 60%;
-    }
-    .flex8 {
-        font-size: 14px;
-    }
-}
-@media only screen and (min-width:600px)    {
-    body {
-        font-size: 22px;
-    }
-    
-    .flex8 {
-        font-size: 22px;
-       
-    }
-    .flex3{
-        width: 30%;
-        top:107%;
-       left:15%;
-    }
-    .flex4 {
-        width: 28%;
-        left:55%;
-        top:109%;
-    }
-   .grid4 {
-    font-size: 22px;
-   }
-}
-@media only screen and (min-height:640px)    {
-     .grid1{
-        width: 95%;
-        height: fit-content;
-        top:0;
-        margin: 0;
-    }
-    .flex1 {
-        width: 15%;
-    }
-    .flex9 {
-        margin-left:21%;
-    }
-    .flex8 {
-        margin-left:17%;
-    }
-    .flex3{
-        width: 30%;
-        top:188%;
-       left:15%;
-    }
-    .flex4 {
-        width: 27%;
-        left:55%;
-        top:190%;
-    }
-    .grid4 {
-        margin-top:5%;
-    }
-}
-   
-@media only screen and (min-width:650px) {
-    .flex9 {
-        margin-left:35%;
-    }
-    .flex8 {
-        top:90%;
-        left:7%;
-    }
-    .flex3{
-        width: 30%;
-        top:133%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:137%;
-    }
-    .flex5{
-        margin-left: 6%;
-        padding: 3%;
-        padding: 3% 22% 3% 13%;
-    }
-    .flex6 {
-        margin-right: 5%;
-        padding: 3% 17% 3% 18%;
-        }
-    .flex7{
-            padding: 2% 34% 2% 37%;
-            margin-left: 8%;
-           
-        }
-}
-@media only screen and (min-height:667px) {
-    .grid1{
-        width: 95%;
-        height: fit-content;
-        top:0;
-       margin: 0;
-    }
-    .flex1 {
-        width: 15%;
-    }
-    .grid2 {
-        bottom:11%;
-    }
-    blockquote {
-font-size: 16px;
-    }
-    .flex1 {
-        bottom: 49%;
-    }
-    .flex3{
-        width: 30%;
-        top:210%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:214%;
-    }
-    .grid4 {
-        bottom: 60%;
-    }
-    .grid3  {
-        bottom:100%;
-    }
-}
-@media only screen and (min-width:700px) {
-    .flex9 {
-        margin-left:35%;
-    }
-    .flex5{
-        margin-left: 7%;
-        padding: 3% 22% 3% 13%;
-    }
-    .flex6 {
-        margin-right: 4%;
-        padding: 3% 17% 3% 18%;
-        }
-    .flex7{
-            padding: 2% 34% 2% 37%;
-            margin-left: 9%;
-           
-        }
-}
-@media only screen and (min-height:720px) {
-   .grid1{
-    width: 95%;
-    top:0;
-   margin: 0;
-}
-
-    .flex2 {
-        left:2%;
-    }
-    .grid2 {
-        top: 15%;
-    }
-    
-    .grid4 {
-        margin-top: 0;
-        height: fit-content;
-        bottom: 25%;
-    }
-    
-    .flex4 {
-       width: 22%;
-        margin-top:12%;
-    }
-}
-@media only screen and (min-height:731px) {
-    .flex3 {
-        top:185%
-       }
-       .flex4 {
-        top:187%
-       }
-    .grid2 {
-       top: 0;
-    }
-    .grid3 {
-        margin-top: 25%
-    }
-  .grid4 {
-    margin-top: 10%;
-    margin-bottom: 15%
-  }
-}
-@media only screen and (min-height:732px) {
-    #h1 {
-        font-size: 28px;
-    }
-        .flex8 {
-            font-size: 20px;
-        }
-        .flex3{
-            margin: 0%;
-            margin-top:20%;
-           left:15%;
-        }
-        .flex4 {
-            margin: 0%;
-            left:55%;
-            margin-top:20%;
-        }
-   .grid4 {
-    margin-bottom: 5%;
-   }
-}
-
-@media only screen and (min-height: 736px){
-    .flex1 {
-        margin: 0;
-        left:0;
-        right: 45%;
-        top:5%;
-        width: 15%;
-    }
-
-}
-@media only screen and (min-width:750px) {
-    .flex3{
-        width: 30%;
-        top:131%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:138%;
-    }
-
-} 
-@media only screen and (min-width:768px) {
-    .flex8 {
-        width: 75%;
-        left:0%;
-    }
-    .grid3 {
-        margin-top: 25%;
-       bottom: 0;
-       
-    }
-    .flex9 {
-        margin-left: 0;
-        padding-left: 12%;
-        font-size: 28px;
-    }
-    .flex8 {
-        font-size: 24px;
-        margin-left: 15%;
-    }
-} 
-
-@media only screen and (min-width:800px) {
-    .grid-container{
-        grid-template-columns:1fr 1fr;
-        grid-template-rows: 0.5fr 1.5fr 0.5fr;
-        grid-row-gap:0.25%;
-        grid-template-areas:
-         "header nav"
-         "article article"
-         "footer footer"
-         
-    }
-   body {margin:0;
-}
-    .miniLogo{
-        display: none;
-    }
-    .logo {
-        display: block;
-        width:100%;
-        padding-top: 5%;
-    
-    }
-
-    .grid1 {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        height: fit-content;
-        
-    }
-    .grid2 {
-           margin-top: 0%;
-        margin-bottom: 50%;
-       
-    }
-
-   .grid3 {
-    margin: 0;
-    top:0;
-   }
-    .grid4 {
-        width: 100%;
-        
-    }
-   
-    .flex1 {
-       margin: 0;
-       width: 70%;
-       height: auto;
-    }
-    .flex5, .flex6 {
-        padding: 0;
-        margin: 0;
-    }
-    .flex5 {
-        margin-left: 25%;
-    }
-    .flex6 {
-        margin-right: 25%;
-    }
-    .flex7 {
-        padding: 0;
-        padding-left: 27%;;
-        font-size:32px;
-        
-    }
-    nav ul {
-        margin-left:15%;
-        width:75%;
-    }
-    .flex9 {
-        margin-left: 0;
-        padding-left: 12%;
-        font-size: 28px;
-    }
-    .flex8 {
-        font-size: 24px;
-        margin-left: 15%;
-    }
-    .flex3{
-        width: 30%;
-        top:143%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:150%;
-    }
-}
-@media only screen and (min-width: 834px) {
-    .grid-container{
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 1.5fr;
-        grid-row-gap:0.25%;
-        grid-template-areas:
-         "header footer nav"
-         "article article article"
-         
-    }
-    .grid3 {
-        margin: 0;
-        padding: 0;
-        width:100%;
-        height: fit-content;
-       font-size: 24px;
-        
-    }
-    body {
-        margin:0;
-        font-size: 24px;
-    }
-    .flex8 {
-        width:5%;
-    }
-}
-@media 
-only screen and (min-width: 1000px) {
-    #h1 {
-        font-size: 36px;
-    }
-    .flex7, .flex8 {
-        font-size: 32px;
-    }
-    .logo {
-        display: none;
-    }
-    .glogo {
+    #minilogoS {
         display: block;
     }
-    .flex8 {
-        margin:0;
-        padding:0;
-        font-size: 34px;
-    }
-    .flex9 {
-        margin: 0;
-        padding: 0;
-        font-size: 36px;
-    }
-}
-
-@media only screen and  (min-height: 667px) {
-    .flex3{
-        width: 30%;
-        top:196%;
-        left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:200%;
-    }
-}
-@media only screen and  (min-height: 720px) {
-    .grid1{
-        width: 95%;
-        height: fit-content;
-        top:0;
-       margin: 0;
-    }
-    #h1 {
-        margin-left: 29%;
-        width: 85%;
-    }
     .flex1 {
-        width: 15%;
+        position:sticky;
     }
-    .flex3{
-        width: 30%;
-        top:196%;
-        left:15%;
+    #header {
+        position:static;
     }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:200%;
-    }
-}
-@media screen and (min-height:731px)    {
-    .flex3{
-        width: 30%;
-        top:145%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:148%;
-    }
-    .grid2 {
-        top:1%;
-    }
-    .grid4 {
-        bottom: 60%;
-    }
-    .grid3  {
-        bottom:100%;
-    }
-}
-@media only screen and  (min-height: 740px) {
-    .flex3{
-        top:220%;
-        
-    }
-    .flex4 {
-       
-        top:223%;
-    }
-    .grid4 {
-        margin-top: 5%;
-    }
-    #h1 {
-        margin-left:20%;
-    }
-}
-@media only screen and (min-width:360px) and (min-height: 740px) {
-    .flex3{
-        top:180%;
-        
-    }
-    .flex4 {
-       
-        top:183%;
-    }
-    .grid4 {
-        margin-top: 5%;
-    }
-    #h1 {
-        margin-left:17%;
-    }
-}
-@media only screen and (min-height:800px){
-    #h1 {
-        width:85%;
-    }
-    .grid1{
-        width: 95%;
-        height: fit-content;
-        top:0;
-       margin: 0;
-    }
-    .flex1 {
-        width: 15%;
-    }
-    .grid2 {
-        margin-top: 0;
-        margin-bottom: 15%;
-    }
-    .grid3 {
-        margin-top: 0;
-    }
-    .grid4 {
-        margin: 0;
-       margin-top: 15%;
-    }
-    .flex1 {
-        bottom:35%;
-    }
-    .flex3{
-        width: 30%;
-        top:220%;
-        left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:223%;
-    }
-    .flex7 {
-        margin-top: 10%;
-    }
-    
-}
-@media only screen and (min-width: 360px) and (min-height:800px){
-    #h1 {
-        width:85%;
-    }
-    .grid1{
-        width: 95%;
-        height: fit-content;
-        top:0;
-       margin: 0;
-    }
-    .flex1 {
-        width: 15%;
-    }
-    .grid2 {
-        margin-top: 0;
-        margin-bottom: 15%;
-    }
-    .grid3 {
-        margin-top: 0;
-    }
-    .grid4 {
-        margin: 0;
-       margin-top: 15%;
-    }
-    .flex1 {
-        bottom:35%;
-    }
-    .flex3{
-        width: 30%;
-        top:190%;
-        left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:193%;
-    }
-    .flex7 {
-        margin-top: 10%;
-    }
-    
-}
-@media only screen and (min-height:812px){
-    .grid1{
-        width: 95%;
-        height: fit-content;
-        top:0;
-       margin: 0;
-    }
-    .flex1 {
-        width: 15%;
-    }
-    .flex3{
-        width: 30%;
-        top:220%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:223%;
-    }
-    .grid2 {
-        top:1%;
-    }
-    .grid4 {
-        bottom: 60%;
-    }
-    .grid3  {
-        bottom:100%;
-    }
-}
-@media screen and (min-width: 375px) and (min-height: 812px) {
-    .flex3 {
-        top:185%;
-    }
-    .flex4 {
-        top:188%;
-    }
-}
-@media screen and (min-height: 823px) {
-    #h1 {
-        margin-left:20%;
-    }
-    .flex3{
-        width: 30%;
-        top:178%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:181%;
-    }
-    .grid3{
-        margin: 0;
-    }
-    .grid4 {
-        margin-bottom:5%;
-    }
-    .flex7 {
-        margin-left: 15%;
-    }
-}
-@media only screen and (min-height: 844px){
-    .flex1 {
-        bottom:33%;
-    }
-    .flex3{
-        width: 30%;
-        top:180%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:183%;
-    }
-  .grid4 {
-    margin-top: 10%;
-  }
-    
-}
-@media only screen and (min-width:414px) and (min-height: 846px){
-    .flex1 {
-        bottom:33%;
-    }
-    .flex3{
-        width: 30%;
-        top:180%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:183%;
-    }
-  .grid4 {
-    margin-top: 10%;
-    margin-bottom: 15%;
-  }
-  .flex7 {
-    margin: 0;
-    margin-left:35%;
-    
-}
-}
-@media screen and (min-height:851px) {
-    .flex3{
-        width: 30%;
-        top:178%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:181%;
-    }
-    .grid3{
-        margin: 0;
-        
-    }
-    .grid4 {
-        margin-bottom:15%;
-    }
-    .flex7 {
-        margin-left: 15%;
-    }
-}
-@media only screen and (min-height: 896px) {
-    #h1 {
-        margin-left:13%;
-    }
-    .flex3{
-        width: 30%;
-        top:180%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:183%;
-    }
-    .grid2 {
-        top:1%;
-    }
-    .grid4 {
-        bottom: 60%;
-    }
-    .grid3  {
-        top:15%;
-    }
-
-    .flex7 {
-        margin-left: 40%;
-    }
-}
-
-@media only screen and (min-height: 900px){
-    
-    .grid1 {
-        margin-top:5%;
-        width:100%;
-    }
-    .grid2 {
-        margin: 0;
-        bottom: 10%;
-     }
-
-    .grid3 {
-        width: 100%;
-        margin: 0;
-        top:0%;
-        right: 0;
-        z-index: 2;
-        
-}
-    .grid4 {
-        margin:0;
-        top:0;
-        width: 100%;
-        height: fit-content;
-      
-    }
-    .flex7 {
-        margin:0;
-        padding: 0;
-        padding-left: 25%;
-    }
-    .flex3 {
-        padding-bottom: 10%;
-    }
-    .flex4 {
-        padding-bottom: 10%;
-    }
-  
-}
-@media only screen and (min-width: 412px) and (min-height: 915px)  {
-    #h1 {
-        margin-left: 20%;
-    }
-    .flex3{
-        width: 30%;
-        top:178%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:181%;
-    }
-    .grid3{
-        margin: 0;
-        margin-bottom:25%;
-    }
-    .grid4 {
-        margin-bottom:25%;
-    }
-    .flex7 {
-        margin-left: 15%;
-    }
-}
-@media only screen and (min-height: 916px)  {
-    #h1 {
-        margin-left: 25%;
-    }
-    .flex3{
-        width: 30%;
-        top:178%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:181%;
-    }
-    .grid3{
-        margin: 0;
-        margin-bottom:25%;
-    }
-    .grid4 {
-        margin-bottom:25%;
-    }
-    .flex7 {
-        margin-left: 15%;
-    }
-}
-
-@media only screen and (min-height: 950px) {
-    
-    .grid1 {
-        margin-top:10%;
-    }
-    .grid2 {
-        margin-top:8%;
-    }
-    .flex8 {
-        margin-top: 3%;
-    }
-    
-    .flex3 {
-        width: 30%;
-        margin-top: 4%;
-       left:15%;
-    }
-    .flex4 {
-        width: 24%;
-        left:55%;
-        margin-top: 4%;
-    }
-}
-@media only screen and (min-height: 960px) {
-    .flex8 {
-        margin-left:14%;
-    }
-    #h1 {
-        margin-left:27%;
-    }
-    .grid1 {
-        top:0;
-        margin: 0;
-        width: 99%;
-        height: fit-content;
-    }
-    .flex1 {
-        width: 10%;
-    }
-    .grid2 {
-        margin-top:8%;
-    }
-   .flex8 {
-        margin-top: 3%;
-    }
-    .flex3 {
-        width: 30%;
-        top: 162%;
-       left:15%;
-    }
-   
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top: 166%;
-    }
-   .flex5 {
-    margin-left:25%;
-    padding: 0;
-   
-   }
-   .flex6 {
-    padding: 0;
-    margin-right: 25%;
-   }
-   .grid2{
-    margin: 0;
-    top:0;
-   }
-   .grid3 {
-    margin: 0;
-    bottom: 0;
-    margin-bottom: 15%;
-   }
-   .grid4 {
-    margin: 0;
-    bottom:0;
-    margin-bottom: 25%;
-   }
-   .flex7   {
-    margin-left: 18%;
-   }
-}
-@media only screen and (min-height: 1000px){
-    
-    .flex3{
-        width: 30%;
-        top:175%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:181%;
-    }
-}
-@media only screen and (min-height: 1024px){
-    .flex2 {
-        width: 45%;
-        margin-left:25%;
-    }
-
-    .flex9 {
-        padding-left: 14%;
-        margin-bottom: 15%;
-    }
-    .flex8 {
-    width: 90%;
-    margin-left: 12%;
-    }
-    
-}
-@media only screen and (min-width:768px) and (min-height:1024px) {
-    .flex3{
-        width: 30%;
-        top:125%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:127%;
-    }
-    .grid3 {
-        margin-top: 45%;
-    }
-    .grid4 {
-        height: 50%;
-        margin-top: 50%;
-    }
-    .flex8 {
-        margin-left: 8%;
-    }
-    .flex9 {
-        padding-left: 10%;
-    }
-}
-@media only screen (min-height: 1100px) {
-    .flex3{
-        width: 30%;
-        top:175%;
-       left:15%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:181%;
-    }
-}
-
-
-@media only screen and (min-height:1180px) {
-    .grid2 {
-        top:0;
-    }
-    .grid3 {
-        height: 50%;
-        bottom:56.5%;
-    }
-    .grid4 {
-        margin-top: 25%;
-    }
-    .flex3{
-        
-        top:124%;
-      
-    }
-    .flex4 {
-        top:127%;
-    }
-    .flex7 {
-        margin-left: 5%;
-    }
-       
-}
-
-@media only screen and (min-height: 1280px) {
-    .grid3 {
-        height:fit-content;
-      margin: 0;
-      top:20%;
-    }
-    .flex1 {
-        width: 70%;
-    }
-    .flex9 {
-        font-size: 28px;
-    }
-    .flex8 {
-        font-size: 24px;
-    }
-    .flex3{
-        width: 30%;
-        top:139%;
-       left:15%;
-       padding-bottom: 20%;
-    }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:141%;
-        padding-bottom: 20%;
-    }
-    .grid4 {
-        top:45%;
-        bottom: 0%;
-    }
-    .flex7 {
-        padding: 0;
-        margin-left: 43%;
-    }
-}
-@media only screen and (min-height: 1366px) {
-    .grid2 {
-        margin-top:0%;
-    }
-    .grid4 {
+    #article {
         margin-top: 15%;
     }
-    .flex3{
-        width: 30%;
-        top:117%;
-       left:15%;
+    #mMlogo {
+        display: block;
     }
-    .flex4 {
-        width: 26%;
-        left:55%;
-        top:120%;
+    #quote {
+        display: block;
     }
-    .grid4 {
-        margin-top:25%;
-    }
-}
 
-@media only screen and (min-width: 1280px) {
-    .flex2 {
-        width:25%;
-        margin-left: 37%;
-    }
-    .flex9 {
-        font-size: 32px;
-        margin: 0;
-        padding: 0;
-        padding-left:15%;
-        width: 25%;  
-    }
-.grid1 {
-    margin: 0;
-    left:0;
-    height: fit-content;
-}
-.flex1{
-    width:60%;
-}
-.grid2 {
-    margin-top: 0;
-}
-.flex8 {
-    margin: 0;
-    padding: 0;
-    width: fit-content;
-    height: fit-content;
-    left:5%;
-    top:110%;
-    font-size: 22px;
-}
-.grid3 {
-    height:fit-content;
-    bottom:70%;
-    margin: 0;
-    padding: 0;
-    top:5%;
-    width:90%;
-}
-nav ul {
-    height: 55%;
-}
-.grid4 {
-    margin-top: 15%;
-    margin-bottom: 2%;
-}
-.flex3 {
-    top:145%;
-    left:22%;
-    width:20%;
-}
-.flex4 {
-    top:149%;
-    left:62%;
-    width:17.5%;
-}
-.flex5 {
-    width: 15%;
-    margin-left: 45%;
-}
-.flex6 {
-    width: 15%;
-    margin-right:5%;
-}
-.flex7 {
-    margin-left: 10%;
-}
-}
-@media only screen and (min-width: 1280px) and (min-height: 720px){
-
-    .flex9 {
-        padding-left: 10%;
-    }
-    .flex3{
-        top:153%;
-       left:25%;
-    }
-    .flex4 {
-       
-        left:60%;
-        top:114%;
-    }
-    .flex8 {
-        left:7%;
-    }
-    .flex2 {
-        left:3%;
-    }
-    .flex7 {
-        margin-left:15%;
-    }
-}
-@media only screen and (min-width: 1280px) and (min-height: 800px){
-    .flex1 {
-        width: 70%;
-    }
-    .flex9 {
-        padding-left: 20%;
-    }
-    .flex3 {
-        top:95%;
-        left:22%;
-        width:20%;
-        padding-bottom: 10%;
-    }
-    .flex4 {
-        top:97%;
-        left:62%;
-        width:17.5%;
-        padding-bottom: 10%;
-
-    }
-    .grid3 {
-        top:0;
-        margin: 0;
-
-    }
-    .grid4 {
-        top:0;
-        margin: 0;
-    }
-    .flex7 {
-        height: fit-content;
-    }
-}
-@media only screen and (min-width: 1280px) and (min-height: 950px){
-    .flex9 {
-        padding-left: 15%;
-    }
-    .grid4{
-        top:10%;
-    }
-    .flex3 {
-        top:145%;
-        left:22%;
-        width:20%;
-        padding-bottom: 10%;
-    }
-    .flex4 {
-        top:147%;
-        left:62%;
-        width:17.5%;
-        padding-bottom: 10%;
-
-    }
-}
-@media only screen and (min-width:1440px) {
-    .flex9 {
-        font-size: 35px;
-        width:27%;
-        padding-left:20%;
-    }
-    .grid1 {
+    #mMUiUx {
+        display: block;
         margin: 0;
         margin-top: 10%;
+        margin-left:24%;
+        width:55%;
+    }
+    #mMAppDead {
+        margin: 0;
+        margin-top: 10%;
+        margin-left:26%;
+        display: block;
+        width:50%;
+    }
+    #instaS {
+        display: block;
+    }
+    #linkedinS {
+        display: block;
+    }
+    ul li {
+       list-style-type: none;
+       display: inline;
+    }
+    #nav {
         width:100%;
-        height: fit-content;
-        margin-bottom: 0;
-    }
-    .grid3 {
-        top:0;
-        margin: 0;
-        height: fit-content;
-    }
-    .flex1 {
-        width:60%;
-    }
-    
-    .flex2 {
-        width:20%;
-        margin-left: 38%;
-        margin-top:0%;
-    }
-
-    .flex8 {
-        font-size: 24px;
-        top:110%;
-        left:23%;
-        width: 60%;
-    }
-    .grid3 {
-        margin-top: 10%;
-        width: 100%;
-        height: fit-content;
-    }
-   
-    .grid4 {
-        top:5%;
+        margin-top: 25%;
+        margin-bottom: 20%;
     }
     .flex4 {
-        top:146%;
-        width: 17%;
+        float:left;
+       margin-left:10%;
+    }
+    .flex5 {
+        float: right;
+        margin-right: 20%;
+    }
+    #art {
+        display: block;
+    }
+    footer {
+        width: 100%;
+        margin-bottom:15%;
+    }
+
+}
+@media screen and (min-width:375px) {
+    #mMlogo {
+        margin-left: 5%;
     }
 }
-@media screen and (min-width:1440px) and (min-height:800px) {
-.flex3{
-    margin: 0;
-    top:181%;
-   left:25%;
+@media screen and (min-width:414px) {
+    #mMlogo {
+        margin-left: 10%;
+    }
 }
-.flex4 {
-    margin: 0;
-    left:60%;
-    top:188%;
-}
-}
-@media screen and (min-width:1440px) and (min-height:900px) {
-    #h1 {
+@media screen and (min-width:600px) {
+    #minilogoS{
+        display: none;
+    }
+    #minilogoM {
+        display: block;
+    }
+    #mMlogo {
+        width:65%;
         margin-left: 20%;
     }
-.flex3{
-    margin: 0;
-    top:181%;
-   left:25%;
+    #instaS {
+        margin-left: 30%;
+    }
+    #linkedinS {
+        margin-right: 30%;
+    }
 }
-.flex4 {
-    margin: 0;
-    left:60%;
-    top:188%;
+@media screen and (min-width:810px) {
+    #mMUiUx {
+        display: block;
+        margin: 0;
+        margin-top: 10%;
+        margin-left:33%;
+        width:35%;
+    }
+    #mMAppDead {
+        margin: 0;
+        margin-top: 10%;
+        margin-left:35%;
+        display: block;
+        width:32%;
+    }
 }
+@media screen and (min-width:1024px) {
+    #mMlogo {
+        width:45%;
+        margin-left: 26%;
+    }
+    #mMUiUx {
+        display: block;
+        margin: 0;
+        margin-top: 10%;
+        margin-left:33%;
+        width:35%;
+    }
+    #mMAppDead {
+        margin: 0;
+        margin-top: 10%;
+        margin-left:34%;
+        display: block;
+        width:32%;
+    }
+    #linkedinS {
+        margin-right: 33%;
+    }
 }
-@media only screen and (min-height:1080px) {
-    #h1 {
-        margin-left:21% ;
+@media screen and (min-width:1280px) {
+    #minilogoM {
+        display: none;
     }
-
-    .flex3 {
-        top:145%;
-        left:22%;
-        width:20%;
-        padding-bottom: 10%;
+    #myLogoD {
+        display: block;
     }
-    .flex4 {
-        top:148%;
-        left:62%;
-        width:17.5%;
-        padding-bottom: 10%;
-
+    .flex1 {
+        float: left;
     }
-    .flex7 {
-        margin-left: 15%;
+    #header {
+        width:100%;
     }
+    #article {
+        margin-top: 25%;
+    }
+    #mMlogo {
+        width:50%;
+        margin-left: 26%;
+    }
+    #mMUiUx {
+        margin: 0;
+        float: left;
+        margin-top: 20%;
+        margin-left:18%;
+        width:25%;
+    }
+    #mMAppDead {
+        margin: 0;
+        float:right;
+        margin-top: 20%;
+        margin-right:20%;
+        display: block;
+        width:25%;
+    }
+    #nav {
+        margin-bottom: 5%;
+    }
+    #instaS {
+        margin-left: 32%;
+    }
+    #linkedinS {
+        margin-right: 38%;
+    }
+}
+@media screen and (min-width:1440px) {
+    #myLogoD {
+        display: none;
+    }
+    #myLogoL {
+        display: block;
+    }
+    #mMUiUx {
+        margin: 0;
+        float: left;
+        margin-top: 20%;
+        margin-left:5%;
+        width:35%;
+    }
+    #mMAppDead {
+        margin: 0;
+        float:right;
+        margin-top: 22%;
+        margin-right:7%;
+        display: block;
+        width:33%;
+    }
+}
+@media screen and (min-width:1920px) {
+    body {
+        font-size: 32pt;
+    }
+    #instaS {
+        display: none;
+    }
+    #linkedinS {
+        display: none;
+    }
+    #instaD{
+        display: block;
+        margin-top:10%;
+        margin-left:35%;
+    }
+    #linkedinD {
+        display: block;
+        margin-top:10%;
+        margin-right:35%;
+    }
+}
+@media screen and (min-width:3840px) {
+    body {
+        font-size: 48pt;
+    }
+   
 }
