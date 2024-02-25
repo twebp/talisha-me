@@ -1,0 +1,259 @@
+#wrapper {
+    margin: 0 auto;
+    width:90%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mMlogoS{
+    transition: all 0.3s ease-in-out;
+   }
+   #mMlogoS:hover {
+    transform: scale(1.2);
+   }
+  
+a:link {
+    color: pink;
+   text-decoration:overline; 
+   font-size: 20px;
+}
+a:visited {
+    color: red;
+    text-decoration: line-through;
+}
+a:hover {
+    color:yellow;
+    text-decoration: underline;
+}
+#myLogoD, #myLogoL, #minilogoM, #minilogoS {
+    display: none;
+}
+#mMlogoL, #mMlogoS {
+    display: none;
+}
+#mMtext {
+    display: none;
+}
+#guardianL, #guardianS {
+    display: none;
+}
+#instaL, #instaM, #instaD, #instaS {
+    display: none;
+}
+#linkedinL, #linkedinD, #linkedinM, #linkedinS {
+    display: none;
+}
+#art {
+    display:none;
+}
+@media screen and (min-width:360px) {
+    body{
+        font-family:  garamond, 'courier new';
+        color: antiquewhite;
+        font-size: 24pt;
+    }
+    a:link {
+        font-family:  garamond, 'courier new';
+        color: antiquewhite;
+        font-size: 24pt;
+    }
+    #wrapper {
+        overflow-y: scroll;
+    }
+    #minilogoS {
+        display: block;
+    }
+    .flex1 {
+        position:sticky;
+    }
+    #header {
+        position:static;
+    }
+    #mMlogoS {
+        display: block;
+        visibility: visible;
+        z-index: 1;
+    }
+    #guardianS {
+        display: block;
+    }
+    #instaS {
+        display: block;
+    }
+    #linkedinS {
+        display: block;
+    }
+    ul li {
+       list-style-type: none;
+       display: inline;
+    }
+    #nav {
+        width:100%;
+        margin-bottom: 50%;
+    }
+    .flex4 {
+        float:left;
+       margin-left:10%;
+    }
+    .flex5 {
+        float: right;
+        margin-right: 20%;
+    }
+    #art {
+        display: block;
+    }
+    footer {
+        width: 100%;
+        margin-bottom:15%;
+    }
+
+}
+@media screen and (min-width:390px) {
+    .flex2, .flex3 {
+        margin-left: 5%;
+    }
+}
+@media screen and (min-width:412px) {
+    .flex2, .flex3 {
+        margin-left: 10%;
+    }
+}
+@media screen and (min-width:414px) {
+    .flex2, .flex3 {
+        margin-left:10%;
+    }
+}
+@media screen and (min-width:428px) {
+    .flex2, .flex3 {
+        margin-left:10%;
+    }
+    #nav {
+        margin-bottom:25%;
+    }
+}
+@media screen and (min-width:600px) {
+    #minilogoS {
+        display: none;
+    }
+    #minilogoM {
+        display:block;
+    }
+        .flex2, .flex3 { 
+            margin-left:20%;
+        }
+}
+@media screen and (min-width:768px) {
+    .flex2, .flex3 {
+        margin-left: 25%;
+    }
+    #instaS {
+        margin-left: 25%;
+    }
+    #linkedinS {
+        margin-right:28%;
+    }
+}
+@media screen and (min-width:800px) {
+  
+    .flex2, .flex3 {
+        margin-left: 25%;
+    }
+    #instaS {
+        margin-left:25%;
+    }
+    #linkedinS {
+        margin-right: 28%;
+    }
+}
+@media screen and (min-width:1280px) {
+    body{
+        font-size: 28pt;
+    }
+    #header{
+        width:100%;
+    }
+    #minilogoM {
+        display:none;
+    }
+    #myLogoD{
+        display:block;
+        float:left;
+    }
+    #article{
+        width:100%;
+    }
+    #mMlogoS {
+        margin:0;
+        float:left;
+        margin-top:10%;
+        width:35%;
+        margin-left: 10%;
+    }
+    #guardianS {
+        margin:0;
+        float:right;
+        margin-top:10%;
+        width:35%;
+        margin-right: 10%;
+    }
+
+    #nav {
+        margin-bottom:10%;
+    }
+    #instaS {
+        margin-left:35%;
+    }
+    #linkedinS{
+        margin-right:35%;
+    }
+    #article {
+        margin-top:10%;
+        margin-bottom: 10%;
+    }
+    
+}
+@media screen and (min-width:1440px) {
+    body{
+        font-size: 32pt;
+    }
+    #myLogoD{
+        display:none;
+    }
+    #myLogoL {
+        display: block;
+        float:left;
+    }
+    #mMlogoS {
+        display: none;
+    }
+    #mMlogoL {
+        display: block;
+        margin: 0;
+        margin-top: 10%;
+        margin-left:5%;
+        width:40%;
+        float:left;
+    }
+    #guardianS {
+        display: none;
+    }
+    #guardianL {
+        display: block;
+        margin: 0;
+        margin-top: 10%;
+        margin-right:5%;
+        width:40%;
+        float:right;
+    }
+}
