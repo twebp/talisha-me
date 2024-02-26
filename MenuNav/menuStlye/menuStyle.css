@@ -1,0 +1,64 @@
+#wrapper {
+    margin: 0 auto;
+    width:90%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border:1px solid red;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap:10%;
+    height: 100vh;
+}
+#myLogoD, #myLogoL, #minilogoM, #minilogoS {
+    display: none;
+}
+#exit {
+    display: none;
+}
+a:link {
+    color: pink;
+   text-decoration:overline; 
+   font-size: 20pt;
+}
+a:visited {
+    color: red;
+    text-decoration: line-through;
+}
+a:hover {
+    color:yellow;
+    text-decoration: underline;
+}
+@media screen and (min-width:360px) {
+    #header {
+        width: 100%;
+    }
+   #exit {
+    display: block;
+    float:right;
+    margin-top: 5%;
+    width:15%;
+}
+#minilogoS {
+    display: block;
+    float:left;
+}
+}
