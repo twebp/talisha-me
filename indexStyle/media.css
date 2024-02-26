@@ -42,6 +42,9 @@ a:hover {
 #mMlogoL, #mMlogoS {
     display: none;
 }
+#hBurgerS {
+    display: none;
+}
 #mMtext {
     display: none;
 }
@@ -73,12 +76,18 @@ a:hover {
     }
     #minilogoS {
         display: block;
+        float:left;
     }
-    .flex1 {
-        position:sticky;
-    }
+   
     #header {
         position:static;
+        width:100%;
+    }
+    #hBurgerS {
+        display: block;
+        float:right;
+        margin-top: 3%;
+        width:10%;
     }
     #mMlogoS {
         display: block;
@@ -148,7 +157,9 @@ a:hover {
     }
     #minilogoM {
         display:block;
+        float:left;
     }
+
         .flex2, .flex3 { 
             margin-left:20%;
         }
@@ -189,6 +200,10 @@ a:hover {
     #myLogoD{
         display:block;
         float:left;
+    }
+    #hBurgerS {
+        margin-top: 2%;
+        width:5%;
     }
     #article{
         width:100%;
