@@ -39,6 +39,9 @@ a:hover {
 #myLogoD, #myLogoL, #minilogoM, #minilogoS {
     display: none;
 }
+#hBurgerS {
+    display: none;
+}
 #mMlogo {
     display: none;
 }
@@ -83,13 +86,24 @@ a:hover {
     #wrapper {
         overflow-y: scroll;
     }
+    #header {
+        width:100%;
+    }
     
     #minilogoS {
         display: block;
+        float:left;
+        
     }
-    .flex1 {
-        position:sticky;
+    #hBurgerS {
+        display: block;
+        margin: 0;
+        margin-top: 3%;
+        float:right;
+        width: 10%;
+    
     }
+    
     #header {
         position:static;
     }
@@ -165,6 +179,7 @@ a:hover {
     }
     #minilogoM {
         display: block;
+        float: left;
     }
     #mMlogo {
         width:65%;

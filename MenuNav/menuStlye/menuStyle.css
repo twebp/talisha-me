@@ -4,7 +4,7 @@
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    border:1px solid red;
+  
 }
 
 body {
@@ -61,4 +61,33 @@ a:hover {
     display: block;
     float:left;
 }
+}
+@media screen and (min-width: 600px) {
+    #exit {
+        width:7%;
+    }
+}
+@media screen and (min-width: 800px) {
+    #minilogoS {
+        display:none;
+    }
+    #minilogoM {
+        display:block;
+        float:left;
+    }
+}
+@media screen and (min-width:1280px) {
+    #exit {
+        width:5%;
+    }
+}
+@media screen and (min-width:1440px) {
+    #exit{
+        width:4%;
+    }
+}
+@media screen and (min-width:3840px) {
+    #exit {
+        width:2%;
+    }
 }
