@@ -51,6 +51,9 @@ a:hover {
 #guardianL, #guardianS {
     display: none;
 }
+#saveS, #saveL {
+    display:none;
+}
 #instaL, #instaM, #instaD, #instaS {
     display: none;
 }
@@ -97,6 +100,9 @@ a:hover {
     #guardianS {
         display: block;
     }
+    #saveS {
+        display: block;
+    }
     #instaS {
         display: block;
     }
@@ -129,27 +135,29 @@ a:hover {
 
 }
 @media screen and (min-width:390px) {
-    .flex2, .flex3 {
+    .flex2, .flex3, .flex6{
         margin-left: 5%;
     }
 }
 @media screen and (min-width:412px) {
-    .flex2, .flex3 {
+    .flex2, .flex3, .flex6 {
         margin-left: 10%;
     }
 }
 @media screen and (min-width:414px) {
-    .flex2, .flex3 {
+    .flex2, .flex3, .flex6 {
         margin-left:10%;
     }
+
 }
 @media screen and (min-width:428px) {
-    .flex2, .flex3 {
+    .flex2, .flex3, .flex6 {
         margin-left:10%;
     }
     #nav {
         margin-bottom:25%;
     }
+   
 }
 @media screen and (min-width:600px) {
     #minilogoS {
@@ -160,12 +168,12 @@ a:hover {
         float:left;
     }
 
-        .flex2, .flex3 { 
+        .flex2, .flex3, .flex6 { 
             margin-left:20%;
         }
 }
 @media screen and (min-width:768px) {
-    .flex2, .flex3 {
+    .flex2, .flex3, .flex6 {
         margin-left: 25%;
     }
     #instaS {
@@ -177,7 +185,7 @@ a:hover {
 }
 @media screen and (min-width:800px) {
   
-    .flex2, .flex3 {
+    .flex2, .flex3, .flex6 {
         margin-left: 25%;
     }
     #instaS {
@@ -218,9 +226,15 @@ a:hover {
     #guardianS {
         margin:0;
         float:right;
-        margin-top:10%;
+        margin-top:5%;
         width:35%;
         margin-right: 10%;
+    }
+    #saveS {
+        margin: 0;
+        float:left;
+        margin-left: 8%;
+        width:35%;
     }
 
     #nav {
@@ -266,7 +280,7 @@ a:hover {
     #guardianL {
         display: block;
         margin: 0;
-        margin-top: 10%;
+        margin-top: 5%;
         margin-right:5%;
         width:40%;
         float:right;
