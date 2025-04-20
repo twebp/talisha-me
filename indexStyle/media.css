@@ -103,6 +103,9 @@ a:hover {
     #saveS {
         display: block;
     }
+    #saveL {
+        display: none;
+    }
     #instaS {
         display: block;
     }
@@ -284,5 +287,14 @@ a:hover {
         margin-right:5%;
         width:40%;
         float:right;
+    }
+    #saveS {
+        display: none;
+    }
+    #saveL {
+        display: block;
+        margin: 0;
+        float:left;
+        margin-left: 8%;
     }
 }
