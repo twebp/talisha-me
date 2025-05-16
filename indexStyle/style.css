@@ -26,10 +26,11 @@ img {
   height: 100%;
   border-radius: 10px;
 }
+
 /*header*/
 .header {
     grid-area: header;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 100;
     display: flex;
@@ -44,7 +45,9 @@ img {
     width:100%;
     height: auto;
 }
-#myLogo img{
+
+#myLogo img, #myLogoS img{
+    width: 25%;
  transition: transform 0.2s cubic-bezier(0.2, 0, 0.4, 1);
 }
 #myLogo img:hover, #myLogo img:focus {
@@ -191,9 +194,19 @@ p {font-size: 20pt;}
     width:80%;
 }
 /* respomse*/
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 799px) {
+    /*my logo*/
+    #myLogo {display: none;}
+    #myLogoS {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
+    /*my logo*/
+    #myLogo img{width:50%;}
+    #myLogoS {display: none;}
     /*projects rotate*/
     .projects1 {
     flex-direction: row;
@@ -206,4 +219,12 @@ p {font-size: 20pt;}
         width:40%
     }
     
+}
+@media screen and (min-width: 1000px) {
+     #dataCorp img, #saveWomen img, #guardian img, #munchies img {;
+        width: 75%;
+    }
+    .footer {
+        margin-top: 54%;
+    }
 }
