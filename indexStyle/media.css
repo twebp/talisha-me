@@ -1,12 +1,22 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: small;
+    background: #fff;
+}
+
 #wrapper {
+    max-width: 1200px;
     margin: 0 auto;
-    width:90%;
+    padding: 0 1rem;
     height: 100vh;
     overflow: hidden;
 }
 
 body {
-    background-color: black;
     text-align: center;
     overflow: hidden;
 }
@@ -15,25 +25,106 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+header a {
+    display: inline-block;
+}
+
+header img {
+    max-width: 160px;
+    height: auto;
+    display: none;
+}
+
+/* Show only the desktop logo by default */
+#myLogoD { display: inline-block; }
+.logo logo-small { display: inline-block;}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Social nav styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 1rem 0;
+}
+
+nav li {
+    display: flex;
+    gap: 0.5rem;
+}
+
+nav img {
+    max-width: 32px;
+    height: auto;
+    display: none;
+}
+
+/* Show only desktop social icons by default */
+#instaD, #linkedinD { display: inline-block; }
+
+footer {
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+}
+
+#art {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #mMlogoS{
     transition: all 0.3s ease-in-out;
-   }
-   #mMlogoS:hover {
+}
+#mMlogoS:hover {
     transform: scale(1.2);
-   }
-  
+}
+
 a:link {
     color: pink;
-   text-decoration:overline; 
-   font-size: 20px;
+    text-decoration: overline;
+    font-size: 20px;
 }
 a:visited {
     color: red;
     text-decoration: line-through;
 }
 a:hover {
-    color:yellow;
+    color: yellow;
     text-decoration: underline;
 }
 #myLogoD, #myLogoL, #minilogoM, #minilogoS {
@@ -51,8 +142,8 @@ a:hover {
 #guardianL, #guardianS {
     display: none;
 }
-#saveS, #saveL {
-    display:none;
+.project-img {
+    display: none;
 }
 #instaL, #instaM, #instaD, #instaS {
     display: none;
@@ -61,16 +152,71 @@ a:hover {
     display: none;
 }
 #art {
-    display:none;
+    display: none;
 }
+
+/* --- Responsive Breakpoints --- */
+
+/* Large screens */
+@media (min-width: 1200px) {
+    #myLogoL { display: inline-block; }
+    #myLogoD { display: none; }
+    #minilogoS, #minilogoM { display: none; }
+    #instaL, #linkedinL { display: inline-block; }
+    #instaD, #linkedinD { display: none; }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    #myLogoL { display: none; }
+    #myLogoD { display: none; }
+    #minilogoM { display: inline-block; }
+    #minilogoS { display: none; }
+    #instaM, #linkedinM { display: inline-block; }
+    #instaD, #linkedinD, #instaL, #linkedinL { display: none; }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #myLogoL, #myLogoD, #minilogoM { display: none; }
+    #minilogoS { display: inline-block; }
+    #hBurgerS { display: inline-block; max-width: 40px; }
+    article {
+        gap: 1rem;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    #saveL, #guardianL, #mMlogoL { display: none; }
+    #saveS, #guardianS, #mMlogoS { display: inline-block; }
+    #instaS, #linkedinS { display: inline-block; }
+    #instaM, #linkedinM, #instaD, #linkedinD, #instaL, #linkedinL { display: none; }
+    nav ul {
+        gap: 1rem;
+    }
+    nav img {
+        max-width: 28px;
+    }
+}
+
+/* Make all images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media screen and (min-width:360px) {
     body{
-        font-family:  garamond, 'courier new';
+        font-family: garamond, 'courier new';
         color: antiquewhite;
         font-size: 24pt;
     }
     a:link {
-        font-family:  garamond, 'courier new';
+        font-family: garamond, 'courier new';
         color: antiquewhite;
         font-size: 24pt;
     }
@@ -79,18 +225,18 @@ a:hover {
     }
     #minilogoS {
         display: block;
-        float:left;
+        float: left;
     }
-   
+
     #header {
-        position:static;
-        width:100%;
+        position: static;
+        width: 100%;
     }
     #hBurgerS {
         display: block;
-        float:right;
+        float: right;
         margin-top: 3%;
-        width:10%;
+        width: 10%;
     }
     #mMlogoS {
         display: block;
@@ -113,16 +259,16 @@ a:hover {
         display: block;
     }
     ul li {
-       list-style-type: none;
-       display: inline;
+        list-style-type: none;
+        display: inline;
     }
     #nav {
-        width:100%;
+        width: 100%;
         margin-bottom: 50%;
     }
     .flex4 {
-        float:left;
-       margin-left:10%;
+        float: left;
+        margin-left: 10%;
     }
     .flex5 {
         float: right;
@@ -133,7 +279,7 @@ a:hover {
     }
     footer {
         width: 100%;
-        margin-bottom:15%;
+        margin-bottom: 15%;
     }
 
 }
@@ -149,31 +295,31 @@ a:hover {
 }
 @media screen and (min-width:414px) {
     .flex2, .flex3, .flex6 {
-        margin-left:10%;
+        margin-left: 10%;
     }
 
 }
 @media screen and (min-width:428px) {
     .flex2, .flex3, .flex6 {
-        margin-left:10%;
+        margin-left: 10%;
     }
     #nav {
-        margin-bottom:25%;
+        margin-bottom: 25%;
     }
-   
+
 }
 @media screen and (min-width:600px) {
     #minilogoS {
         display: none;
     }
     #minilogoM {
-        display:block;
-        float:left;
+        display: block;
+        float: left;
     }
 
-        .flex2, .flex3, .flex6 { 
-            margin-left:20%;
-        }
+    .flex2, .flex3, .flex6 {
+        margin-left: 20%;
+    }
 }
 @media screen and (min-width:768px) {
     .flex2, .flex3, .flex6 {
@@ -183,16 +329,16 @@ a:hover {
         margin-left: 25%;
     }
     #linkedinS {
-        margin-right:28%;
+        margin-right: 28%;
     }
 }
 @media screen and (min-width:800px) {
-  
+
     .flex2, .flex3, .flex6 {
         margin-left: 25%;
     }
     #instaS {
-        margin-left:25%;
+        margin-left: 25%;
     }
     #linkedinS {
         margin-right: 28%;
@@ -203,68 +349,68 @@ a:hover {
         font-size: 28pt;
     }
     #header{
-        width:100%;
+        width: 100%;
     }
     #minilogoM {
-        display:none;
+        display: none;
     }
     #myLogoD{
-        display:block;
-        float:left;
+        display: block;
+        float: left;
     }
     #hBurgerS {
         margin-top: 2%;
-        width:5%;
+        width: 5%;
     }
     #article{
-        width:100%;
+        width: 100%;
     }
     #mMlogoS {
-        margin:0;
-        float:left;
-        margin-top:10%;
-        width:35%;
+        margin: 0;
+        float: left;
+        margin-top: 10%;
+        width: 35%;
         margin-left: 10%;
     }
     #guardianS {
-        margin:0;
-        float:right;
-        margin-top:5%;
-        width:35%;
+        margin: 0;
+        float: right;
+        margin-top: 5%;
+        width: 35%;
         margin-right: 10%;
     }
     #saveS {
         margin: 0;
-        float:left;
+        float: left;
         margin-left: 8%;
-        width:35%;
+        width: 35%;
     }
 
     #nav {
-        margin-bottom:10%;
-    }
-    #instaS {
-        margin-left:35%;
-    }
-    #linkedinS{
-        margin-right:35%;
-    }
-    #article {
-        margin-top:10%;
         margin-bottom: 10%;
     }
-    
+    #instaS {
+        margin-left: 35%;
+    }
+    #linkedinS{
+        margin-right: 35%;
+    }
+    #article {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
 }
 @media screen and (min-width:1440px) {
     body{
         font-size: 32pt;
     }
     #myLogoD{
-        display:none;
+        display: none;
     }
     #myLogoL {
         display: block;
-        float:left;
+        float: left;
     }
     #mMlogoS {
         display: none;
@@ -273,9 +419,9 @@ a:hover {
         display: block;
         margin: 0;
         margin-top: 10%;
-        margin-left:5%;
-        width:40%;
-        float:left;
+        margin-left: 5%;
+        width: 40%;
+        float: left;
     }
     #guardianS {
         display: none;
@@ -284,9 +430,9 @@ a:hover {
         display: block;
         margin: 0;
         margin-top: 5%;
-        margin-right:5%;
-        width:40%;
-        float:right;
+        margin-right: 5%;
+        width: 40%;
+        float: right;
     }
     #saveS {
         display: none;
@@ -294,7 +440,7 @@ a:hover {
     #saveL {
         display: block;
         margin: 0;
-        float:left;
+        float: left;
         margin-left: 8%;
     }
 }
