@@ -221,7 +221,7 @@ p {font-size: 20pt;}
     
 }
 @media screen and (min-width: 1000px) {
-     #dataCorp img, #saveWomen img, #guardian img, #munchies img {;
+     #dataCorp img, #saveWomen img, #guardian img, #munchies img {
         width: 75%;
     }
     .footer {
