@@ -17,7 +17,7 @@
                     setTimeout(showNextMessage, 1700);
                 } else {
                     // Redirect to your main index page after the last message
-                    window.location.href = "index.html";
+                    window.location.href = "home.html";
                 }
             }, 700);
         }
