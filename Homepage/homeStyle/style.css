@@ -154,7 +154,6 @@ p {font-size: 20pt;}
     gap:20px;
     width: 100%;
     height:50%;
-    margin-top: 20%;
     background-color: black;
     bottom: 0;
     z-index: -100;
@@ -202,6 +201,9 @@ p {font-size: 20pt;}
         justify-content: center;
         align-items: center;
     }
+    #linked img, #insta img {
+        width: 35%;
+    }
 }
 @media screen and (min-width: 800px) {
     /*my logo*/
@@ -213,6 +215,7 @@ p {font-size: 20pt;}
 } 
 .projects2 {
     flex-direction: row;
+    margin-bottom: 30rem;
 }
     /*Resize Social links*/
     #insta img, #linked img{
