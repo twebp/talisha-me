@@ -46,14 +46,15 @@ img {
 }
 #myLogo img{
     width: 50%;
-    transition: transform 0.2s cubic-bezier(0.2, 0, 0.4, 1);
+    height: auto;
+    transition: none;
 }
 #myLogoS img{
     width: 25%;
  transition: transform 0.2s cubic-bezier(0.2, 0, 0.4, 1);
 }
 #myLogo img:hover, #myLogo img:focus {
-    transform: scale(1.15);
+    transform: none;
 }
 .intro {
     display: flex;
@@ -113,34 +114,13 @@ p {font-size: 20pt;}
     background: #fff;
     max-width: 350px;
     max-height: 350px;
+    transition: transform 0.2s ease;
 }
 
-/*Old DataCorp*/
-
-#old-data-corp img{
-    width: 100%;
-    height: auto;
-}
-/*New DataCorp*/
-/* Always keep these as columns */
-#old-data-corp,
-#new-data-corp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 350px;
-    max-width: 400px;
-    min-width: 260px;
-    background: transparent;
-    /* Set a fixed height for perfect alignment */
-    min-height: 520px;
-    box-sizing: border-box;
-}
-
-#new-data-corp img{
-    max-width: 100%;
-    height: auto;
-
+.project-img:hover,
+#old-data-corp a:focus-visible .project-img,
+#new-data-corp a:focus-visible .project-img {
+    transform: scale(1.03);
 }
 
 /*footer*/
@@ -229,8 +209,8 @@ p {font-size: 20pt;}
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        width: 400px;         /* Fixed width */
-        height: 400px;        /* Fixed height */
+        width: 400px;
+        height: 400px;
         max-width: 400px;
         min-width: 300px;
         min-height: 400px;
@@ -242,8 +222,8 @@ p {font-size: 20pt;}
     .project-img {
         width: 100%;
         height: 100%;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 400px;
+        max-height: 400px;
         object-fit: contain;
         aspect-ratio: 1 / 1;
         display: block;
@@ -255,15 +235,8 @@ p {font-size: 20pt;}
     
 }
 @media screen and (min-width: 1000px) {
-     #old-data-corp img, #new-data_corp img {
-        width: 75%;
-    }
     .footer {
         margin-top: 54%;
-    }
-    #old-data-corp img{
-        width: 100%;
-        height: auto;
     }
 }
 @media (max-width: 900px) {
@@ -273,7 +246,10 @@ p {font-size: 20pt;}
     }
     #old-data-corp,
     #new-data-corp {
+        width: 90vw;
+        height: 90vw;
         max-width: 90vw;
+        max-height: 90vw;
         min-height: unset;
     }
     .project-img {
