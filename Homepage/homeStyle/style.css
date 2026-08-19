@@ -48,11 +48,13 @@ img {
 
 #myLogo img, #myLogoS img{
     width: 25%;
+    height: auto;
  transition: transform 0.2s cubic-bezier(0.2, 0, 0.4, 1);
 }
 #myLogo img:hover, #myLogo img:focus {
     transform: scale(1.15);
 }
+
 #menu {
     display: flex;
     width: 50px;
@@ -144,6 +146,12 @@ p {font-size: 20pt;}
 #munchies img{
  width:100%;
  height:auto;
+}
+#Prophecy {
+    display: flex;
+      width:50%;
+      height:auto;
+      margin: 20px 0;
 }
 /*footer*/
 .footer {
