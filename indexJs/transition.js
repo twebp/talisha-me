@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
     document.body.classList.add('fade-effect');
 
-                    setTimeout(funtion () {
+                    setTimeout(function () {
                         window.location = goTo;
 
-                    } 1000);
+                    }, 1000);
         });
     });
 });
