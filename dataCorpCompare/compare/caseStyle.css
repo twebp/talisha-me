@@ -3,9 +3,9 @@
 :root {
     --ink: #101010;
     --paper: #fbfaf7;
-    --gold: #bd8b3e;
+    --teal: #2b9b9b;
     --muted: #716e69;
-    --line: #e8e2d9;
+    --section1: #f8edcd;
 }
 
 * { box-sizing: border-box; }
@@ -56,7 +56,7 @@ a {
     text-decoration: none; 
 }
 .header-nav a:hover, .header-nav a:focus-visible { 
-    color: var(--gold); 
+    color: var(--teal); 
 }
 .header-mark { 
     display: none;
