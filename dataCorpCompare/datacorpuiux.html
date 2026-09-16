@@ -10,41 +10,61 @@
     <meta name="author" content="Talisha D. Lopez">
     <meta property="og:title" content="Talisha D. Lopez | Web & UI Designer Portfolio">
     <meta property="og:description" content="Portfolio of Talisha D. Lopez - Web Designer, UI Designer, and Artist. View projects and creative work.">
-    <link rel="stylesheet" href="/dataCorpCompare/compare/caseStyle.css">
+    <link rel="stylesheet" href="/dataCorpCompare/compare/dataCorpuiux.css">
     <link rel="stylesheet" href="">
     
 </head>
 <body>
     <header class="header" id="header">
-            <div id="myLogoS">
+        <div class = "logo-container">
+            <div class="myLogo">
                 <a href="../home.html" aria-label="Home">
-                    <img src="../images/myFullLogoLogo.png" alt="Talisha's Web & UI Design">
-                </a>
+                    <img src="../images/myFullLogo001_.png" alt="Talisha's Web & UI Design"></a>
             </div>
-            <div id="myLogo">
-                <a href="../home.html" aria-label="Home">
-                    <img src="../images/myFullLogo.png" alt="Talisha's Web & UI Design"></a>
+            <div class="my-logo-Small">
+                <img src="../images/myFullLogo002_.png" alt="Talisha's Web & UI Design">
             </div>
-            <nav class="header-nav" aria-label="Main navigation">
+        </div>
+            <!-- Navigation-->
+            <div class="nav-container">
+                <nav class="toggle-nav" aria-label="Main navigation">
+                    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="header-nav">
+                        &#9776;
+                    </button>
+            <div class="header-nav" aria-label="Main navigation">
+                <div class="header-nav_item">
                 <a href="#about">About</a>
+                </div>
+                <div class="header-nav_item">
                 <a href="https://creativetea.artstation.com" target="_blank" rel="noopener noreferrer">Art</a>
+                </div>
+                <div class="header-nav_item">
                 <a href="#contact">Contact</a>
+                </div>
+                <div class="header-nav_item">
                 <button class="lets-work-together">Let's Work Together</button>
+                </div>
+                </div>
             </nav>
+            </div>
         </header>
-        <main id="wrapper">
+        
+        <main class="wrapper">
             <!--Hero-->
             <section class="project-hero" id="dataCorp-project">
+                
             <div class="project-hero_content">
+                <div class = "project-hero_text-container">
                 <p class="project-hero_tagline">Website Redesign · UX/UI · Front-EndDevelopment</p>
                 <h1 class="project-hero_title">DataCorp<br>Computer Systems</h1>
             
                 <p class="project-hero_subtitle">Website Redesign &amp; Development</p>
-
-                <p class="project-hero_descrition">A responsive website redesign concept for a long-running computer sales and repair business. 
+                <div class="eyebow"></div>
+                <p class="project-hero_description">A responsive website redesign concept for a long-running computer sales and repair business. 
                 The goal was to simplify navigation and improve product browsing, modernize the visual identity, 
                 and create a consistent experience across desktop and mobile devices.</p>
-             
+                </div>
+             <div class ="project-details_container">
                 <dl class="project-details">
                     <div class="project-details_item">
                         <img src="../images/Role.png" alt="Role Icon" class="project-details_icon">
@@ -73,13 +93,35 @@
                         <dd>Figma, Adobe Photoshop, HTML, CSS, JavaScript</dd>
                     </div>
                 </dl>  
+                </div>
             </div>
+             
             <figure class="project-hero_visual">
                 <img src="../images/dataCorp004_.png" alt="DataCorp Computer Systems Website Redesign displayed on labtop and mobile devices">
             </figure>
         </section>
+        <!--Interactive Prototype-->
+        <section id="interactive-prototype" class="prototype">
+            <div class="prototype-content">
+            <h2>Interactive Prototype</h2>
+            <p> I built a semi-finished website to bring the design to life and demonstrate behavior, interactions, and page structure.</p>
+            </div>
+                <div class="prototype-display">
+                    <div class="prototype-link">
+                    <a href="#" onclick="window.open('https://twebp.github.io/datacorp-compaudio/', '_blank')">View Live Prototype</a>
+                    </div>
+                    <div class="github-link">
+                        <a href="https://github.com/twebp/datacorp-compaudio" target="_blank" class="github-linka">
+                            <span>View Source Code on GitHub</span>
+                   </a>
+                        <img src="../images/github-logo.png" alt="GitHub Logo" class="github-logo">
+                    
+                     </div>
+            </div>
+            </section>
+    <main class="wrapper">
     <div class="case-study_container">
-        <!--Current Website-->
+             <!--Current Website-->
         <section id="existing-website" class="case-study existing-website">
             <div class="existing-site_intro">
                 <h2>The Existing Site</h2>
@@ -102,7 +144,7 @@
                 </div>
         </section>
         <!--Brand Identity-->
-        <section id="brand-identity" class="case-study brand-identity">
+        <section id="brand-identity" class="brand-identity">
             <div class="brand-refresh_intro">
             <h2>Brand Identity</h2>
             <p>I refreshed the DataCorp's visual identity with a cleaner, 
@@ -112,6 +154,7 @@
             <div class="brand-identity_content">
                 <div class="brand-identity_palette">
                     <h3>Color Palette</h3>
+                   
                     <ul class="color-palette">
                         <li class="color-palette_item">
                             <span class="color-swatch color-swatch--yellow" aria-hidden="true"></span>
@@ -128,22 +171,24 @@
                     </ul>
                 </div>
                 <div class ="brand-identity_logos">
-                    <div>Logo Exploration</div>
+                   <h3>Logo Exploration</h3>
+                
                     <div class="logo-exploration">
-                       
-                    <figure class="logo-option">
+                      <div class = "their-logo">
+                    <figure class="logo-option original-logo">
                         <img src="../images/Logo-Old.png" alt="DataCorp Old Logo" class="project-img">
                         <figcaption>Original Logo</figcaption>
                     </figure>
-                    <figure class="logo-option">
+                    </div>
+                    <figure class="logo-option concept1">
                           <img src="../images/logoIdea003_.png" alt="DataCorp Logo Exploration" class="project-img">
                           <figcaption>Concept 1</figcaption>
                     </figure>
-                    <figure class="logo-option">
+                    <figure class="logo-option concept2">
                         <img src="../images/logoIdea002_.png" alt="DataCorp Logo Exploration" class="project-img">
                         <figcaption>Concept 2</figcaption>
                     </figure>
-                    <figure class="logo-option">
+                    <figure class="logo-option final-concept">
                         <img src="../images/logoIdea001_.png" alt="DataCorp Logo Exploration" class="project-img">
                         <figcaption>Final Concept</figcaption>
                     </figure>
@@ -153,7 +198,7 @@
         </section>
         
         <!--Wireframes-->
-        <section id="planning" class="case-study">
+        <section id="planning" class="case-study_wireframes">
             <div class="plan_intro">
                 <h2>Planning the Experience</h2>
                 <p>Low-Fidelity Wireframes were created to establish the information hierarchy,
@@ -161,7 +206,7 @@
             </div>
                 <div class="planning_wireframes">
                     <figure class ="wireframe">
-                        <figcaption>Homepage</figcaption>
+                        <figcaption>Sitemap</figcaption>
                         <img src="../images/Sitemap.png" alt="DataCorp Sitemap" class="project-img">
                     </figure>
                     <figure class ="wireframe">
@@ -169,12 +214,8 @@
                         <img src="../images/WireframeHome.png" alt="DataCorp Wireframe Homepage" class="project-img">
                     </figure>
                     <figure class ="wireframe">
-                        <figcaption>Product Listing</figcaption>
-                        <img src="../images/Products.png" alt="DataCorp Wireframe" class="project-img">
-                    </figure>
-                    <figure class ="wireframe">
-                        <figcaption>Product Detail</figcaption>
-                        <img src="../images/ProductDetail.png" alt="DataCorp Wireframe" class="project-img">
+                        <figcaption>Appointment Page</figcaption>
+                        <img src="../images/AppointmentPage.png" alt="DataCorp Wireframe" class="project-img">
                     </figure>
                     <figure class ="wireframe">
                         <figcaption>Service Page</figcaption>
@@ -184,7 +225,7 @@
         </section>
         
         <!--Mobile Mockups-->
-        <section id="small-screen_design" class="case-study">
+        <section id="small-screen_design" class="mobile-mockups">
             <div class="small-screen_intro">
 
             <h2>Designing for Smaller Screens</h2>
@@ -197,82 +238,64 @@
                         <figcaption>Mobile Homepage</figcaption>
                             <img src="../images/MobileHome.png" alt="DataCorp Mobile Homepage" class="project-img">
                     </figure>
-                    <figure class="mobile-design_mockup">
-                        <figcaption>Mobile Cases</figcaption>
-                            <img src="../images/Chassis.png" alt="DataCorp Mobile Chassis" class="project-img">
-                    </figure>
-                    <figure class="mobile-design_mockup">
-                        <figcaption>Mobile Ram</figcaption>
+                     <figure class="mobile-design_mockup">
+                        <figcaption>Mobile About</figcaption>
                             <img src="../images/Ram.png" alt="DataCorp Mobile Ram" class="project-img">
                     </figure>
+                    
                     <figure class="mobile-design_mockup">
-                        <figcaption>Mobile Service</figcaption>
+                            <figcaption>Homepage Card</figcaption>
+                    <img src="../images/Contact.png" alt="DataCorp Mobile Contact" class="project-img">
+                    </figure>
+                    <figure class="mobile-design_mockup">
+                        <figcaption>Repair Shop Page</figcaption>
                             <img src="../images/mobileService.png" alt="DataCorp Mobile Service" class="project-img">
                     </figure>
                     <figure class="mobile-design_mockup">
-                        <figcaption>Mobile About</figcaption>
-                            <img src="../images/About.png" alt="DataCorp Mobile About" class="project-img">
+                        <figcaption>Mobile IT Network</figcaption>
+                            <img src="../images/Chassis.png" alt="DataCorp Mobile Chassis" class="project-img">
                     </figure>
-                        <figure class="mobile-design_mockup">
-                            <figcaption>Mobile Contact</figcaption>
-                    <img src="../images/Contact.png" alt="DataCorp Mobile Contact" class="project-img">
+                    <figure class="mobile-design_mockup">
+                        <figcaption>Scheduling Calendar</figcaption>
+                            <img src="../images/About.png" alt="DataCorp Mobile About" class="project-img">
                     </figure>
                 </div>
         </section>
         <!--Desktop Mockups-->
-        <section id="desktop-design" class="case-study">
+        <section id="desktop-design" class="case-study_large-screen">
             <div class="desktop-design_intro">
                 <h2>Scaling the System to Desktop</h2>
                     <p> The visual system was expanded across desktop layouts to create a clean, 
                      spacious, and easy to browse shopping experience.</p>
             </div>
-            <div class="section-content">
+            <div class="desktop-design-content">
                 <figure class="desktop-design_gallery">
-                    <figcaption>Desktop Homepage</figcaption>
+                    <figcaption>Homepage</figcaption>
                         <img src="../images/DesktopHome.png" alt="DataCorp Desktop Homepage" class="project-img">
                 </figure>
                 <figure class="desktop-design_gallery">
-                    <figcaption>Desktop Chassis</figcaption>
+                    <figcaption>Repair Shop</figcaption>
                         <img src="../images/chassisDesktop.png" alt ="DataCorp Desktop Product Listing" class="project-img">
                 </figure>
                 <figure class="desktop-design_gallery">
-                    <figcaption>Desktop Ram</figcaption>
+                    <figcaption>Appointment Calendar</figcaption>
                         <img src="../images/ramDesktop.png" alt="DataCorp Desktop Ram" class="project-img">
                 </figure>
+                
                 <figure class="desktop-design_gallery">
-                    <figcaption>Desktop Service</figcaption>
+                    <figcaption>Review Service CheckOut</figcaption>
                     <img src="../images/serviceDesktop.png" alt="DataCorp Desktop Service" class="project-img">
                 </figure>
             </div>
-         <!--Interactive Prototype-->
-      <section id="interactive-prototype" class="prototype">
-            <div class="prototype-content">
-            <h2>Interactive Prototype</h2>
-            <p> I built a semi-finished website to bring the design to life and demonstrate behavior, interactions, and page structure.</p>
-            </div>
-                <div class="prototype-display">
-                    <figure class="prototype-preview">
-                        <img src="../images/prototypePhoto.png" alt="DataCorp Prototype Homepage" class="project-img">
-                    </figure>
-                    <div class="prototype-link">
-                    <a href="#" onclick="window.open('https://twebp.github.io/datacorp-compaudio/', '_blank')">View Live Prototype</a>
-                    </div>
-                    <div class="github-link">
-                        <a href="https://github.com/twebp/datacorp-compaudio" target="_blank" class="github-link"><span>View Source Code on GitHub</span>
-                    </div>
-                    
-                    <figure class="github-logo">
-                        <img src="../images/github-logo.png" alt="GitHub Logo" class="github-logo"></a>
-                    </figure>
-                
-            </div>
-        </section>
+            </section>
+         
         <!--Before & After-->
         <section id="before-after" class="before-after">
             <div class="before-after_intro">
                 <h2>Before &amp; After</h2>
                     <p> A cleaner design, clearer hierarchy, modern visuals, and a much better experience across all devices.</p>
             </div>
+                    <div class="before-after_comparison-container">
                         <div class="before-after_comparison">
                             <figure class="comparison">
                                 <img src="../images/Before.png" alt="DataCorp Before and After" class="project-img">
@@ -285,9 +308,14 @@
                                 <figcaption>After</figcaption>
                             </figure>
                         </div>
+                    </div>
             </section>
-            <!--Project Reflection-->
+        
+           
+        </main>
+         <!--Project Reflection-->
             <section id="project-reflection" class="project-reflection">
+                <div class="project-reflection_container">
                 <div class="project-reflection_icon" aria-hidden="true">
                 <img src="../images/Reflection.png" alt="DataCorp Project Reflection" class="project-img">
                 </div>
@@ -297,26 +325,29 @@
                     I focused on reducing visual clutter, strengthening hierarchy, creating responsive layouts, and translating the design into a functional 
                     web prototype. Looking back, I would continue refining typography, spacing and component consistency.</p>
                 </div>
+                </div> <!-- .project-reflection_container -->
             </section>
-        </main>
     </div> <!-- .case-study_container -->
 
             <!--footer-->
         <footer class="project-footer">
             <nav class="project-footer_nav" aria-label="Project navigation">
-            
+                <div class="previous-project">
                 <a href="../home.html" aria-label="Previous Project">
                     <span>&lt; Previous Project</span>
                 </a>
-            
+                </div>
+                <div class="all-projects">
                 <a href="../home.html" aria-label="All Projects">
                     <img src="../images/AllProjects.png" alt="All Projects" class="project-img">
                     <span>All Projects</span>
                 </a>
-         
+                </div> 
+                <div class="next-project">
                 <a href="../home.html" aria-label="Next Project">
                     <span>Next Project ></span>
                 </a>
+                </div>
             </nav>
         </footer>
     <!--scripts-->
