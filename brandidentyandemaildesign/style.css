@@ -365,12 +365,6 @@ a {
         align-items: start;
        
      }
-     .arrow2 {
-        display: block;
-     }
-     .arrow1 {
-        display: none;
-     }
  .before-after-comparison {
     display: grid;
     grid-template-columns: 1fr;
@@ -528,6 +522,10 @@ a {
 .arrow {
     grid-area: arrow;
     justify-self: center;
+    width: 42px;
+    height: auto;
+
+    transform: rotate(90deg)
 }
 .after {
     grid-area: after;
