@@ -595,6 +595,34 @@ a {
 .project-reflection_content h2 {
     color: var(--titles);
 }
+.project-footer_nav{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+.project-footer_nav a {
+    display: flex;
+    align-items: center;
+
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+.project-img {
+    grid-column: 2;
+    display: flex;
+}
+.previous-project {
+    justify-self: start;
+}
+.all-projects {
+    justify-self: center;
+}
+.next-project {
+    justify-self: end;
+}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .header{
