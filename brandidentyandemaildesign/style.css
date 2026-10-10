@@ -301,6 +301,49 @@ a {
     margin-right: 0.3rem;
     object-fit: contain;
 }
+.image-zoom {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+.image-zoom:hover {
+    transform: scale(1.03);
+}
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+}
+.image-lightbox.open {
+    display: flex;
+}
+.lightbox-image {
+    max-width: 99vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 10000;
+}
+
 @media (max-width: 767px) { 
      body {
         font-size: 18px;
@@ -365,22 +408,30 @@ a {
         align-items: start;
        
      }
- .before-after-comparison {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
- }
- .project-hero_visual {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
- .project-hero_visual img {
-    width: 70%;
-    max-width: 100%;
-    height: auto;
+.date-label {
+    display: inline-block;
+    padding: 0.35rem 0.25rem;
+     min-width: 50px;
+     text-align: center;
+     font-size: 0.5rem;
 }
+  .project-hero_visual {
+        width: 50%; 
+  }
+  .project-hero_visual img {
+      width: 100%;
+      height: auto;
+  }
+   .before-after-comparison {
+       display: grid;
+       grid-template-columns: repeat(2, 150px);
+       gap: 0.75rem;
+       justify-content: center;
+       justify-self: center;
+       text-align: center;
+       width: 100%;
+       margin: 2rem 0;
+   }
 .project-hero_visual h2 {
     text-align: center;
     font-size: 0.9rem;
@@ -394,6 +445,9 @@ a {
     gap: 1rem;
     padding: 1rem;
 }
+.color-palette_title1 {
+    display:none;
+}
 .color-palette, .typography, .brand-identity_logos {
     display: flex;
     flex-direction: column;
@@ -404,6 +458,9 @@ a {
     background-color: var(--paper);
     border-radius: 8px;
     margin: 1rem 0;
+}
+.color-palette {
+    padding: 2rem 0;
 }
 .font-one  {
     font-family: 'Varanda', sans-serif;
@@ -673,13 +730,26 @@ a {
     .search-bar {
         display: none;
     }
- 
+.date-label {
+    display: inline-block;
+    padding: 0.35rem 0.25rem;
+     min-width: 50px;
+}
+  .project-hero_visual {
+        width: 50%; 
+  }
+  .project-hero_visual img {
+      width: 100%;
+      height: auto;
+  }
    .before-after-comparison {
        display: grid;
-       grid-template-columns: 1fr 1fr;
-       gap: 1rem;
-       justify-items: center;
+       grid-template-columns: repeat(2, 190px);
+       gap: 0.75rem;
+       justify-content: center;
+       justify-self: center;
        text-align: center;
+       width: 100%;
        margin: 2rem 0;
    }
    .brand-identity {
@@ -711,14 +781,17 @@ a {
     align-items: center;
     gap: 1rem;
    }
-   .color-palette_title {
+   .color-palette_title2 {
+    display:none;
+}
+   .color-palette_title1 {
        text-align: center;
        margin-bottom: 1.5rem;
    }
    .color-palette_card {
        width:100%;
        max-width: 650px;
-       padding: 1.5rem;
+       padding: 1rem;
        background-color: var(--paper);
        border-radius: 8px;
    }
@@ -1191,8 +1264,11 @@ a {
        gap: 1rem;
        margin-top: 2rem;
    }
- 
-   .color-palette_title {
+.color-palette_title2 {
+    display:none;
+}
+
+   .color-palette_title1 {
        text-align: center;
        margin-bottom: 1.5rem;
    }
@@ -1230,15 +1306,16 @@ a {
     border-radius: 8px;
     margin: 1rem 0;
 }
+
 .color-palette_card, .typography, .brand-identity_logos {
     width: 100%;
     max-width: none;
     margin: 0;
     padding: 1.25rem;
-
     background-color: var(--paper);
     border-radius: 8px;
 }
+
 .logo-concept {
     display: flex;
     justify-content: center;

@@ -1,8 +1,9 @@
-const zoomImages = document.querySelectorAll('.wireframe-zoom');
+const zoomImages = document.querySelectorAll('.image-zoom');
 
 const lightbox = document.querySelector('#image-lightbox');
 const lightboxImage = document.querySelector('#lightbox-image');
 const closeLightbox = document.querySelector('.lightbox-close');
+
 
 zoomImages.forEach(image => {
     image.addEventListener('click', () => {
