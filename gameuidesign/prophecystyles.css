@@ -641,6 +641,25 @@ a {
     }
 
 }
+@media (max-width: 1024px) {
+    .toggle-nav {
+        position: relative;
+     }
+     .header-nav.is-open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:1rem;
+
+        position: absolute;
+        top: calc(100% + 0.75rem);
+        right: 0;
+        min-width: 160px;
+        padding: 1rem;
+        background: #101010;
+        z-index: 1000;
+     }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
         font-size: 18px;
@@ -816,6 +835,63 @@ span, figcaption    {
         justify-items: center;
         gap: 2rem;
     }
+    .project-footer{
+    width:100%;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.project-footer_nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+
+    width: 100%;
+}
+.project-footer_nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+    width: auto;
+}
+.project-img {
+    grid-column: 2;
+    display: flex;
+}
+.project-footer_nav span {
+    font-size: 1rem;
+}
+.project-footer_nav > .previous-project {
+    justify-self: start;
+}
+.project-footer_nav > .all-projects {
+    justify-self: center;
+    min-width: max-content;
+}
+.project-footer_nav > .all-projects a{
+   white-space: nowrap;
+   flex-wrap: nowrap;
+}
+.project-footer_nav > .next-project {
+    justify-self: end;
+}
+.project-footer_nav a:first-child, 
+.project-footer_nav a:last-child {
+    
+    margin:0;
+}
+
+.project-footer_nav img {
+    width: 18%;
+    height: 18px;
+    flex-shrink: 0;
+    margin: 0;
+    object-fit: contain;
+}
 
 }
 @media (min-width: 1025px) {
@@ -1352,6 +1428,8 @@ min-width: 0;
 .reflection_container > .partition {
     display: none;
 }
+
+}
 .image-zoom {
     cursor: zoom-in;
     transition: transform 0.3s ease;
@@ -1359,21 +1437,7 @@ min-width: 0;
 .image-zoom:hover {
     transform: scale(1.03);
 }
-.image-lightbox {
-    position: fixed;
-    inset: 0;
 
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 100%;
-
-    padding: 2rem;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 9999;
-}
 .image-lightbox.open {
     display: flex;
 }
@@ -1394,4 +1458,18 @@ min-width: 0;
     cursor: pointer;
     z-index: 10000;
 }
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
 }
